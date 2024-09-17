@@ -82,4 +82,15 @@ eg. : `<form class="ms-5">` , `<h2 class="ms-4">Bootstrap</h2>`
 1. .btn-close
 1. .btn-link
 1. .btn-toolbar
- 
+
+ ### Input Group Classes:
+ - .input-group
+ - .input-group-text
+#### Syntax:
+```
+<div class="input-group">
+        <span class="input-group-text">&#8377;</span>
+        <input type="text">
+        <span class="input-group-text">.00</span>
+</div>
+```
