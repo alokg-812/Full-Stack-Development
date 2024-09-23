@@ -94,3 +94,64 @@ eg. : `<form class="ms-5">` , `<h2 class="ms-4">Bootstrap</h2>`
         <span class="input-group-text">.00</span>
 </div>
 ```
+
+>[!Note]
+>*
+
+## Validation part:
+
+* Initially, validation in a form like the disappearance of the '*' symbol through javascript but when it was seen to use very frequently, CSS inheritance code was written through which we can do that validation part. 
+
+### CSS classes for validating the elements:
+1. :required:{_true/false_} it configures when the field is defined with required.
+2. :optional:{_true/false_} it configures when the field is not defined with required.
+3. :valid: it defines effects when all validations attributes are satisfied.
+4. :invalid: it defines effects when the field validation returns an error.
+Ex:
+```
+input:required+span{
+            color: red;
+            display: inline;
+}
+input:optional + span{
+            display: none;
+}
+<form>
+        <dl>
+            <dt>UserName</dt>
+            <dd>
+                <input type="text" name="txtUsername" required><span>*</span>
+            </dd>
+            <dt>Password</dt>
+            <dd>
+                <input type="text" name="txtpwd" required><span>*</span>
+            </dd>
+            <dt>Age</dt>
+            <dd>
+                <input type="text" name="txtAge"><span>*</span>
+            </dd>
+        </dl>
+</form>
+```
+
+**Output:**
+![image](https://github.com/user-attachments/assets/08339fea-3b52-419b-a758-5684d1bb3edd)
+
+
+## Multimedia with HTML:
+
+* marquee
+  ```
+  <marquee>
+  ```
+* audio
+  ```
+  <audio>
+  ```
+* video
+  ```
+  <video>
+  ```
+* embed
+>[!Note]
+> {_Used till HTML4 only and til then applets and swings were in use_
