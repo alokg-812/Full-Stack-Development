@@ -155,3 +155,25 @@ input:optional + span{
 * embed
 >[!Note]
 > {_Used till HTML4 only and til then applets and swings were in use_
+
+### Some important attributes:
+Attribute       Description
+scrollamount     => Control the marquee scrolling speed[1 to 100]
+**Syntax:**
+```
+<marquee scrollamount="75">HI</marquee>
+```
+direction
+width and height
+loop
+bgcolor
+
+
+
+### Key points related to audio and videos:
+* Autoplay - It uses "boolean" value[true/false]. It enables autoplay set to true
+* controls - It defines control for the media-player. Controls can be like seekbar, and play/resume etc..
+* loop - It uses a boolean value, which allows to loop the video continously.
+* muted - Upon loading a page, if the video/audio has to be muted, we use this attribute.
+* poster - To represent a thumbnail on video before playback.
+* src - It defines the name and location of video content.
