@@ -177,3 +177,46 @@ bgcolor
 * muted - Upon loading a page, if the video/audio has to be muted, we use this attribute.
 * poster - To represent a thumbnail on video before playback.
 * src - It defines the name and location of video content.
+
+
+# CSS
+ - Styles(CSS) provides an extra attribute through which an appearance can be changed to get a good look and feel.
+ - In case of styling language, we go for a MIME type called text/CSS.
+```
+<style type="text/CSS">
+    // content goes here
+</style>
+```
+ * We can link CSS to HTML in 3 ways
+ * * Inline
+   * Embedd
+   * External
+  
+* **Inline:**
+Ex:
+```
+   <element style = "attribute:value; attribute:value; attribute:value; ..."></element>
+```
+>[!Note]:
+>* Applying the style through inline is faster as it is local to that particular element
+
+**LIMITATIONS:**
+- Increase in redundancy as the scope is limited to that line we need to rewrite the instructions again to get the effect for another element
+
+>[!Note]:
+>* It is best suited only when we want to use that particular style at that particular element
+
+* **Embedd:**
+```
+<style type="text/CSS">
+
+<style>
+```
+CASE -1: If style eleement is places inside head element than the code owuld be loaded to browser memeoyr and it would be used at the later stage as per our requirement
+```
+```
+CASE -2: Inside the body
+If we do so, then at the time of rendering elements, style effect would be applied by the browser
+
+CASE -3: OUtside the HTML element
+In this case also, same as case -2  but some time it would behave abnormally in somw scenarios
