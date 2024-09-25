@@ -154,7 +154,7 @@ ________________________________________________________________________________
   => We can access css files across pages.
   => If we are using external files, then number of requests will increase for a page, which internally increase the page load time.
   
-Structure:
+⭐Structure:
 
 - _Fashion Store_
 - * public
@@ -173,3 +173,28 @@ Structure:
   > ```
   > <link rel="stylesheet" href="path_to_CSS_file">
   > ```
+
+**QS: What is minification?:**
+Ans:
+- Minification is the process of compressing CSS.
+- It is always recommended to minify and use the CSS file for production.
+- CSS original files will occupy more space, we have to use them for development but not for production
+
+>[!Note]
+>  **Priority Order:**
+> 1. Inline
+> 2. Embed
+> 3. External
+> 4. 👉 If new properties are defined in external, embed, inline, all will be applied
+
+```
+<style type="text/CSS>
+    h1{
+           color: blue;
+           text-align: center;
+    }
+</style>
+<link rel="stylesheet" href="path to external CSS"></link>
+<h1 style="color: red;">Welcome to HTML</h1>
+```
+Here, **inline>>embed>>external**
