@@ -92,6 +92,7 @@ bgcolor
    * Embedd
    * External
   
+___________________________________________________________________________________________________________________________
 * **Inline:**
 Ex:
 ```
@@ -105,7 +106,7 @@ Ex:
 
 >[!Note]:
 >* It is best suited only when we want to use that particular style at that particular element
-
+___________________________________________________________________________________________________________________________
 * **Embedd:**
 ```
 <style type="text/CSS">
@@ -120,3 +121,55 @@ If we do so, then at the time of rendering elements, style effect would be appli
 
 CASE -3: OUtside the HTML element
 In this case also, same as case -2  but some time it would behave abnormally in somw scenarios
+
+### Why MIME type should be given?
+Ans: to tell the browser how to render a page
+### Why should we tell to browser?
+Ans: because we would have '{}' in our code. In general world,:
+'{}' indicates:
+- json file
+- java code
+- css styling
+
+
+## Media type in CSS:
+
+**QS. What is mediatype for style?**
+Ans: 
+It configures your styles for various devices and viewport.
+We can set styles fo screen, print and speech.
+```
+<style type="text/CSS" media="all/screen/print/speech..">
+</style>
+```
+Here-
+screen: to see the effects on the screen.
+print: to see the effect to take pictures
+
+___________________________________________________________________________________________________________________________
+* **External:**
+  => We can write styles in separate stylesheets.
+  => Stylesheets have an extension of '.css'.
+  => Styles can cascade the HTML page and hence the name _Cascading Style Sheet_
+  => We can access css files across pages.
+  => If we are using external files, then number of requests will increase for a page, which internally increase the page load time.
+  
+Structure:
+
+- _Fashion Store_
+- * public
+  * * docs
+    * images
+    * audios
+    * videos
+  * src
+  * * scripts
+    * styles
+    * - CSS
+      - ticket-effects.css
+- index.html
+  >[!Note]:
+  > ticket-effects.css is linked with the index.html file using
+  > ```
+  > <link rel="stylesheet" href="path_to_CSS_file">
+  > ```
