@@ -278,7 +278,8 @@ ___
 >    * If different attributes are present, then all will be applied.
 >  - If same attributes are defined using ID selector in embed and external file, which set would be applied?
 >  - * Yes we can do like not giving 2 names with same property but different names, in that case, we can use the ',' delimiter to sort the issue like #idname,.classname,typename{ // properties go here}
- Ex:
+
+Ex:
 ```
 .text, #styling, h1{
    color: blue;
@@ -291,6 +292,7 @@ ___
 ___________
 ##### Ratioanl Selector:
 👉 We can select elements using parent and child hierarchy.
+
 👉 We can also select elements using siblings.
 
 - parent child -----------------all child elements in specific parents
@@ -298,4 +300,30 @@ ___________
 - ElementA + ElementB ----------adjacent selector[siblings]
 - ELementA ~ ElementB-----------generic siblings
 
+**Attribute Selector:**
 
+elementname[attributename]{
+
+}
+elementname[attributename="value"]{
+
+}
+
+>[!Note]
+> **Meta Character Binding:**
+
+> **Condition ========================== Purpose**
+
+> [attribute="val"] ================= Equal specifies that it should be exact match.
+
+> [attribute^="val"] ================ It refers to the value starting with specified.
+
+> [attribute$="val"] ================ It refers to the value ending with specified.
+
+> [attribute*="val"] ================ Matches the terms at any location(same as % in SQL).
+
+> [attribute|="val"] ================ Name starts with specified and is separated with "-".
+
+> [attribute&="val"] ================ Name starts with specified term and not binded with other words.
+
+Ex:
