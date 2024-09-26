@@ -198,3 +198,104 @@ Ans:
 <h1 style="color: red;">Welcome to HTML</h1>
 ```
 Here, **inline>>embed>>external**
+
+___________________________________________________________________________________________________________________
+
+## Selectors
+It refers to the process of selecting an element in a web page.
+
+**CSS selectors are classified into various categories:**
+* Primary selectors.
+* Rational selectors.
+___
+* Dynamic Pseudo classes.
+* Structural Pseudo classes.
+* ELement Pseudo classes.
+* Validation State Pseudo classes.
+___
+* Attribute selectors.
+* Universal selectors.
+* Root selectors.
+* Behavioural selectors.
+___
+##### Primary Selector:
+1. ID selectors
+   -ID refers to identifying an element with unique names
+   - ```
+     #library{
+        color: red;
+     }
+
+     <body>
+         <h1>HTML</h1>
+         <h1>CSS</h1>
+         <h1>JS</h1>
+         <h1 id="library">REACT JS</h1>
+     </body>
+     ```
+     >[!Note]
+     > In real-time coding, normally we write multiple designs( styles with effects):
+     > * To use this design on multiple elements if we go for id spectator then the effects would not be applied on the 
+  elements. To resolve this problem, we go for class selector as an example of bootstrap.
+     > * jfi
+     > * fda
+
+2. Class selectors
+- If we want to apply multiple effects for an element then we go for class selector
+- ```
+  <elementName class="classname1 classname2 classname3 ..."
+              data goes here
+  </element>
+  ```
+3. Type selectors.
+   - We target the element directly by referring to the token(tokens also known as tags)
+   - ```
+     h1{
+        color:red;
+     }
+     ```
+
+     ```
+            <head>
+            <style>...</style>
+            link rel="..." href="..." →stored in browser memory and interpreted line by line
+     ```
+
+>[!Tip]
+>  **FAQs:**
+> * If styles are defined for any element in all three ways, then which set of effects would be applied?
+> * * First inline, then embed, and then external
+> * If the style container is defined with the same attributes in both head and body sections, then which set of effects would be applied?
+> * If the style container is defined with the same attribute multiple times in a body, then what set would be applied?
+
+
+>[!Note]
+>  **CSS Rules:**
+>  **CSS Rules:** 
+>  **FAQs:**
+>  - If we define the style for any element using all three primary selectors, which one would be applied??
+>  - * ID name >> class name >> type
+>    * If different attributes are present, then all will be applied.
+>  - If same attributes are defined using ID selector in embed and external file, which set would be applied?
+>  - * Yes we can do like not giving 2 names with same property but different names, in that case, we can use the ',' delimiter to sort the issue like #idname,.classname,typename{ // properties go here}
+ Ex:
+```
+.text, #styling, h1{
+   color: blue;
+   text-align: center;
+}
+   <h1>HTML</h1>
+   <h2 id="styling">CSS</h2>
+   <h3 class="text">JS</h3>
+ ```
+___________
+##### Ratioanl Selector:
+👉 We can select elements using parent and child hierarchy.
+👉 We can also select elements using siblings.
+
+- parent child -----------------all child elements in specific parents
+- parent>child -----------------only direct child elements in specific parent
+- ElementA + ElementB ----------adjacent selector[siblings]
+- ELementA ~ ElementB-----------generic siblings
+
+
