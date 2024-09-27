@@ -58,12 +58,34 @@ eg. : `<form class="ms-5">` , `<h2 class="ms-4">Bootstrap</h2>`
 - .justify-content-{center, left, between, space-around....}
 - .align-items-{center, end, start ,top , baseline}
 
-### 8. Bootstrap grid
-- .row 
-- .col : responsive
-- .col-{size} : 1 to 12
 
+<aside>
+💡
 
+Q: How to design a grid (display: grid)???
+
+To design a grid using Bootstrap, we can use the following classes:
+
+- .row: Creates a horizontal group of columns
+- .col-*: Defines the number of columns to span (e.g., .col-4 for 4 columns)
+- col-(-size): 1 to 12
+- .col-sm-*, .col-md-*, .col-lg-*, .col-xl-*: Responsive grid classes for different screen sizes
+
+Example:
+
+```html
+<body class="container-fluid">
+    <section class="border border-3 border-success m-3 row">
+        <nav class="border border-2 m-2 p-3 col-2">Nav</nav>
+        <main class="border border-2 m-2 p-3 col">Main</main>
+        <aside class="border border-2 m-2 p-3 col-1">Aside</aside>
+    </section>
+</body>
+```
+
+This creates a responsive grid with 3 columns on medium and larger screens, and 2 columns on small screens.
+
+</aside>
 ### 9. Bootstrap inbuilt classes for form elements
 
 - 
@@ -87,7 +109,7 @@ eg. : `<form class="ms-5">` , `<h2 class="ms-4">Bootstrap</h2>`
  - .input-group
  - .input-group-text
 #### Syntax:
-```
+```html
 <div class="input-group">
         <span class="input-group-text">&#8377;</span>
         <input type="text">
