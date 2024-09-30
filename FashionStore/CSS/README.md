@@ -384,3 +384,9 @@ example for attribute selector
 
 
 #### Behavioural and Occurance class*:
+- **Selector** ====  **Description**
+- ::first-line ==== Effects for first line in paragraph.
+- ::first-letter == Effects for first character.
+- ::before ======== Effects or content to add before the current element.
+- ::after ========= Effects or content to add after the current element.
+- ::place-holder == Effects on the placeholder elements.
