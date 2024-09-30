@@ -290,7 +290,7 @@ Ex:
    <h3 class="text">JS</h3>
  ```
 ___________
-##### Ratioanl Selector:
+##### Rational Selector:
 👉 We can select elements using parent and child hierarchy.
 
 👉 We can also select elements using siblings.
@@ -324,6 +324,63 @@ elementname[attributename="value"]{
 
 > [attribute|="val"] ================ Name starts with specified and is separated with "-".
 
-> [attribute&="val"] ================ Name starts with specified term and not binded with other words.
+> [attribute~="val"] ================ Name starts with specified term and not binded with other words.
 
 Ex:
+```html
+example for attribute selector
+```
+
+#### Dynamic Pseudo Class Selector:
+- Dynamic indicates that the effect can change according to state and situation.
+- Pseudo means false representation.
+- Class refers to Program template in computer programming, it contains predefined logic and data, which you can implement and customize according to the requirements.
+
+- Selectors: =======Description:
+- * :link =====Specifies effect for Hyperlink[anchor in default state]
+  * :visited ==It defines effect for visited links[andchor in visited state]
+  * :target ===It defines effect for the target element[used normally in intradocument(not scrollable)] {element is specified hyperlink}
+  * :hover ====It defines effects when mouse pointer is over[mouseover]
+  * :active === It defines effects when link is in active state[mousedown]
+
+🌟class can transform element appearance, transformation time can be controlled by using "CSS attribute called **transition**".
+
+#### Validation State Pseudo Classes:
+- Selector ===========Description
+- * :valid =========== It defines effects for element if tit is valid against the validation defined.
+  * - Validation can be verified using:
+  * - Minlength
+    - Maxlength
+    - Required
+    - Pattern
+    - Email
+    - Url etc...
+  * :invlid ========== It defines effects for an element when it is invalid.
+  * :required ======== It defines effects for element when it is verified with requirement.
+  * :optional ======== If it is not defined with required validation then it is treated as optional
+ 
+
+#### ELement State Pseudo Classes:
+- Selector ===========Description
+- * enabled ==== It defines effects when the element is enabled.
+  * disabled === It defines effects when the element is disabled.
+  * read-only === It defines effects when the element is set to read-only.
+  * checked === It defines effects when the element is checked.
+  * focus ==== It defines effects when element is focused.
+
+#### Structural Pseudo Classes:
+>[!Note]
+> * We can target our effects based on the position of the element in parent and child hierarchy.
+- Selector ===========Description
+- * :first-child ===  It defines effects only for first child element.
+  * :last-child ==== It defines effects only for last child element
+  * :nth-child ===== It defines effects only to specific child element that occurs at given level.
+  * - Level number starts with 1.
+    - Index number starts with 0.
+    - We can also define the pre-set values like 'even & odd' to apply effects based on even and odd occureneces respectively.
+
+  * nth-of-type(3|3n|3n+1) :: select elements from top nth occurance.
+  * nth-last-of-type(3|3n|3n+1) :: select elements from bottom nth occurrence.
+
+
+#### Behavioural and Occurance class*:
