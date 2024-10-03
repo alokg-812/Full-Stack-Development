@@ -40,92 +40,105 @@ input:optional + span{
 
 ## Multimedia with HTML:
 
-* marquee
-  ```
+* ``
   <marquee>
-  ```
-* audio
-  ```
+  ``
+* ``
   <audio>
-  ```
-* video
-  ```
+  ``
+* ``
   <video>
-  ```
-* embed
->[!Note]
-> {_Used till HTML4 only and til then applets and swings were in use_
+  ``
+* `` embed ``_[Used till HTML4 only and til then applets and swings were in use]_
 
-### Some important attributes:
-Attribute       Description
-scrollamount     => Control the marquee scrolling speed[1 to 100]
+### Some important attributes related to marquee element:
+|Attribute|Description|
+|-|-|
+|scrollamount|Control the marquee scrolling speed[1 to 100]|
+|direction|It specifies the scrolling directions, which can be left, right, up or down|
+|width and height|Sets the widht and height of the content|
+|loop|specifies the number of time marquee content need to display|
+|bgcolor|It sets the background area|
 **Syntax:**
 ```
 <marquee scrollamount="75">HI</marquee>
 ```
-direction
-width and height
-loop
-bgcolor
-
 
 
 ### Key points related to audio and videos:
-* Autoplay - It uses "boolean" value[true/false]. It enables autoplay set to true
-* controls - It defines control for the media-player. Controls can be like seekbar, and play/resume etc..
-* loop - It uses a boolean value, which allows to loop the video continously.
-* muted - Upon loading a page, if the video/audio has to be muted, we use this attribute.
-* poster - To represent a thumbnail on video before playback.
-* src - It defines the name and location of video content.
+|Attribute|Description|
+|-|-|
+|Autoplay|It uses "boolean" value[true/false]. It enables autoplay set to true|
+|controls|It defines control for the media-player. Controls can be like seekbar, and play/resume etc..|
+|loop|It uses a boolean value, which allows to loop the video continously.|
+|muted|Upon loading a page, if the video/audio has to be muted, we use this attribute.|
+|poster|To represent a thumbnail on video before playback.|
+|src|It defines the name and location of video content.|
 
-
+________________________________________________________________________________________________________________________________________________
 # CSS
  - Styles(CSS) provides an extra attribute through which an appearance can be changed to get a good look and feel.
- - In case of styling language, we go for a MIME type called text/CSS.
-```
-<style type="text/CSS">
-    // content goes here
-</style>
-```
  * We can link CSS to HTML in 3 ways
  * * Inline
    * Embedd
    * External
+ - In case of styling language, we go for a MIME type called text/CSS.
+```
+<link rel="stylesheet" href='path to external CSS file'>
+<style type="text/CSS">
+    // content goes here
+</style>
+<element style="attribute2: value; attribute1: value;......."></element>
+```
   
 ___________________________________________________________________________________________________________________________
-* **Inline:**
+## 1. **Inline:**
 Ex:
-```
+```HTML
    <element style = "attribute:value; attribute:value; attribute:value; ..."></element>
 ```
->[!Note]:
->* Applying the style through inline is faster as it is local to that particular element
+>[!Note]
+> Applying the style through inline is faster as it is local to that particular element
+> It is best suited only, when we want to use that style for that particular element.
 
 **LIMITATIONS:**
-- Increase in redundancy as the scope is limited to that line we need to rewrite the instructions again to get the effect for another element
-
->[!Note]:
->* It is best suited only when we want to use that particular style at that particular element
+- Increase in redundancy as the scope is limited to that line we need to rewrite the instructions again to get the effect for another element.
 ___________________________________________________________________________________________________________________________
-* **Embedd:**
-```
+## 2. **Embedd:**
+```CSS
 <style type="text/CSS">
 
 <style>
 ```
-CASE -1: If style eleement is places inside head element than the code owuld be loaded to browser memeoyr and it would be used at the later stage as per our requirement
+
+#### Different cases to look about:
+1. If style eleement is places inside head element than the code owuld be loaded to browser memeoyr and it would be used at the later stage as per our requirement
+```HTML
+<head>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+        }
+    </style>  
+</head>    // browser memory
+
+<body>
+    <h1>Hii</h1>
+</body>
 ```
-```
-CASE -2: Inside the body
+2. Inside the body
 If we do so, then at the time of rendering elements, style effect would be applied by the browser
 
-CASE -3: OUtside the HTML element
+3. Outside the HTML element
 In this case also, same as case -2  but some time it would behave abnormally in somw scenarios
+_________________________________________
+## Media Type in CSS:
 
-### Why MIME type should be given?
-Ans: to tell the browser how to render a page
-### Why should we tell to browser?
-Ans: because we would have '{}' in our code. In general world,:
+Q. Why MIME type should be given?
+> Ans: to tell the browser how to render a page
+Q. Why should we tell to browser?
+> Ans: Because we would have '{}' in our code. In general world,:
 '{}' indicates:
 - json file
 - java code
@@ -134,24 +147,32 @@ Ans: because we would have '{}' in our code. In general world,:
 
 ## Media type in CSS:
 
-**QS. What is mediatype for style?**
-Ans: 
-It configures your styles for various devices and viewport.
-We can set styles fo screen, print and speech.
-```
+Q. What is mediatype for style?
+> Ans:
+> * It configures your styles for various devices and viewport.
+> * We can set styles fo screen, print and speech.
+```HTML
 <style type="text/CSS" media="all/screen/print/speech..">
+    x{
+         ....
+         ....
+     }
 </style>
 ```
 Here-
-screen: to see the effects on the screen.
-print: to see the effect to take pictures
+- screen: to see the effects on the screen.
+- print: to see the effect to take pictures
 
 ___________________________________________________________________________________________________________________________
-* **External:**
+## 3. External:
   => We can write styles in separate stylesheets.
+  
   => Stylesheets have an extension of '.css'.
+  
   => Styles can cascade the HTML page and hence the name _Cascading Style Sheet_
+  
   => We can access css files across pages.
+  
   => If we are using external files, then number of requests will increase for a page, which internally increase the page load time.
   
 ⭐Structure:
@@ -168,60 +189,72 @@ ________________________________________________________________________________
     * - CSS
       - ticket-effects.css
 - index.html
-  >[!Note]:
-  > ticket-effects.css is linked with the index.html file using
-  > ```
-  > <link rel="stylesheet" href="path_to_CSS_file">
-  > ```
+>[!Note]
+> ```HTML
+> <link rel="stylesheet" href="path_to_CSS_file">
+> ```
+> ticket-effects.css is linked with the index.html file using
 
-**QS: What is minification?:**
-Ans:
+
+QS: What is minification?:
+> Ans:
 - Minification is the process of compressing CSS.
 - It is always recommended to minify and use the CSS file for production.
 - CSS original files will occupy more space, we have to use them for development but not for production
 
->[!Note]
->  **Priority Order:**
+**Priority Order:**
 > 1. Inline
 > 2. Embed
 > 3. External
 > 4. 👉 If new properties are defined in external, embed, inline, all will be applied
 
+```HTML<head>
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+    </style>
+    <link rel = "stylesheet" href = "test-effect.css">
+</head>
+
+<body>
+    <h1 style="color:red; background-color: black;"> Web Development </h1>
+</body>
 ```
-<style type="text/CSS>
-    h1{
-           color: blue;
-           text-align: center;
-    }
-</style>
-<link rel="stylesheet" href="path to external CSS"></link>
-<h1 style="color: red;">Welcome to HTML</h1>
-```
+![image](https://github.com/user-attachments/assets/156c2cbc-3ae7-4124-98fd-f669939bf0c4)
+
 Here, **inline>>embed>>external**
 
 ___________________________________________________________________________________________________________________
 
-## Selectors
+## CSS Selectors
 It refers to the process of selecting an element in a web page.
+![image](https://github.com/user-attachments/assets/918684ae-ce97-4634-862a-cea382491907)
+
 
 **CSS selectors are classified into various categories:**
-* Primary selectors.
-* Rational selectors.
+> Primary:
+1. Primary selectors.
+2. Rational selectors.
+> Pseudo Selector:
+3. Dynamic Pseudo classes.
+4. Structural Pseudo classes.
+5. ELement Pseudo classes.
+6. Validation State Pseudo classes.
+> Basic Selectors
+7. Attribute selectors.
+8. Universal selectors.
+9. Root selectors.
+10. Behavioural selectors.
 ___
-* Dynamic Pseudo classes.
-* Structural Pseudo classes.
-* ELement Pseudo classes.
-* Validation State Pseudo classes.
-___
-* Attribute selectors.
-* Universal selectors.
-* Root selectors.
-* Behavioural selectors.
-___
-##### Primary Selector:
+## 1. Primary Selector:
+id selector, class selector, type(tag) selector.
+
 1. ID selectors
+   
    -ID refers to identifying an element with unique names
-   - ```
+   - ```HTML
      #library{
         color: red;
      }
@@ -233,29 +266,29 @@ ___
          <h1 id="library">REACT JS</h1>
      </body>
      ```
-     >[!Note]
-     > In real-time coding, normally we write multiple designs( styles with effects):
-     > * To use this design on multiple elements if we go for id spectator then the effects would not be applied on the 
+>[!Note]
+> In real-time coding, normally we write multiple designs( styles with effects):
+> * To use this design on multiple elements if we go for id spectator then the effects would not be applied on the 
   elements. To resolve this problem, we go for class selector as an example of bootstrap.
-     > * jfi
-     > * fda
+> * When we give id like : id = "id1 id2", then no effect will be seen.
+> * But when we give the id like ``<ele id="id1" id="id2" id="id3"...> </ele>``, so the first id will have effect on the element.
 
 2. Class selectors
 - If we want to apply multiple effects for an element then we go for class selector
-- ```
+- ```HTML
   <elementName class="classname1 classname2 classname3 ..."
               data goes here
   </element>
   ```
 3. Type selectors.
    - We target the element directly by referring to the token(tokens also known as tags)
-   - ```
+   - ```HTML
      h1{
         color:red;
      }
      ```
-
-     ```
+_______________________________________
+     ```HTML
             <head>
             <style>...</style>
             link rel="..." href="..." →stored in browser memory and interpreted line by line
@@ -280,7 +313,7 @@ ___
 >  - * Yes we can do like not giving 2 names with same property but different names, in that case, we can use the ',' delimiter to sort the issue like #idname,.classname,typename{ // properties go here}
 
 Ex:
-```
+```HTML
 .text, #styling, h1{
    color: blue;
    text-align: center;
@@ -290,97 +323,110 @@ Ex:
    <h3 class="text">JS</h3>
  ```
 ___________
-##### Rational Selector:
+## 2. Rational Selector:
 👉 We can select elements using parent and child hierarchy.
 
 👉 We can also select elements using siblings.
 
-- parent child -----------------all child elements in specific parents
-- parent>child -----------------only direct child elements in specific parent
-- ElementA + ElementB ----------adjacent selector[siblings]
-- ELementA ~ ElementB-----------generic siblings
+- ``parent child``: all child elements in specific parents
+- ``parent>child``: only direct child elements in specific parent
+- ``ElementA + ElementB``: adjacent selector[siblings]
+- ``ELementA ~ ElementB``: generic siblings
 
-**Attribute Selector:**
 
+Ex:1
+![image](https://github.com/user-attachments/assets/f777df15-29d2-4761-8325-a91d9188f0a0)
+
+
+Ex:2
+![image](https://github.com/user-attachments/assets/8b1a3cf3-a421-458b-9316-a20649592150)
+________________________
+## 3. Attribute Selector:
+
+Syntax:
+```HTML
 elementname[attributename]{
 
 }
 elementname[attributename="value"]{
 
 }
-
->[!Note]
-> **Meta Character Binding:**
-
-> **Condition ========================== Purpose**
-
-> [attribute="val"] ================= Equal specifies that it should be exact match.
-
-> [attribute^="val"] ================ It refers to the value starting with specified.
-
-> [attribute$="val"] ================ It refers to the value ending with specified.
-
-> [attribute*="val"] ================ Matches the terms at any location(same as % in SQL).
-
-> [attribute|="val"] ================ Name starts with specified and is separated with "-".
-
-> [attribute~="val"] ================ Name starts with specified term and not binded with other words.
-
-Ex:
-```html
-example for attribute selector
 ```
 
-#### Dynamic Pseudo Class Selector:
+>[!Note]
+> Meta Character Binding:
+
+
+|Condition|Purpose|
+|-|-|
+|[attribute="val"]|Equal specifies that it should be exact match.|
+|[attribute^="val"]|It refers to the value starting with specified.|
+|[attribute$="val"]|It refers to the value ending with specified.|
+|[attribute*="val"]|Matches the terms at any location(same as % in SQL).|
+|[attribute]="val"]|Name starts with specified and is separated with "-".|
+|[attribute~="val"]|Name starts with specified term and not binded with other words.|
+_________________
+
+## 4. Dynamic Pseudo Class Selector:
 - Dynamic indicates that the effect can change according to state and situation.
 - Pseudo means false representation.
 - Class refers to Program template in computer programming, it contains predefined logic and data, which you can implement and customize according to the requirements.
 
-- Selectors: =======Description:
-- * :link =====Specifies effect for Hyperlink[anchor in default state]
-  * :visited ==It defines effect for visited links[andchor in visited state]
-  * :target ===It defines effect for the target element[used normally in intradocument(not scrollable)] {element is specified hyperlink}
-  * :hover ====It defines effects when mouse pointer is over[mouseover]
-  * :active === It defines effects when link is in active state[mousedown]
+|Selectors:|Description:|
+|-|-|
+| :link|Specifies effect for Hyperlink[anchor in default state]|
+| :visited|It defines effect for visited links[andchor in visited state]|
+| :target|It defines effect for the target element[used normally in intradocument(not scrollable)] {element is specified hyperlink}|
+| :hover|It defines effects when mouse pointer is over[mouseover]|
+| :active|It defines effects when link is in active state[mousedown]|
+> 🌟🌟 Class can transform element apperance, transformatin time can be controlled by using "CSS Attribute called transition."
+_______________________________________
+## 5. Validation State Pseudo Classes:
+|Selector|Description|
+|-|-|
+| :valid|It defines effects for element if tit is valid against the validation defined.|
+| :invlid|It defines effects for an element when it is invalid.|
+| :required|It defines effects for element when it is verified with requirement.|
+| :optional|If it is not defined with required validation then it is treated as optional|
 
-🌟class can transform element appearance, transformation time can be controlled by using "CSS attribute called **transition**".
-
-#### Validation State Pseudo Classes:
-- Selector ===========Description
-- * :valid =========== It defines effects for element if tit is valid against the validation defined.
-  * - Validation can be verified using:
-  * - Minlength
-    - Maxlength
-    - Required
-    - Pattern
-    - Email
-    - Url etc...
-  * :invlid ========== It defines effects for an element when it is invalid.
-  * :required ======== It defines effects for element when it is verified with requirement.
-  * :optional ======== If it is not defined with required validation then it is treated as optional
- 
-
-#### ELement State Pseudo Classes:
-- Selector ===========Description
-- * enabled ==== It defines effects when the element is enabled.
-  * disabled === It defines effects when the element is disabled.
-  * read-only === It defines effects when the element is set to read-only.
-  * checked === It defines effects when the element is checked.
-  * focus ==== It defines effects when element is focused.
-
-#### Structural Pseudo Classes:
+- Validation can be verified using:
+- * Minlength
+  * Maxlength
+  * Required
+  * Pattern
+  * Email
+  * Url etc...
+_______________________________
+## 6. ELement State Pseudo Classes:
+|Selector|Description|
+|-|-|
+|enabled|It defines effects when the element is enabled.|
+|disabled|It defines effects when the element is disabled.|
+|read-only|It defines effects when the element is set to read-only.|
+|checked|It defines effects when the element is checked.|
+|focus|It defines effects when element is focused.|
+______________________________
+## 7. Structural Pseudo Classes:
 >[!Note]
-> * We can target our effects based on the position of the element in parent and child hierarchy.
-- Selector ===========Description
-- * :first-child ===  It defines effects only for first child element.
-  * :last-child ==== It defines effects only for last child element
-  * :nth-child ===== It defines effects only to specific child element that occurs at given level.
-  * - Level number starts with 1.
-    - Index number starts with 0.
-    - We can also define the pre-set values like 'even & odd' to apply effects based on even and odd occureneces respectively.
+> We can target our effects based on the position of the element in parent and child hierarchy.
 
-  * nth-of-type(3|3n|3n+1) :: select elements from top nth occurance.
-  * nth-last-of-type(3|3n|3n+1) :: select elements from bottom nth occurrence.
+
+|Selector|Description|
+|-|-|
+| :first-child|It defines effects only for first child element.|
+| :last-child|It defines effects only for last child element|
+| :nth-child(Level Number)|It defines effects only to specific child element that occurs at given level.
+1.Level number starts with
+2. Index number starts with 0.
+You can also define the pre-set value like "even & odd" to apply effects based on even and odd occurences|
+
+- Level number starts with 1.
+- Index number starts with 0.
+- We can also define the pre-set values like 'even & odd' to apply effects based on even and odd occureneces respectively.
+```HTML
+ nth-of-type(3|3n|3n+1) :: select elements from top nth occurrence.
+ nth-last-of-type(3|3n|3n+1) :: select elements from bottom nth occurrence.
+```
 
 
 #### Behavioural and Occurance class*:
