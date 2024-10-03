@@ -390,3 +390,113 @@ example for attribute selector
 - ::before ======== Effects or content to add before the current element.
 - ::after ========= Effects or content to add after the current element.
 - ::place-holder == Effects on the placeholder elements.
+
+
+## CSS Inheritance:
+
+## BOX MODEL:
+
+>[!Note]
+> In order to make an image appear in a proper circle, width height of that image should be made as equal to border radius value.
+
+CSS Border Image:
+we can set umage as borer by ysung attributes like
+border
+border-image
+syntax:
+```CSS
+      {
+            border: 15px solid transparent;
+            border-image: url() stretch/space 1-100;
+      }
+```
+
+### CSS Units:
+> Units define size and positions.
+> They are used to define the dimensions and location of elements in a page.
+> You can configure size with: height and width.
+> The CSS units are categorized into 2 groups:
+> * Absolute Length Units
+> * Relative Length Units.
+
+**Absolute Length Units:**
+* They are note relatice to anuthing else and are generally constiders as normal units.
+* THese are not affected by other relative ements and their unis.
+* Theu are not affected bu patent or adjacenet t
+
+>[!Note]:
+> Usage of Absolute Path:
+> * When we are creating an animation on a button click, if we want to zoom then go for the "absolute path".
+> * If we want to move the objects a little far in a screen, we go for "inch/cm/mm".
+
+
+|Unit|Name|Equivalent to| 
+|--|--|--|
+|cm|Centimeters|1 cm = 96px/2.54 = 37px|
+|mm|Milimeters|1/10th of 1 cm|
+|Q|QuarterMilimeter|1Q = 1/40th of 1 cm|
+|in|Inches|1in = 2.54cm = 96px|
+|pc|Picas|1/6th of 1 inch|
+|pt|Point|1/72th of 1 inch|
+|px|Pixels|1/96th of 1 inch|
+
+#### **Example 1 of Relative Unit:**
+* These are related to other content in the page.
+* The size of any element can be determined based on its parent, child, or adjacent.
+* The advantages are when the parent element size is changed it will relatively affects the child element also.
+* _When we use 'rem', we need to target the root element(**HTML**)._
+
+|Unit|Relative to|
+|--|--|
+|em|It uses the font size of the parent element and applies it to the current element.|
+|hi|Note: 1 em = 100% of parent element , 0.5em = 50% of parent element|
+|rem|Font size to the root element size.|
+|%|Relative to the view port|
+
+
+## CSS Positions:
+- Generally, elements are placed according to the document layout flow.
+- Position allows to make element behave differently and take them out of the document flow.
+- CSS Positions are defined by using "position" style attribute.
+
+1. static
+2. absolute
+3. fixed
+4. sticky
+5. relative
+
+#### 1. Static
+- This value would not disturb the layout of the page.
+- It will not allow to change the position of element.
+- Static Position would not be affected by top, right, bottom, left(if defined).
+- Generally in JavaScript, if we want to move the elements we can change its place, but if we don't want to change then we need to ake those elements as 'static'
+- While designing a responsive design also the element should not be changed dynamically, then we need to for position as 'static'
+```HTML
+```
+#### 2. Absolute:
+- It disturbs the normal flow of the layout of the page.
+- Absolute Position would be affected by top, right, bottom, left.
+- * It attaches to the content of the page and moves along with the content of the page.
+
+#### 3. Fixed:
+- It disturbs the normal flow, the position of the is fixed when we use with top, left, bottom, right attributes.
+- It would not move from the position defined.
+- It locks the component at fixed position on page.
+- * It attach to browser of the page and it won't move along the content along the page.
+ 
+#### 4. Sticky:
+- It does not disturbs the layout of the page.
+- It would not allow you to change the position.
+- It can make the elements sticky after reaching specified position.
+ 
+
+
+
+
+
+
+
+
+5 concepts to be asked:
+- Slectors
+- 
