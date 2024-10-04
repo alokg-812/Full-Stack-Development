@@ -430,34 +430,165 @@ You can also define the pre-set value like "even & odd" to apply effects based o
 
 
 #### Behavioural and Occurance class*:
-- **Selector** ====  **Description**
-- ::first-line ==== Effects for first line in paragraph.
-- ::first-letter == Effects for first character.
-- ::before ======== Effects or content to add before the current element.
-- ::after ========= Effects or content to add after the current element.
-- ::place-holder == Effects on the placeholder elements.
+|**Selector**|**Description**|
+|-|-|
+|::first-line|Effects for first line in paragraph.|
+|::first-letter|Effects for first character.|
+|::before|Effects or content to add before the current element.|
+|::after|Effects or content to add after the current element.|
+|::place-holder|Effects on the placeholder elements.|
 
 
 ## CSS Inheritance:
 
-## BOX MODEL:
+Ex:
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INHERITANCE</title>
 
->[!Note]
-> In order to make an image appear in a proper circle, width height of that image should be made as equal to border radius value.
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 15px;
+            color: white;
+            font-family: Brush script MT;
+            background-color: black;
+        }
 
-CSS Border Image:
-we can set umage as borer by ysung attributes like
-border
-border-image
-syntax:
-```CSS
+        h1 {
+            border: inherit;
+            background-color: white;
+            color: black;
+        }
+
+        p {
+            font-family: initial;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Development</h1>
+        <p>HTML</p>
+    </div>
+</body>
+</html>
+```
+
+DOM:   ![image](https://github.com/user-attachments/assets/f29efdf4-83d0-4446-9cc5-161904f86cd9)
+
+Default nature of p and h1 :
+```HTML
+p {
+    display : block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1 {
+    display : block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+```
+* In CSS inheritance is the process of configuring parent effects to child elements.
+* child elements automatically implement some of the parent feature which we can control by using following css values:
+1. inherit
+2. initial
+3. unset
+
+* All the properties of the parent will not reach to the child, if we want it to reach to the child, then we use ``inherit`` value on that particular attribute all ``all: inherit;`` attribute
+* After inheriting the attribute from the parent if the child is interested in changing the value, the child can change the value or set the value to default appearance.
+* To remove the default nature of a particular element we use ``unset`` value to the attribute
+
+## CSS BOX MODEL:
+1. ``margin``
+2. ``padding``
+3. ``border``
+4. ``border-radius``
+5. ``width``
+6. ``height``
+7. ``box-shadow``
+8. ``border-image``
+
+
+### 1. ``margin``
+* It specifies the space around border.
+* You define by using the following properties:
+* * margin [short hand - sets in all direction]
+  * margin-top
+  * margin-bottom
+  * margin-left
+  * margin-right
+
+Syntax:
+```HTML
+{
+    margin: 0px 0px 0px 0px; /*top , right, bottom, left*/
+}
+```
+
+### 2. ``padding``
+* It specifies the space around content
+* You can define
+* * padding [short hand - sets in all direction]
+  * padding-top
+  * padding-bottom
+  * padding-left
+  * padding-right
+* All options are similar like margin
+
+Syntax:
+```HTML
+{
+    padding: 0px 0px 0px 0px; /*top , right, bottom, left*/
+}
+```
+
+### 3. ``border``
+* ``border`` - short hand for style, color and width
+* ``border-style: dotted, double, dotted, solid, dashed, etc..; ``
+* ``border-width: border-size;``
+* ``border-color: border-color;``
+* ``border-left`` - short hand for style color and width
+* ``border-left-style``
+* ``border-left-width``
+* ``border-left-color``
+> Similarly for all directions [Indicates top, right, bottom]
+
+### 4. ``border-radius``
+* ``border-radius`` - short hand for all directions (top-left, top-right, bottom-right, bottom-left)
+* ``border-top-right-radius`` 
+* ``border-top-left-radius``
+* ``border-bottom-right-radius``
+* ``border-bottom-left-radius``
+* In order to make image to appear like a proper circle, width and height value of an image should be made equal to border-radius value.
+
+![image](https://github.com/user-attachments/assets/77523a3c-9f60-499a-897a-cca2aa793bac)
+
+### 5. ``Border-image:``
+* We can set image as border by using attributes like : border and border-image
+
+Syntax:
+```HTML
       {
             border: 15px solid transparent;
             border-image: url() stretch/space 1-100;
       }
 ```
 
-### CSS Units:
+## CSS Units:
 > Units define size and positions.
 > They are used to define the dimensions and location of elements in a page.
 > You can configure size with: height and width.
@@ -531,18 +662,24 @@ syntax:
 - * It attach to browser of the page and it won't move along the content along the page.
  
 #### 4. Sticky:
-- It does not disturbs the layout of the page.
+- It does not disturb the layout of the page.
 - It would not allow you to change the position.
-- It can make the elements sticky after reaching specified position.
+- It can make the elements sticky after reaching a specified position.
  
+#### 5. Relative Position:
+- It is defined for parent element.
+- The parent element keeps all child elements relative to the context.
+- It requires placement of child element using absolute.
+- Fixed will keep element regarding the page.
 
 
-
-
+## CSS Z-index
 
 
 
 
 5 concepts to be asked:
-- Slectors
+- Selectors
+- Inheritance
+- Box Model
 - 
