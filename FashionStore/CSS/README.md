@@ -429,7 +429,7 @@ You can also define the pre-set value like "even & odd" to apply effects based o
 ```
 
 
-#### Behavioural and Occurance class*:
+## 7. Behavioural and Occurance class*:
 |**Selector**|**Description**|
 |-|-|
 |::first-line|Effects for first line in paragraph.|
@@ -438,7 +438,62 @@ You can also define the pre-set value like "even & odd" to apply effects based o
 |::after|Effects or content to add after the current element.|
 |::place-holder|Effects on the placeholder elements.|
 
+Ex:
+![image](https://github.com/user-attachments/assets/8ec8695e-4273-470b-b744-f622129c522d)
+```HTML
+<style>
+    ol li:first-child {    /* first item of list*/
+        color : red;
+    }
+    ol li:last-child {   /* last item of list*/
+        color: green;
+    }
 
+    ol li:nth-child(even) {  /* those items which are in even position */
+        font-size: 30px;
+    }
+</style>
+```
+Output:
+
+![image](https://github.com/user-attachments/assets/34b7aa77-ec09-4a9c-8b5c-c4a70e2d286e)
+
+## 8. Universal Selector:
+* It is mainly used to apply the effects for all the elements on a page.
+* Syntax:
+```html
+<style>
+    * {
+        attribute1: value1;
+        attribute2: value2;
+        .
+        .
+        .
+        attribute-n: value-n;
+    }
+</style>
+```
+__________________
+## 9. Root Selector:
+* will be discussed in Javascript.
+____________
+## 10. Language Selector:
+* It is used to give the effects based on a language configured for an element. If your page contains multiple langauge data then to define the effects based on a specific language, we go for language selector.
+* Syntax:
+```html
+<style>
+    elementName:lang(lang) {
+        attribute1: value1;
+        attribute2: value2;
+        .
+        .
+        .
+        attribute-n: value-n;
+    }
+</style>
+```
+
+____________
 ## CSS Inheritance:
 
 Ex:
