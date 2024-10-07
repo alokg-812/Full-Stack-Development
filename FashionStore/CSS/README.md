@@ -730,8 +730,36 @@ Syntax:
 
 ## CSS Z-index
 
+## Working with CSS Display:
+* Values of display are:
+* 1. `display: none`
+  2. `display: block` content will appear in new line(`<br>`)
+  3. `display: inline` content will appear in the same line
+  4. `display: inline-block` to adjust the dimension of few html elements, we use inline-block. Ex: span, anchor, image, etc...
+  5. `display: flex`
+  6. `display: grid`
+  - > flex and grid are for responsive design.
+
+5. display: flex -
+* should be applied on a container only and not on an element.
+* by default, the elements present inside the container would be arranged `row-wise`.
+* if we apply this effect on elements, we get `abnormal behavior` as the response.
+* flex would support adjusting the elements in both `row-wise` and `column-wise`.
+* `display- inline` is only applicable for elements and not for container.
+> [!Note]
+> ```html
+>     display:flex;
+>     flex-direction: column;
+> ```
+> The elements present in the container would be adjusted as per the width of the container, if the flex-direction is row, then the elements present in the container would be adjusted as per the height of the container.
 
 
+
+### FAQs:
+Q: What is the difference between ``display: none`` vs ``visibility: hidden``
+> Ans: `visibility: hidden` will not remove the memory reserved for that element on the page whereas `display: none` will remove the memory for the element from the page as a result of which it disturbs the page layout.
+
+Q: 
 
 5 concepts to be asked:
 - Selectors
