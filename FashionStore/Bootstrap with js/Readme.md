@@ -5,6 +5,10 @@ linking javascript jquery wehere we want to use complete bootstrap:
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 ```
 ## Bootstrap Components:
+1. ALert
+2. Badges
+3. Cards
+
 1. Alert -
 **Classes:**
 * alert
@@ -30,3 +34,18 @@ Bootstrap jquery attributes are of various types:
 > ```<button class='btn btn-close' data-bs-dismiss='component-name'>
 > eg: <button class='btn btn-close' data-bs-dismiss='alert'>
 > ```
+
+3. Cards: A card comprises of the three sections:
+   * Cardheader
+   * CardBody
+   * CardFooter
+   >[!Note]:
+   > we can present our content in cards, which are displayed in page with flexible rows or column layout.
+   > **Classes**:
+   > * .card
+   > * .card-header
+   > * .card-body
+   > * .card-footer
+   > * .card-title
+   > * .card-subtitle
+   > * .card-img-top
