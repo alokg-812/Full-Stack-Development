@@ -8,6 +8,7 @@ linking javascript jquery wehere we want to use complete bootstrap:
 1. ALert
 2. Badges
 3. Cards
+4. Pagination
 
 1. Alert -
 **Classes:**
@@ -39,8 +40,9 @@ Bootstrap jquery attributes are of various types:
    * Cardheader
    * CardBody
    * CardFooter
-   >[!Note]:
+   >[!Note]
    > we can present our content in cards, which are displayed in page with flexible rows or column layout.
+   
    > **Classes**:
    > * .card
    > * .card-header
@@ -49,3 +51,12 @@ Bootstrap jquery attributes are of various types:
    > * .card-title
    > * .card-subtitle
    > * .card-img-top
+
+4. Pagination:
+   > **Classes:**
+   > * pagination
+   > * page-item
+   > * page-link
+   > * page-text
+   > * active
+   > * disabled
