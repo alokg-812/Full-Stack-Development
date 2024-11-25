@@ -9,7 +9,9 @@ linking javascript jquery wehere we want to use complete bootstrap:
 2. Badges
 3. Cards
 4. Pagination
+5. Carousel
 
+_____
 1. Alert -
 **Classes:**
 * alert
@@ -60,3 +62,58 @@ Bootstrap jquery attributes are of various types:
    > * page-text
    > * active
    > * disabled
+
+5. Carousel:
+**Syntax:**
+```html
+<div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="" alt="">
+            </div>
+            ...add multiple items ...
+        </div>
+    </div>
+```
+* Carousel items cannot display any item directly.
+* Carousel needs any one item set to active.[only one item must be active]
+* ` <div class="carousel-item active"> `
+* >[!Note]
+  > Carousel cannot start animation directly, we need to define the attribute `data-bs-ride` for carousel.
+  > `<div class="carousel" data-bs-ride="carousel">`
+  > Carousel doesn't have any default transition, we have to set the transition using classes.
+  > * slide
+  > * carousel-fade
+
+### Adding carousel indicators and making them work:
+- We can add controls for carousel so that user can navigate to previous and next slide.
+- **Classes:**
+- * carousel-control-prev
+  * carousel-control-prev-icon
+  * carousel-control-next
+  * carousel-control-next-icon
+
+- To make the buttons dark:
+- `<div class="carousel" data-bs-ride="carousel" data-bs-theme="dark">`
+- Carousel controls are normally buttons:
+- **Syntax:**
+```html
+        <button class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+```
+
+- Carousel controls needs jQuery attributes to handle navigation
+- `data-bs-slide="prev"`
+- `data-bs-slide="next"`
+- `data-bs-target="#carousel_id"`
+
+- it is also possible to control the transition time of each carousel using the attribute: `data-bs-interval="milliseconds"`
+- **Syntax:**
+- ```html
+     div class="carousel-item" data-bs-interval="3000"
+  ```
