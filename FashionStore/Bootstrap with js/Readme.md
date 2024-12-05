@@ -117,3 +117,33 @@ Bootstrap jquery attributes are of various types:
 - ```html
      div class="carousel-item" data-bs-interval="3000"
   ```
+
+_______________________________________________________________________________________
+Dropdown:
+- It is good for dynamic list.
+- If we want static list with navigation and with complex data like images, icons etc then you can use bootstrap dropdown.
+
+  
+**Classes:**
+* .dropdown
+* .dropup
+* .dropend
+* .dropstart
+* .dropdown-toggle
+* .dropdown-item
+* .dropdown-divider
+_______________________________________________________________________________________
+Nav With Tabs():
+
+**Classes:**
+* .nav
+* .nav-menu
+* .nav-item
+* .nav-link
+* .nav-tabs
+* .nav-pills
+* .nav-content
+* .nav-pane
+
+Syntax:
+```html
