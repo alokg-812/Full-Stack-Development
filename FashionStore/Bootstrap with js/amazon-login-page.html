@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        summary a{
+            text-decoration: none;
+        }
+        li a{
+            text-decoration: none;
+        }
+        #conditions{
+            font-size: 12px;
+        }
+        body{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="border border-secondary-subtle border-2 w-25 m-2 p-3">
+        <div class="h3">Sign in</div>
+        <label for="username">Email or phone number</label>
+        <div>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="mt-2">
+            <button class="btn btn-warning">Continue</button>
+        </div>
+        <div class="m-1" id="conditions">
+            <p>By continuing, you agree to Amazon's <a href="javascript:void()">Conditions of Use</a> and <a href="#">Privacy Notice</a>
+            </p>
+        </div>
+        <div>
+            <details>
+                <summary><a href="">Need help?</a></summary>
+                <ul class="m-2">
+                    <li>
+                        <a href="">Forgot Your Password</a>
+                    </li>
+                    <li class="m-2">
+                        <a href="">Other issues</a>
+                    </li>
+                </ul>
+            </details>
+
+        </div>
+    </div>
+</body>
+</html>
