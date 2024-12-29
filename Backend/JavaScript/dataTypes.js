@@ -9,3 +9,13 @@
  * 7. Boolean : true or false
  * 8. Symbot : symbol(), constructor, symbol object, keys in objects because they are unique
  */
+//string
+var name = 'Alok' 
+console.log(name);
+console.log(typeof(name)); // how to know the datatype of the variable
+console.log(typeof name); // how to know the datatype of the variable
+
+// Number
+var age = 25
+console.log(age);
+console.log(typeof(age)); 
