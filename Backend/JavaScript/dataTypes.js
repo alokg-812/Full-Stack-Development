@@ -19,3 +19,22 @@ console.log(typeof name); // how to know the datatype of the variable
 var age = 25
 console.log(age);
 console.log(typeof(age)); 
+
+// BigInt
+var big_num = 100n;
+console.log(big_num);
+console.log(typeof(big_num));
+
+/** 
+ * Non Primitive
+ * 1. Object : collection of key value pairs, keys->string or symbol, values-> can be of any datatype
+ */
+
+// Object
+var person = {
+    name: 'Alok',
+    age: 20,
+    hobby: "cricket"
+};
+console.log(person);
+console.log(typeof(person)); // object
