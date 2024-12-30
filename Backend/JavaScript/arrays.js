@@ -14,6 +14,12 @@ console.log(typeof arr1); //will give object and not array
 arr2 = new Array(1,2) //another way of array creation
 console.log(arr2);
 
+//converting array into string
+charName = ['A', 'l', 'o', 'k', ' ', 'G', 'u', 'p', 't', 'a'];
+console.log(charName.join()); //will print the string with each characters sererated
+console.log(charName.join('')); //will print the string
+console.log(charName.toString());
+
 /**
  * //arrays are mutable:
  * 1. push-> adds whatever value is in the bracket at the last of the array
@@ -74,6 +80,16 @@ console.log(arr3); // [1, 2, 6, 4, 5]
 let arr4 = [5, 1, 3, 2, 4];
 arr4.sort(); // By default sorts alphabetically
 console.log(arr4); // [1, 2, 3, 4, 5]
+let my_arr = [15, 1, 3, 2, 40];
+console.log(my_arr); //as sorting is by default done ascending order, all numbers with 1 comes first, then 2's and so on, hence a proper logic should be provided to get array sorted
+
+my_arr.sort((a, b) => a - b); // sorts in ascending order
+console.log(my_arr); // [1, 2, 3, 15, 40]
+my_arr.sort((a, b) => b - a); // sorts in descending order
+console.log(my_arr); // [ 40, 15, 3, 2, 1]
+
+
+
 
 // 7. reverse()
 arr4.reverse();
