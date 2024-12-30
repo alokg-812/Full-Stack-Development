@@ -9,6 +9,16 @@ console.log(name) // Alok
 
 // indexing in the string is 0 based
 console.log(name[0]) // A
+
+//concat method is string:
+let firstName = "Alok";
+let lastName = "Gupta";
+let fullName = firstName + " " + lastName;
+console.log(fullName) // Alok Gupta
+let puraNaam = firstName.concat(" "+ lastName);
+console.log(puraNaam) // AlokGupta
+
+
 /**
  * Properties of string:
  * 1. length
