@@ -27,3 +27,19 @@ console.log(i); // this will give error as let is not hoisted!
 
 let i = 50;
 console.log(i);
+
+/** 
+ * const:
+ * 1. const is used to define a constant, they can't be reassigned any other values once assigned
+ * 2. scope is same as let
+ * 3. const is not hoisted
+ * 4. const can't be reassigned, but the value of the variable can be changed if 
+ */
+
+const country = 'India';
+console.log(country);
+country = 'USA'; // this will give error as const can't be reassigned!
+
+// const pie;
+pie = 3.14;
+console.log(pie); // this will give error as const is not hoisted!
