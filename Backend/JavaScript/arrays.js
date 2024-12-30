@@ -62,3 +62,97 @@ console.log(arr1); //will print [10,1,2,20,4]
 //4. shift()
 arr1.shift();
 console.log(arr1); //will print [2,20,4]
+
+// 5. splice()
+let arr3 = [1, 2, 3, 4, 5];
+arr3.splice(2, 1); // Removes 1 element at index 2
+console.log(arr3); // [1, 2, 4, 5]
+arr3.splice(2, 0, 6); // Inserts 6 at index 2
+console.log(arr3); // [1, 2, 6, 4, 5]
+
+// 6. sort()
+let arr4 = [5, 1, 3, 2, 4];
+arr4.sort(); // By default sorts alphabetically
+console.log(arr4); // [1, 2, 3, 4, 5]
+
+// 7. reverse()
+arr4.reverse();
+console.log(arr4); // [5, 4, 3, 2, 1]
+
+// 8. concat()
+let arr5 = [6, 7];
+let arr6 = arr4.concat(arr5);
+console.log(arr6); // [5, 4, 3, 2, 1, 6, 7]
+
+// 9. join()
+let joinedStr = arr6.join('-');
+console.log(joinedStr); // "5-4-3-2-1-6-7"
+
+// 10. map()
+let squared = arr6.map(num => num * num);
+console.log(squared); // [25, 16, 9, 4, 1, 36, 49]
+
+// 11. filter()
+let evens = arr6.filter(num => num % 2 === 0);
+console.log(evens); // [4, 2, 6]
+
+// 12. reduce()
+let sum = arr6.reduce((acc, num) => acc + num, 0);
+console.log(sum); // 28
+
+// 13. every()
+let allPositive = arr6.every(num => num > 0);
+console.log(allPositive); // true
+
+// 14. some()
+let hasEven = arr6.some(num => num % 2 === 0);
+console.log(hasEven); // true
+
+// 15. find()
+let firstEven = arr6.find(num => num % 2 === 0);
+console.log(firstEven); // 4
+
+// 16. findIndex()
+let indexOfFirstEven = arr6.findIndex(num => num % 2 === 0);
+console.log(indexOfFirstEven); // 1
+
+// 17. indexOf()
+console.log(arr6.indexOf(3)); // 2
+
+// 18. lastIndexOf()
+let arr7 = [1, 2, 3, 1, 2, 3];
+console.log(arr7.lastIndexOf(3)); // 5
+
+// 19. includes()
+console.log(arr6.includes(3)); // true
+console.log(arr6.includes(10)); // false
+
+// 20. flat()
+let nestedArr = [1, [2, 3], [4, [5, 6]]];
+console.log(nestedArr.flat()); // [1, 2, 3, 4, [5, 6]]
+console.log(nestedArr.flat(2)); // [1, 2, 3, 4, 5, 6]
+
+// 21. flatMap()
+let flatMapped = arr6.flatMap(num => [num, num * 2]);
+console.log(flatMapped); // [5, 10, 4, 8, 3, 6, 2, 4, 1, 2, 6, 12, 7, 14]
+
+// 22. entries()
+let entries = arr6.entries();
+for (let [index, value] of entries) {
+  console.log(index, value); // Logs index-value pairs
+}
+
+// 23. keys()
+let keys = arr6.keys();
+for (let key of keys) {
+  console.log(key); // Logs indices
+}
+
+// 24. values()
+let values = arr6.values();
+for (let value of values) {
+  console.log(value); // Logs values
+}
+
+// 25. forEach()
+arr6.forEach(value => console.log(value * 2)); // Logs each element multiplied by 2
