@@ -42,3 +42,23 @@ console.log(arr2);
  * 24. values-> returns an array iterator allowing you to iterate over all values in the array
  * 25. forEach-> calls a function on every element in the array
  */
+
+//1. push()
+arr1.push(4);
+console.log(arr1); //will print [1,2,3,4]
+arr1[2] = 20
+console.log(arr1); //will print [1,2,20,4]
+arr1.push(4,40);
+console.log(arr1);
+
+//2. pop()
+arr1.pop();
+console.log(arr1); //will print [1,2,20,4]
+
+//3. ushift()
+arr1.unshift(10);
+console.log(arr1); //will print [10,1,2,20,4]
+
+//4. shift()
+arr1.shift();
+console.log(arr1); //will print [2,20,4]
