@@ -16,3 +16,14 @@
     var j = 5; //no block scope
 }
 console.log(j);
+
+/**
+ * let:
+ * 1. let is used to define a variable
+ * 2. let is block scoped
+ * 3. let is not hoisted
+ */
+console.log(i); // this will give error as let is not hoisted!
+
+let i = 50;
+console.log(i);
