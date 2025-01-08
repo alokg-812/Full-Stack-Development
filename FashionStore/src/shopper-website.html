@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion point</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/Fashion Store/public/images/fashionstore.ico">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            font-family: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;          /Space from all sides/
+        }
+        .cart-item{
+            background-color: red;
+            color: white;
+            display: inline-block;       /To make change in the width of span element/
+            width: 15px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        nav span{
+            margin-right: 15px;
+        }
+        .brand-title{
+            font-weight: bold;
+        }
+        .bi-lightning-charge-fill{
+            color:GOLD;
+        }
+        article{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            padding-right: 120px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 300;
+            font-size: medium;
+               }
+
+        /* section{
+            height: 700px;
+        } */
+        footer{
+            background-color: #080808;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .foot-heading{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .email,.button{
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .button{
+            background-color: #feda15;
+            margin-top: 25px;
+        }
+        .footer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer p{
+            color: grey;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .footer h3{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .footer-footer{
+            text-align: left;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 100px;
+            padding-top: 15px;
+            color: grey;
+        }
+        .womenfashion{
+            background-image: url(/public/images/womens\ fashion.jpg);
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.8;
+        }
+
+        .womenfashion:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .menfashion:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .kidfashion:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .menfashion{
+            background-image: url(/public/images/menfashion.jpeg);
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.8;
+        }
+        .kidfashion{
+            background-image: url(/public/images/kidcard.jpg);
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.8;   
+        }
+        .main-card{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap: 10px;                     
+            
+
+        }
+        .card-header{
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 2px 3px 1px gray;
+            color: white;
+            margin-bottom: 150px;
+        }
+        button{
+            /* margin-bottom: 150px; */
+            
+            bottom: 10px;
+            text-align: center;
+            padding: 20px;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        main{
+            margin-top: 10px;
+            margin-bottom: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .top-seller{
+            text-align: center;
+        }
+        .top-seller-nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .women{
+            color: #ff7466;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ff7466;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .men,.kids{
+            cursor: pointer;
+        }
+        .men:hover , .kids:hover{
+            color: #ff7466;
+        }
+        .top-seller-details{
+            width: 300px;
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            
+        }
+        /* .top-seller-items div{
+            /* border: 1px solid black; */
+        /* } */
+
+        .top-seller-items{
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            grid-gap: 20px;
+            margin-left: 170px;
+            margin-right: 170px;
+            margin-bottom: 60px;
+        }
+        .shoes{
+            margin-top: 10px;
+            text-align: left;
+            margin-left: 12px;
+            color: gray;
+            font-size: medium;
+        }
+        .item-title{
+            margin-top: 5px;
+            text-align: left;
+            margin-left: 12px;
+            font-weight: bold;
+        }
+        .item-price{
+            margin-top: 5px;
+            text-align: left;
+            margin-left: 12px;
+        }
+        .top-seller{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .price-change{
+            color: red;
+            font-weight: bold;
+        }
+        .category-item{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-left: 150px;
+        }
+        #category-item{
+            /* margin-left: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="brand-title">Shopper</div>
+        </div>
+        <div>
+            <nav>
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+        </nav>
+        </div>
+        <div>
+            <nav>
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"><span class="cart-item">2</span></span>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-charge-fill"></span>
+        <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+        <span class="bi bi-lightning-charge-fill"></span>
+    </article>
+    <section>
+        <main class="main-card">
+            <div class="womenfashion">
+                <div class="card">
+                    <div class="card-header">
+                        Women
+                    </div>
+                    <div class="card-footer">
+                        <button>Shop Women <span class="bi bi-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menfashion">
+                <div class="card">
+                    <div class="card-header">
+                        Men
+                    </div>
+                    <div class="caard-footer">
+                        <button>Shop Men <span class="bi bi-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="kidfashion">
+                <div class="card">
+                    <div class="card-header">
+                        Kids
+                    </div>
+                    <div class="caard-footer">
+                        <button>Shop Kids <span class="bi bi-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main class="category-item">
+                <div>
+                    <span id="category-item" class="bi bi-truck">FREE SHIPPING</span>
+                    <div>From all orders over $100</div>
+                </div>
+                <div>
+                    <span id="category-item" class="bi bi-arrow-repeat">FREE SHIPPING</span>
+                    <div>From all orders over $100</div>
+                </div>
+                <div>
+                    <span id="category-item" class="bi bi-arrow-repeat">FREE SHIPPING</span>
+                    <div>From all orders over $100</div>
+                </div>
+                <div>
+                    <span id="category-item" class="bi bi-arrow-repeat">FREE SHIPPING</span>
+                    <div>From all orders over $100</div>
+                </div>
+        </main>
+        <main class="top-seller">
+            <div class="top-seller-details">
+                <div class="top-seller-header">Top Month Sellers</div>
+                <div class="top-seller-nav">
+                    <ul>
+                        <li class="women">Women</li>
+                        <li class="men">Men</li>
+                        <li class="kids">Kids</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-seller-items">
+                <div>
+                    <img src="/public/images/product1.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Leather mid-heel Sandals</div>
+                    <div class="item-price">&dollar;129.00</div>
+                </div>
+                <div>
+                    <img src="/public/images/product2.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Cotton floral print Dress</div>
+                    <div class="item-price">&dollar;129.00</div>
+                </div>
+                <div>  
+                    <img src="/public/images/product3.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Leather Sneakers</div>
+                    <div class="item-price"><strike>&dollar;129.00</strike>   <span class="price-change">&dollar;85.00</span></div>
+                </div>
+                <div>
+                    <img src="/public/images/product4.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Cropped cotton Top</div>
+                    <div class="item-price">&dollar;29.00</div>
+                </div>
+                
+            </div>
+            <div class="top-seller-items">
+                <div>
+                    <img src="/public/images/product5.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Floral print midi Dress</div>
+                   
+                    <div class="item-price">&dollar;50.00</div>
+                </div>
+                <div>
+                    <img src="/public/images/product6.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Suede cross body Bag</div>
+                    <div class="item-price"><strike>&dollar;79.00</strike>   <span class="price-change">&dollar;49.00</span></div>
+                </div>
+                <div>  
+                    <img src="/public/images/product7.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Printed A-line Skirt</div>
+                    <div class="item-price">&dollar;79.00</div>
+                </div>
+                <div>
+                    <img src="/public/images/product8.jpg" alt="" height="320px" width="270px">
+                    <div class="shoes">Shoes</div>
+                    <div class="item-title">Heel strappy Sandals</div>
+                    <div class="item-price">&dollar;90.00</div>
+                </div>
+            </div>
+        </main>
+        
+    </section>
+
+    <footer >
+        <span class="foot-heading">Want style Ideas and Treats?</span>
+        <form>
+            <input vmodel="message" type="email" name="email" id="email" placeholder="*Enter-email" class="email">&nbsp;&nbsp;&nbsp;
+            <input type="button" name="button" id="button" value="Subscribe" class="button">
+        </form>
+        
+        <div class="footer">
+            <div class="shopper">
+                <h3>Shopper.</h3>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-medium"></span>
+            </div>
+            <div class="support">
+                <h3>Support</h3>
+                <p>Contact US</p>
+                <p>FAQs</p>
+                <p>Size Guide</p>
+                <p>Shipping & Returns</p>
+            </div>
+            <div class="shop">
+                <h3>Shop</h3>
+                <p>Men's Shopping</p>
+                <p>Women's Shopping</p>
+                <p>Kids' Shopping</p>
+                <p>Discounts</p>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy & Cookie Policy</p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>1234567890</p>
+                <p>0987654321</p>
+                <p>help@stopper.com</p>
+            </div>
+        </div>
+        <hr color="grey">
+        <div class="footer-footer">
+            <p>&copy;2019 All rights reserved.Designed by DG.</p>
+        </div>
+    </footer>
+</body>
+</html>
