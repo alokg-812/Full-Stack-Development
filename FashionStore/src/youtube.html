@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            font-family: arial;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .corner-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .mail-id{
+            background-color: orangered;
+            color: white;
+            border: 1px solid gray;
+            border-radius: 50%;
+            padding: 5px;
+            margin-left: 5px;
+        }
+        .search{
+            border: 1px solid black;
+            border-radius: 22px;
+            /* width: 315px; */
+            padding: 7px;
+
+        }
+        .bi-search{
+            margin-left: 250px;
+        }
+        .bi-mic-fill{
+            background-color: gray;
+            border: 1px solid rgb(186, 180, 180);
+            color: white;
+            border-radius: 19px;
+            padding: 8px;
+            margin-left: 15px;
+        }
+        .bi-camera-video{
+            margin-right: 10px;
+        }
+        .bi-bell{
+            margin-right: 8px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            padding: 15px;
+        }
+        li span{
+            margin-right: 10px;
+            margin-left: -30px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1.2fr 10.8fr;
+        }
+        div img{
+            border-radius: 15px;
+        }
+        article{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+        article img{
+            border-radius: 90px;
+        }
+        article div{
+            margin-left: 5px;
+            padding: 5px;
+        }
+        .channel-name{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        article div a{
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+        }
+        .subscribe{
+            margin-top: 9px;
+            border: 1px solid gray;
+            width: 125px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 60px;
+            color: black;
+            background-color: lightgray;
+        }
+        .detail-link{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <span class="bi bi-list"></span>
+            <span>
+                <img src="/public/images/youtube_image.jpg" alt="">
+            </span>
+        </div>
+        <div class="search-bar">
+            <div class="search">
+                <span>Search</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <div class="bi bi-mic-fill"></div>
+        </div>
+        <div class="corner-bar">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"></span>
+            <span class="mail-id">N</span>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><span class="bi bi-house-door-fill"></span>Home</li>
+                <li><span class="bi bi-play-circle"></span>Shorts</li>
+                <li><span class="bi bi-collection-play"></span>Subscription</li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <img src="/public/images/pwioi_channel_banner.jpg" alt="" width="100%">
+            </div>
+            <article>
+                <div>
+                    <img src="/public/images/pw_ioi_logo.jpg" alt="">
+                </div>
+                <div>
+                    <div class="channel-name">PW Institute of Innovation</div>
+                    <div>@PW-IOI • 7.23K subscribers • 157 videos </div>
+                    <div>
+                        <a href="javascript:void()">Shaping Futures, Empowering Innovators! 🚀 <b>...more</b></a>
+                    </div>
+                    <div class="detail-link"><a href="" style="color: blue;">pwioi.com/?utm_source=Youtube&utm_medium=Social&utm_campaign=Organic <b>and 8 more links</b></a>
+                    </div>
+                    <div class="subscribe">
+                        <span class="bi bi-bell"></span>
+                        <span>Subscribe</span>
+                        <span class="bi bi-chevron-down"></span>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </section>
+    <nav>
+
+    </nav>
+</body>
+</html>
