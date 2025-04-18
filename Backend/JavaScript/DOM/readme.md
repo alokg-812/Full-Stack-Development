@@ -8,5 +8,5 @@ The window object represents an open window in a browser. It is browser’s obje
 
 
 # DOM(Document Object Model)
-[link](https://github.com/alokg-812/Web-Dev/blob/main/Backend/JavaScript/images/domImage.png)
+[link](https://github.com/alokg-812/Web-Dev/blob/main/Backend/JavaScript/images/domImage.png) <br>
 ![image](https://github.com/user-attachments/assets/61d9436e-536b-4cb2-80cb-e2220a4ca207)
