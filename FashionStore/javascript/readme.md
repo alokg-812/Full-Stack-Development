@@ -11,3 +11,27 @@ Ans - `3 compile time error`
 
 Scene - 10 HLL code -> 100 MLL code, 13th line error, 25th line error of MLL <br>
 Ans - at 13th line, the `execution error` will be generated and no further execution will be done (Interpretation)
+
+# JavaScript:
+
+It was initially a scripting lang and not prog lang. <br>
+Ques. What is difference between Programming Language & Scripting Language?
+- `Programming Language`- A programming language is a formal language used to develop standalone applications, like operating systems, desktop apps, or games.
+- Ex- C, C++, Java, etc...
+- `Scripting Language`- A scripting language is generally used to automate tasks or extend the capabilities of existing programs.
+- Ex- JavaScript, Python, etc...
+
+- In day to day life we use scripts like
+    - for making folder, we use `GUI(Mouse right click-> create folder)` instead of `mkdir`. MKDIR is a script in our desktop
+    - for date, we use `GUI`, instead of `date on command prompt`.
+```yaml
+C:\Users\alokg>date
+The current date is: 24-04-2025
+
+C:\Users\alokg>time
+The current time is:  9:19:21.76
+```
+
+- The adaptability of the Javascript lead to its nature as a programming language.
+![image](https://github.com/user-attachments/assets/c0cd2b18-c77c-4e2f-ac6a-c0c2bbf03c42)
+![javascriptStory](https://github.com/user-attachments/assets/329c93ca-44aa-4937-a923-e0b4a56e3511)
