@@ -33,5 +33,4 @@ The current time is:  9:19:21.76
 ```
 
 - The adaptability of the Javascript lead to its nature as a programming language.
-![image](https://github.com/user-attachments/assets/c0cd2b18-c77c-4e2f-ac6a-c0c2bbf03c42)
 ![javascriptStory](https://github.com/user-attachments/assets/329c93ca-44aa-4937-a923-e0b4a56e3511)
