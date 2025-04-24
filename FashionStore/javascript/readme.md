@@ -42,4 +42,8 @@ The current time is:  9:19:21.76
 ```
 
 - The adaptability of the Javascript lead to its nature as a programming language.
+
+### - JavaScript as Scripting Language:
 ![javascriptStory](https://github.com/user-attachments/assets/329c93ca-44aa-4937-a923-e0b4a56e3511)
+
+### - JavaScript as Programming Language:
