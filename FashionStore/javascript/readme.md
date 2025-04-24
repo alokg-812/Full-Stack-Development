@@ -21,6 +21,15 @@ Ques. What is difference between Programming Language & Scripting Language?
 - `Scripting Language`- A scripting language is generally used to automate tasks or extend the capabilities of existing programs.
 - Ex- JavaScript, Python, etc...
 
+| Feature               | Programming Language        | Scripting Language              |
+|-----------------------|-----------------------------|---------------------------------|
+| **Execution**         | Usually compiled            | Usually interpreted             |
+| **Use**               | Build apps from scratch     | Automate tasks, enhance apps    |
+| **Scope**             | System-level, standalone    | App-level, embedded             |
+| **Performance**       | Generally faster             | Slightly slower (interpreted)   |
+| **Examples**          | C, Java, Go                 | JavaScript, Python, Bash        |
+| **Environment**       | OS or machine-level         | Inside applications (e.g., browser, shell) |
+
 - In day to day life we use scripts like
     - for making folder, we use `GUI(Mouse right click-> create folder)` instead of `mkdir`. MKDIR is a script in our desktop
     - for date, we use `GUI`, instead of `date on command prompt`.
