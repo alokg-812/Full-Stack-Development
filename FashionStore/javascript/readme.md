@@ -37,7 +37,7 @@ Ques. What is difference between Programming Language & Scripting Language?
 C:\Users\alokg>date
 The current date is: 24-04-2025
 
-C:\Users\alokg>time
+C:\Users\alokg>time 
 The current time is:  9:19:21.76
 ```
 
@@ -46,9 +46,16 @@ The current time is:  9:19:21.76
 ### - JavaScript as Scripting Language:
 ![javascriptStory](https://github.com/user-attachments/assets/329c93ca-44aa-4937-a923-e0b4a56e3511)
 
+- The JIT compilation loads the code into the memory `Just In Time Compilation`
 ### - JavaScript as Programming Language:
 
 
 
 - HLL is converted into bytecode internally even before the request has been shooted, if the bytecode starts after request shoot, time consumption happened.
-- 
+- `Just Ahead of Time Compilation`, third party compiler is used to convert the code before the request shooting, here, we will use `Babel` for compilation.
+- When request is shooted, only interpretation is done.
+
+
+
+> Javascript is a light weight & interpreted style of executable code.
+> `lightweight` - 
