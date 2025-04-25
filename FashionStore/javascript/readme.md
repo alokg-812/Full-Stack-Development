@@ -47,3 +47,8 @@ The current time is:  9:19:21.76
 ![javascriptStory](https://github.com/user-attachments/assets/329c93ca-44aa-4937-a923-e0b4a56e3511)
 
 ### - JavaScript as Programming Language:
+
+
+
+- HLL is converted into bytecode internally even before the request has been shooted, if the bytecode starts after request shoot, time consumption happened.
+- 
