@@ -60,4 +60,4 @@ The current time is:  9:19:21.76
 > Javascript is a light weight & interpreted style of executable code.
 > `lightweight` - JavaScript doesn't need a bulky compiler to convert the code into machine language before it runs. Instead, it's interpreted directly by the browser or runtime (like Node.js).
 
-![image](https://github.com/user-attachments/assets/530b62fa-0e57-4efe-872b-4b8e6dfc2903)
+![image](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/public/images/javascript_as_pl.png)
