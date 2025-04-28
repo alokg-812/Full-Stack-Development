@@ -49,31 +49,27 @@ The current time is:  9:19:21.76
 - The JIT compilation loads the code into the memory `Just In Time Compilation`
 ### - JavaScript as Programming Language:
 
-
-
 - HLL is converted into bytecode internally even before the request has been shooted, if the bytecode starts after request shoot, time consumption happened.
 - `Just Ahead of Time Compilation`, third party compiler is used to convert the code before the request shooting, here, we will use `Babel` for compilation.
 - When request is shooted, only interpretation is done.
 
-
-
-> `lightweight` - JavaScript doesn't need a bulky compiler to convert the code into machine language before it runs. Instead, it's interpreted directly by the browser or runtime (like Node.js).
-
 ![image](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/public/images/javascript_as_pl.png)
 
 > JavaScript is `light weight interpreted` and `Just-in-Time Compiled` programming language.
-> > Light weight refers to memory occupied and how heavy the application is.
-> > Interpreted refers to line by line translation.
+> * Light weight refers to memory occupied and how heavy the application is.
+> * Interpreted refers to line by line translation.
 
 
 Compiled refers to translating entire program, all lines of program are translated simultaneously at the same time.
-a) JIT compiled 
-b) AOT compiled
+1. JIT compiled
+2. AOT compiled
 
-JIT [Just-in-Time] is the process where JavaScript is loaded into browser and compiled in browser [This happens when the user sends the request]..
-ADT [Ahead-of-Time] is the process where JavaScript is compiled and processed at application level. [Even before the request comes this process would happen
-2025-04-22... 01:03:35
-We can use various engines and compilers
-a) Ivy b) Babel
-c) Node
-d) V8
+1. `JIT [Just-in-Time]` is the process where JavaScript is loaded into browser and compiled in browser. [This happens when the user sends the request]
+2. `ADT [Ahead-of-Time]` is the process where JavaScript is compiled and processed at application level. [Even before the request comes this process would happen]
+
+
+We can use various engines and compilers:
+1. Ivy
+2. Babel
+3. Node
+4. V8
