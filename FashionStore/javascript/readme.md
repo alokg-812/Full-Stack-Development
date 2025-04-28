@@ -61,9 +61,6 @@ The current time is:  9:19:21.76
 
 
 Compiled refers to translating entire program, all lines of program are translated simultaneously at the same time.
-1. JIT compiled
-2. AOT compiled
-
 1. `JIT [Just-in-Time]` is the process where JavaScript is loaded into browser and compiled in browser. [This happens when the user sends the request]
 2. `ADT [Ahead-of-Time]` is the process where JavaScript is compiled and processed at application level. [Even before the request comes this process would happen]
 
