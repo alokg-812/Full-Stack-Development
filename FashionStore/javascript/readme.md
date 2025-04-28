@@ -70,3 +70,18 @@ We can use various engines and compilers:
 2. Babel
 3. Node
 4. V8
+
+![image](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/public/images/jsDevelopment.png)
+
+JavaScript supports various programming techniques and approaches
+* Structural Programming
+* Functional Programming
+* Imperative Programming
+* Object Oriented Programming
+> Note: JavaScript is not an OOP language, It supports only few features of OOP.
+
+JavaScript is a programming language, which is used at different layers of our projects
+1. Client Side: with HTML
+2. Server Side: with Node 35
+3. Database: MongoDB
+4. Animation Tools: Flash, 3DS Max, etc..
