@@ -135,14 +135,15 @@ In this case also, same as case -2  but some time it would behave abnormally in 
 _________________________________________
 ## Media Type in CSS:
 
-Q. Why MIME type should be given?
-> Ans: to tell the browser how to render a page
-Q. Why should we tell to browser?
-> Ans: Because we would have '{}' in our code. In general world,:
-'{}' indicates:
-- json file
-- java code
-- css styling
+>[!Note]
+> * Q. Why MIME type should be given?
+> * Ans: to tell the browser how to render a page
+> * Q. Why should we tell to browser?
+> * Ans: Because we would have `{}` in our code. In general world,:
+> * * `{}` indicates:
+>   * json file
+>   * java code
+>   * css styling
 
 
 ## Media type in CSS:
