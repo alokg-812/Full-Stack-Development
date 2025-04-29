@@ -129,3 +129,79 @@ a = 10;
 - *Trojan*: Installing a virus via JavaScript can allow control of a device (Bad approach).
 - *TeamViewer*: Installing remote access software properly can allow control of devices (Good approach).
 
+# Day 2
+
+JavaScript Client Side-
+=================
+1. The main purpose of JavaScript at Client side is to avoid burden on the server.
+2. It can improve the performance of the application by managing the various interactions client side.
+3. Interactions at the Client Side includes
+
+	a. DOM Manipulations
+		- Adding Elements into page
+		- Remove Elements from Page
+		- Update Data into Elements
+		- Configuring styles to elements dynamically.
+		- Configuring events to elements dynamically.
+
+	b. It is used for validations[Verify the user input]
+
+	c. Client Side 
+		- Managing Client Memory.[username and password stored in cache memory]
+		- Managing Client Devices.[Booked the ticket and now print the ticket so we don't need internet].
+		- Managing the locations of the user[websites ask for location].
+		- Sharing of data with other applications on client device.
+
+
+
+FAQ: 
+ 1.   What is the MIME type for script?	
+Ans.
+```javascript
+    <script type='text/javascript'> :: bulk loading
+	<script type='text/module'>     :: module based loading(performance is high)
+```
+ 3.   What is difference between script in head and body?
+Ans.
+```javascript
+     head ---> script would be loaded into browser memory and later used in the page
+     body ---> script would be loaded directly into the page and it is not a part of browser memory.
+```
+ 5.   How JavaScript converts Static DOM into Dynamic DOM?
+Ans.
+```javascript
+          HTML -----> HTML parser ----> Static DOM
+          CSS  -----> CSS  parser ----> use static DOM and change the style of an element using CSSOM.
+	      JS   -----> Javascript engine -----> use STATIC DOM and converts into Dynamic DOM using 'events and functions'.
+```
+
+ 7.   What is strict mode for JavaScript?
+Ans.  without declaring a variable, if we dont' want javascript to permit the usage of variables then we need to go for `strictmode`
+	eg:: ```javascript
+             <script type="text/javascript">
+        		"use strict";
+        			a = 10;
+        			console.log(a); //uncaught ReferenceError : a is not defined	
+    	     </script>
+          ```
+
+ 9.   How to target JavaScript for Legacy browsers? [Old Version Browsers]
+Ans.  Developer can target new JavaScript code to the legacy browser by enclosing the code in HTML comments.
+
+Syntax:
+```javascript
+<script type="text/javascirpt">
+	<!--
+		"use strict";
+			......
+			......
+	-->
+</script>
+```
+
+ 6.   How to link external javascript file to html?
+Ans.
+```javascript
+       <script src=''>
+       </script>
+```
