@@ -161,13 +161,13 @@ Ans.
     <script type='text/javascript'> :: bulk loading
 	<script type='text/module'>     :: module based loading(performance is high)
 ```
- 3.   What is difference between script in head and body?
+ 2.   What is difference between script in head and body?
 Ans.
 ```javascript
      head ---> script would be loaded into browser memory and later used in the page
      body ---> script would be loaded directly into the page and it is not a part of browser memory.
 ```
- 5.   How JavaScript converts Static DOM into Dynamic DOM?
+ 3.   How JavaScript converts Static DOM into Dynamic DOM?
 Ans.
 ```javascript
           HTML -----> HTML parser ----> Static DOM
@@ -175,7 +175,7 @@ Ans.
 	      JS   -----> Javascript engine -----> use STATIC DOM and converts into Dynamic DOM using 'events and functions'.
 ```
 
- 7.   What is strict mode for JavaScript?
+ 4.   What is strict mode for JavaScript?
 Ans.  without declaring a variable, if we dont' want javascript to permit the usage of variables then we need to go for `strictmode`
 	eg:: ```javascript
              <script type="text/javascript">
@@ -185,7 +185,7 @@ Ans.  without declaring a variable, if we dont' want javascript to permit the us
     	     </script>
           ```
 
- 9.   How to target JavaScript for Legacy browsers? [Old Version Browsers]
+ 5.   How to target JavaScript for Legacy browsers? [Old Version Browsers]
 Ans.  Developer can target new JavaScript code to the legacy browser by enclosing the code in HTML comments.
 
 Syntax:
