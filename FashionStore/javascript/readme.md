@@ -209,34 +209,42 @@ Ans.
 
 
 # Day 3:
+
 1. document.getElementsByClassName()  : HTMLCollection[]
 
-How to convert HTMLCollection to Array?
-Ans. arrayElements = Array.from(HtmlCollection)
-    
+Ques. How to convert HTMLCollection to Array? <br>
+Ans. `arrayElements = Array.from(HtmlCollection)`
 
 
-working with iterator called "forEach"
-======================================
--> It can be used only on Array object.
+Working with iterator called `forEach` 
+* It can be used only on Array object.
 
+```javascript
 callbackfunction = (value,index,arr) => {
 		//value 
 		//index
 		//arr
 };
 forEach( callbackfunction)
+```
 
-2. document.getElementsByTagName()  : HTMLCollection[]
+2.
+```javascript
+	document.getElementsByTagName()  : HTMLCollection[]
 	Another approach to convert HTMLCollection to Array
 		[...HTMLCollection]
+```
 
-
-3. document.getElementsByName()     : NodeList
+3.
+```javascript
+	document.getElementsByName()     : NodeList
 	While working with NodeList,directly we can use forEach() without any conversion.
+```
 
-4. Instead of remembering all these methods, we go for a method called 
-		querySelector(cssSelector) | querySelectorAll(cssSelector)
+4.
+	Instead of remembering all these methods, we go for a method called 
+
+  querySelector(cssSelector) | querySelectorAll(cssSelector)
     	to target the elements in a HTML Page.
 
 
@@ -244,9 +252,8 @@ forEach( callbackfunction)
 		querySelectorAll(cssSelector) : NodeList
 
 
-FAQ: 
- a. why do we need so many methods to target HTML page using javascript ,when we can target
-	directly with single method called 'querySelectorXXX()'?
+FAQ:
+a. why do we need so many methods to target HTML page using javascript ,when we can target directly with single method called `querySelectorXXX()`?
 
 Ans. Older version of javascript added methods like
 		getElementById(),getElementsByClassName(),getElementsByTagName(),....
