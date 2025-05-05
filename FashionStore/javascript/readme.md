@@ -377,12 +377,11 @@ eg#1.
 
 
 
-Javascript output operations
-============================
- a. 'alert()'
- b. confirm()
- c. document.write() | document.writeln()
- d. innerHTML | outerHTML
+## Javascript output operations:
+1. 'alert()'
+2. confirm()
+3. document.write() | document.writeln()
+4. innerHTML | outerHTML
  e. innerText | outerText
  f. textContent
  g. console.XXXXX() [log(),warn(),error(),info(),debug()]
