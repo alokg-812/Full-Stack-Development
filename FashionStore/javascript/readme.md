@@ -1,6 +1,6 @@
-## Day 1: [Javascript PL vs SL](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript)
-## Day 2: [Javascript Client-side](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-2)
-## Day 3: []
+## [Day 1: Javascript PL vs SL](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript)
+## [Day 2: Javascript Client-side](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-2)
+## [Day 3: ](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-3)
 
 ## Java story:
 
