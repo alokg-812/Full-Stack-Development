@@ -277,15 +277,14 @@ FAQ:
 a. why do we need so many methods to target HTML page using javascript ,when we can target directly with single method called `querySelectorXXX()`?
 
 Ans. Older version of javascript added methods like
+
 		getElementById(),
   		getElementsByClassName(),
     		getElementsByTagName(),
       		....
-     As css become popular, to give the direct support of accessing the elements using CSS
-     methods like querySelector() and querySelectorAll() were added.
+As css become popular, to give the direct support of accessing the elements using CSS, methods like querySelector() and querySelectorAll() were added.
 
-
-	querySelector | querySelectorAll|getElementById ===> works only for staticDOM
+	querySelector | querySelectorAll|getElementById ===> works only for static DOM
 	  getElementsByClassName() 
 	  getElementsByTagName()	====> Dynamic DOM
  	  getElementsByName() 
@@ -294,6 +293,7 @@ Ans. Older version of javascript added methods like
 
 Accessing the elements using getElementsByTagName() : HTMLCollection(Live)
 =========================================================================
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -325,7 +325,7 @@ Accessing the elements using getElementsByTagName() : HTMLCollection(Live)
        })
     }
 </script>
-
+```
 
 
 Difference b/w them with example
