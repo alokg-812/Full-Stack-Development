@@ -1,3 +1,7 @@
+## Day 1: [Javascript PL vs SL](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript)
+## Day 2: [Javascript Client-side](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-2)
+## Day 3: []
+
 ## Java story:
 
 ![javaStory](https://github.com/user-attachments/assets/3e514e27-e1e9-49c4-8e39-3a770564a21e)
@@ -88,43 +92,24 @@ JavaScript is a programming language, which is used at different layers of our p
 3. Database: MongoDB
 4. Animation Tools: Flash, 3DS Max, etc..
 
-Frontend ==> Backend ==> Database <br>
-React[js] __ Node.js __ MongoDB[js] <br>
-____________ express.js
+
+Frontend => `React`[.js] <br>
+Backend => `Node.js` | `Express.js`  <br>
+Databse => `MongoDB`[.js] <br>
+
+⁛ `MERN` = MongoDB + Express + React + Node.
 
 FAQ1. What are the issues of Javascript? <br>
-Ans: 
+[Ans](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript/FAQs#faq1-what-are-the-issues-of-javascript) 
 1. JavaScript is not `strongly typed`
 (No data types enforced on a variable)
-
-```javascript
-a = 10;
-a = "sachin";
-a = false;
-a = 13.5;
-```
 
 2. JavaScript is not `strictly typed`
 (It allows using variables without declaring them)
 
-```javascript
-"use strict";
-a = 10;
-```
-
 3. JavaScript doesn't enforce `uniform data structure`
 (Inconsistent data properties can exist together)
 
-```javascript
-[
-  {
-    Name: "samsung", price: 45000
-  },
-  {
-    Product: "LG", cost: 55000
-  }
-]
-```
 * JavaScript is not secured and it can be blocked by the browsers.
 
 **Examples:**
@@ -135,18 +120,20 @@ a = 10;
 
 JavaScript Client Side-
 =================
-1. The main purpose of JavaScript at Client side is to avoid burden on the server.
+1. The main purpose of JavaScript at Client side is to avoid `burden on the server`.
+
 2. It can improve the performance of the application by managing the various interactions client side.
+
 3. Interactions at the Client Side includes
 
-	a. DOM Manipulations
+	🚨 **a. DOM Manipulations**
 		- Adding Elements into page
 		- Remove Elements from Page
 		- Update Data into Elements
 		- Configuring styles to elements dynamically.
 		- Configuring events to elements dynamically.
 
-	b. It is used for validations[Verify the user input]
+	🚨**b. It is used for validations**[Verify the user input]
 
 	c. Client Side 
 		- Managing Client Memory.[username and password stored in cache memory]
@@ -154,6 +141,9 @@ JavaScript Client Side-
 		- Managing the locations of the user[websites ask for location].
 		- Sharing of data with other applications on client device.
 
+
+### How javasccript will take the control over html elements OR in how many ways we can write a javascript code in html page:
+![image](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/public/images/embedingogJavascripttoHTML.png)
 
 
 FAQ: 
