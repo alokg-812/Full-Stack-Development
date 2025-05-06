@@ -150,9 +150,14 @@ FAQ:
  1.   What is the MIME type for script?	
 Ans.
 ```javascript
-    <script type='text/javascript'> :: bulk loading
+        <script type='text/javascript'> :: bulk loading
 	<script type='text/module'>     :: module based loading(performance is high)
 ```
+**Explaination:**
+![image](https://github.com/user-attachments/assets/221eec37-02b9-4031-8929-020a80691225)
+
+
+
  2.   What is difference between script in head and body?
 Ans.
 ```javascript
