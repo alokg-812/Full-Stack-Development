@@ -195,15 +195,15 @@ eg::
 ![image](https://github.com/user-attachments/assets/84dcfce0-c9c1-4b89-ba8a-5bc362acc0b3)
 
  5.   How to target JavaScript for Legacy browsers? [Old Version Browsers]
-Ans.  Developer can target new JavaScript code to the legacy browser by enclosing the code in HTML comments.
+Ans.  Developer can target new JavaScript code to the legacy browser by enclosing the code in `HTML comments`.
 
 Syntax:
 ```javascript
 <script type="text/javascirpt">
 	<!--
 		"use strict";
-			......
-			......
+		......
+		......
 	-->
 </script>
 ```
@@ -219,12 +219,27 @@ Ans.
 
 # Day 3:
 
+Targetting the HTML element using javascript:
+* `DOM hierarchy`
+* `Using ID`(limitation : multiple ids if used while targeting, we can access the first element)
+
+```javascript
+arrayElements.forEach(
+	function(value, index, arr){
+		console.log('Read the elements');
+	}
+)
+```
+![image](https://github.com/user-attachments/assets/47706815-b88a-42d6-be27-7c3be5f505a1)
+
+_____________________
+
 1. document.getElementsByClassName()  : HTMLCollection[]
 
 Ques. How to convert HTMLCollection to Array? <br>
-Ans. `arrayElements = Array.from(HtmlCollection)`
+Ans. 
 
-
+`arrayElements = Array.from(HtmlCollection)`
 Working with iterator called `forEach` 
 * It can be used only on Array object.
 
@@ -238,24 +253,21 @@ forEach( callbackfunction)
 ```
 
 2.
-```javascript
-	document.getElementsByTagName()  : HTMLCollection[]
+`document.getElementByTagName() : HTML Collection[]`
+```
 	Another approach to convert HTMLCollection to Array
 		[...HTMLCollection]
 ```
 
 3.
-```javascript
-	document.getElementsByName()     : NodeList
+`document.getElementsByName : NodeList`
+```
 	While working with NodeList,directly we can use forEach() without any conversion.
 ```
 
-4.
-	Instead of remembering all these methods, we go for a method called 
+4. Instead of remembering all these methods, we go for a method called 
 
-  querySelector(cssSelector) | querySelectorAll(cssSelector)
-    	to target the elements in a HTML Page.
-
+`querySelector(cssSelector)` | `querySelectorAll(cssSelector)` to target the elements in a HTML Page.
 
 		querySelector(cssSelector)    : Element
 		querySelectorAll(cssSelector) : NodeList
@@ -265,7 +277,10 @@ FAQ:
 a. why do we need so many methods to target HTML page using javascript ,when we can target directly with single method called `querySelectorXXX()`?
 
 Ans. Older version of javascript added methods like
-		getElementById(),getElementsByClassName(),getElementsByTagName(),....
+		getElementById(),
+  		getElementsByClassName(),
+    		getElementsByTagName(),
+      		....
      As css become popular, to give the direct support of accessing the elements using CSS
      methods like querySelector() and querySelectorAll() were added.
 
