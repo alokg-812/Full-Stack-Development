@@ -537,4 +537,5 @@ To store any large integer number(exceeding 53-bit precision), we use `BigIntege
 > 1. It doesn't do any conversion.
 > 2. On the input, it checks whether it is NaN: `true` else `false`
 
-
+> [Note!]:
+> While performing `+` operation, if one of the operand is `NaN` then the output would be `NaN`
