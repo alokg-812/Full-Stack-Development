@@ -514,11 +514,27 @@ To store any large integer number(exceeding 53-bit precision), we use `BigIntege
 	console.log(c == c+1n); //false[No loss of precision]
 ```
 
+* To convert the data from String format to number type, we have `3 mechanisms`:
+  1. `parseInt()` | `parseFloat()`
+  2. `Number()`
 
+1. `parseInt(input): number` <br>
+	     ^  <br>
+	    It also expects the input in string type,
+   	    It returns the number till it encounter the special character
+    	    If first symbol itself is a special charachter then it returns `NaN`
 
+2. `Number(input): number` <br>
+		It expects the data to strictly in number type only if any special symbols are part of the data then it would throw `NaN`.
 
+![image](https://github.com/user-attachments/assets/c72aa771-6dff-469f-8ee4-20976591c405)
 
+> isNaN(input):
+> 1. convert the input into number type using Number()
+> 2. if it is NaN, then it returns `true` else `false`
 
-
+>Number.isNaN(input):
+> 1. It doesn't do any conversion.
+> 2. On the input, it checks whether it is NaN: `true` else `false`
 
 
