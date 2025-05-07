@@ -539,3 +539,25 @@ To store any large integer number(exceeding 53-bit precision), we use `BigIntege
 
 > [Note!]:
 > While performing `+` operation, if one of the operand is `NaN` then the output would be `NaN`
+![image](https://github.com/user-attachments/assets/973b9604-90ad-4378-8de2-cd0968324805)
+
+### local-encode & currency:
+|Country | Locale Code | Currency Code |
+----------------------------------------
+|United States | "en-us" | "USD"|
+|Germany | "de-DE" | "EUR"|
+|Japan | "ja-JP" | "JPY"|
+|India | "en-IN" | "INR"|
+|United Kingdom | "en-GB" | "GBP"|
+
+**Ex:**
+```javascript
+
+
+
+
+
+
+
+
+
