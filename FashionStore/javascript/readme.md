@@ -431,3 +431,94 @@ Limitation
 
 
 # Day 4
+
+
+# Day 5
+
+
+
+# Day 6
+
+
+# Day 7:
+
+## Variables:
+It is the name given to memory location where we keep our data. Normally variables are used when we want to access the data in multiple lines.
+
+#### Variable naming rules:
+
+1.  Name must start with an alphabet or can start with `_` or `$`.
+
+2. `_` is used for configures lot of constructs. `_` refers that variable requires further implementation.
+```javascript
+	var productName;  // its functionality is final
+	var _productName; // Representation :: it is not yet implemented
+```
+
+3. Don't use special chars in variable.(Suggested by ECMA standards)
+
+4. Name can be alpha numeric.
+```javascript
+	var product2020;
+```
+
+5. Name is case `sensitive`.
+
+6. Name can be `max 255 chars` long.
+
+7. Avoid using single char and long variable name.
+
+8. Avoid using keywords[Total 45 reserved words]
+	var const; // invalid
+	var if;   // invalid
+
+9. Always use camelCase for name and it should speak what it is?.
+```javascript
+	var u = "sachin"; //not a good approach
+	var userName = "sachin"; //good approach
+```
+
+# Day 8:
+
+## Number:
+Javascript stores all numebers(whether typed by user or written in code) using **IEEE 754 double-precision floating point format(64-bit float)**.
+
+| Bits    | Purpose                               |
+|---------|---------------------------------------|
+| 1 bit   | Sign (0 = positive, 1 = negative)     |
+| 11 bits | Exponent (with bias of 1023)          |
+| 52 bits | Mantissa/Fractional digits            |
+
+| Concept            | Javascript (number) |
+|--------------------|---------------------|
+| Max safe integer   | 2^53 - 1            |
+| Precision above limit | Lost              |
+| Alternative        | BigInt              |
+
+> Note
+> 1. Since _numbers_ is _floating point type_, it leads to precision issues.
+>
+```javascript
+	console.log(0.1+0.2); // 0.30000000002
+```
+**Solution:**
+```javascript
+	console.log((0.1+0.2).toFixed(2))
+```
+
+## BigInteger:
+To store any large integer number(exceeding 53-bit precision), we use `BigInteger`.
+```javascript
+	let c = 9007199254740993n;
+	console.log(c); //9007199254740993
+	console.log(c == c+1n); //false[No loss of precision]
+```
+
+
+
+
+
+
+
+
+
