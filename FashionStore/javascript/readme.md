@@ -542,18 +542,19 @@ To store any large integer number(exceeding 53-bit precision), we use `BigIntege
 ![image](https://github.com/user-attachments/assets/973b9604-90ad-4378-8de2-cd0968324805)
 
 ### local-encode & currency:
-|Country | Locale Code | Currency Code |
-----------------------------------------
-|United States | "en-us" | "USD"|
-|Germany | "de-DE" | "EUR"|
-|Japan | "ja-JP" | "JPY"|
-|India | "en-IN" | "INR"|
-|United Kingdom | "en-GB" | "GBP"|
+
+| Country         | Locale Code | Currency Code |
+|-----------------|-------------|----------------|
+| United States   | "en-US"     | "USD"          |
+| Germany         | "de-DE"     | "EUR"          |
+| Japan           | "ja-JP"     | "JPY"          |
+| India           | "en-IN"     | "INR"          |
+| United Kingdom  | "en-GB"     | "GBP"          |
 
 **Ex:**
 ```javascript
 
-
+```
 
 
 
