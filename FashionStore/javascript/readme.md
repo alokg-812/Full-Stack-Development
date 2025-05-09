@@ -6,7 +6,7 @@
 ## [Day 6: Var, Let & Const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6--var-let--const)
 ## [Day 7: Variables & Datatypes](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
-## [Day 9: String in Javascript]()
+## [Day 9: String in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
 
 
 ## Java story:
