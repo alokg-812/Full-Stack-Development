@@ -6,7 +6,7 @@
 ## [Day 6: Var, Let & Const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6--var-let--const)
 ## [Day 7: Variables & Datatypes](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
-
+## [Day 9: String in Javascript]()
 
 
 ## Java story:
@@ -626,7 +626,62 @@ Ex:
 
 ```
 
+## Day 9, String in Javascript:
+> String in javascript is created in 3 ways:
+> 1. using ''. (`used internally by JS engine`)
+> 2. using "". (`provided because other lang were using this`)
+> 3. using ``. (`used by developers for Template Binding`)
 
+Ex:
+```javascript
+let str1 = 'sachin'; //used internally by JS engine
+let str2 = "kohli";
+let str3 = `dhoni`; //used by developers for Template Binding
+console.log(typeof str1, typeof str2, typeof str3);
+console.log(str1, str2, str3);
+```
+Output:
+![image](https://github.com/user-attachments/assets/4dd18bc5-8490-40e2-94c7-1a37aff1703b)
+
+
+![image](https://github.com/user-attachments/assets/824817ed-656c-4143-9b67-ba9fe6fafde8)
+```javascript
+let str1 = 'sachin';
+let str2 = new String("Dhoni"); // creating an object of String
+console.log(str1.toUpperCase()); //helping developers to use mehtods on that object 
+
+str1.country = "India"; //support not available because still str1:primitive type
+console.log(str1);
+
+str2.country = 'INDIA'; //as str2 is object, country as a key will be added
+console.log(str2);
+```
+
+* Length Property:
+
+Ex: 4:
+```javascript
+let str1 = 'sachin'; 
+let str2 = new String('sachin');
+
+console.log(str1);
+console.log(str2);
+console.log("Length of str1 is: ", str1);
+console.log("Length of str2 is: ", str2);
+```
+Output:
+![image](https://github.com/user-attachments/assets/2a89d37a-0818-4133-ad45-3347fa331f04)
+
+
+### Working with backticks(`):
+Ex 5:
+```javascript
+let userName = prompt("Enter the userName: ");
+let userAge = prompt("Enter the userAge: ");
+document.write('Hello ' + userName + ' Your age is: ' + userAge + '<br>\n');
+document.write("Hello " + userName + " Your age is: " + userAge + '<br>\n');
+document.write(`Hello ${userName} Your age is: ${userAge}` + '<br>\n'); //Expression Binding using template syntax
+```
 
 
 
