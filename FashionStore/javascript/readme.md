@@ -3,7 +3,7 @@
 ## [Day 3: ](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-3)
 ## [Day 4: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-4)
 ## [Day 5: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-5)
-## [Day 6: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6)
+## [Day 6: Var, Let & Const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6)
 ## [Day 7: Variables & Datatypes](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 
@@ -444,7 +444,41 @@ Limitation
 
 
 
-# Day 6
+# Day 6 : Var, Let & Const
+### Var:
+* It supports `hoisting` and `undefined` as the result.
+* Redeclaring the same variable is possible.
+* Reassignment of value to a variable is possible.
+* It is `function scope variable`.
+* It supports `shadowing`.
+
+### Let:
+* It supports `hoisting`(Variable would be in **Temporal Dead Zone** i.e., it cann't be used without initializing).
+* If we try to use the variable present in the Temporal Dead Zone, then it would result in:
+	``ReferenceError: variable can't be accessed without initialization.``
+* Redeclaring same variable is not possible.
+* Reassignment of value to a variable is possible.
+* They are `block scope variable`(Can't be used outside the block).
+* It supports `shadowing`.
+
+### Const:
+* It supports `hoisting`(Variable would be in **Temporal Dead Zone** i.e., it cann't be used without initializing).
+* Redeclaring same variable is not possible.
+* Reassignment of a value to the variable is also not possible.
+* They are `block scoped variables`(Can't be used outside the block).
+* It supports `shadowing`.
+
+### Difference & Common Table
+
+| Feature                | `var`                         | `let`                         | `const`                       |
+|------------------------|-------------------------------|-------------------------------|-------------------------------|
+| Scope                  | Function-scoped               | Block-scoped                  | Block-scoped                  |
+| Hoisting               | Yes (initialized as `undefined`) | Yes (in Temporal Dead Zone)   | Yes (in Temporal Dead Zone)   |
+| Can be reassigned      | Yes                           | Yes                           | No                            |
+| Can be redeclared      | Yes                           | No                            | No                            |
+| Temporal Dead Zone     | No                            | Yes                           | Yes                           |
+| Use in loops           | Function-scoped               | Block-scoped (ideal for loops)| Block-scoped (not for reassignment) |
+| Global Object property | Yes (if declared globally)    | No                            | No                            |
 
 
 # Day 7:
