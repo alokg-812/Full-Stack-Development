@@ -3,7 +3,7 @@
 ## [Day 3: ](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-3)
 ## [Day 4: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-4)
 ## [Day 5: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-5)
-## [Day 6: Var, Let & Const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6)
+## [Day 6: Var, Let & Const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6--var-let--const)
 ## [Day 7: Variables & Datatypes](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 
@@ -521,8 +521,17 @@ It is the name given to memory location where we keep our data. Normally variabl
 
 # Day 8:
 
+### Javascript vs JSON:
+**Javascript Object = {`key` : `value`}:**
+- Convert javascript object to JSON -> `JSON.stringify()`.
+
+
+**JSON Object = {`'key'` : `value`}:**
+- Convert string representation(JSON) to javascript object -> `JSON.parse()`.
+
+
 ## Number:
-Javascript stores all numebers(whether typed by user or written in code) using **IEEE 754 double-precision floating point format(64-bit float)**.
+> Javascript stores all numbers(whether typed by user or written in code) using **IEEE 754 double-precision floating point format(64-bit float)**.
 
 | Bits    | Purpose                               |
 |---------|---------------------------------------|
@@ -530,25 +539,24 @@ Javascript stores all numebers(whether typed by user or written in code) using *
 | 11 bits | Exponent (with bias of 1023)          |
 | 52 bits | Mantissa/Fractional digits            |
 
-| Concept            | Javascript (number) |
+| Concept            | Javascript (`number`) |
 |--------------------|---------------------|
-| Max safe integer   | 2^53 - 1            |
+| Max safe integer   | 2⁵³ - 1             |
 | Precision above limit | Lost              |
 | Alternative        | BigInt              |
 
-> Note
-> 1. Since _numbers_ is _floating point type_, it leads to precision issues.
->
+Since _numbers_ is _floating point type_, it leads to precision issues.
+Ex: 
 ```javascript
 	console.log(0.1+0.2); // 0.30000000002
 ```
 **Solution:**
 ```javascript
-	console.log((0.1+0.2).toFixed(2))
+	console.log((0.1+0.2).toFixed(2)); //0.30
 ```
 
 ## BigInteger:
-To store any large integer number(exceeding 53-bit precision), we use `BigInteger`.
+> To store any large integer number(exceeding 53-bit precision), we use `BigInteger`.
 ```javascript
 	let c = 9007199254740993n;
 	console.log(c); //9007199254740993
@@ -560,23 +568,44 @@ To store any large integer number(exceeding 53-bit precision), we use `BigIntege
   2. `Number()`
 
 1. `parseInt(input): number` <br>
-	     ^  <br>
+	     
 	    It also expects the input in string type,
    	    It returns the number till it encounter the special character
     	    If first symbol itself is a special charachter then it returns `NaN`
 
 2. `Number(input): number` <br>
+
 		It expects the data to strictly in number type only if any special symbols are part of the data then it would throw `NaN`.
 
 ![image](https://github.com/user-attachments/assets/c72aa771-6dff-469f-8ee4-20976591c405)
 
-> isNaN(input):
-> 1. convert the input into number type using Number()
-> 2. if it is NaN, then it returns `true` else `false`
+### `isNaN()` vs `Number.isNaN()`
 
->Number.isNaN(input):
-> 1. It doesn't do any conversion.
-> 2. On the input, it checks whether it is NaN: `true` else `false`
+| Feature                        | `isNaN(input)`                                         | `Number.isNaN(input)`                                |
+|-------------------------------|--------------------------------------------------------|-------------------------------------------------------|
+| Type Conversion               | Converts input to `Number` before checking             | Does **not** convert the input                        |
+| Checks                        | If converted result is `NaN` → returns `true`          | Checks if input is exactly `NaN`                      |
+| Example: `isNaN("abc")`       | `true` (because `"abc"` → NaN)                         | `false` (because `"abc"` is not type `NaN`)           |
+| Example: `isNaN(NaN)`         | `true`                                                 | `true`                                                |
+| Example: `isNaN("123")`       | `false` (because `"123"` → 123)                        | `false`                                               |
+| Example: `isNaN(undefined)`   | `true` (`undefined` → NaN)                             | `false` (not exactly `NaN`)                           |
+| Example: `isNaN(true)`        | `false` (`true` → 1)                                   | `false`                                               |
+| Example: `isNaN([])`          | `false` (`[]` → 0)                                     | `false`                                               |
+
+
+```javascript
+	let age = prompt("Please enter the age").trim();
+	
+	if (age == null) {
+	  console.log("No age enetered, you pressed cancle or escape button");
+	}
+	else if (age == " " || isNaN(age)) {
+	  console.log("Please enter the correct age")
+	}
+	else {
+	  console.log("Age is : ", age);
+	}
+```
 
 > [Note!]:
 > While performing `+` operation, if one of the operand is `NaN` then the output would be `NaN`
