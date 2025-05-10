@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function doTask(){
+        let userName = prompt("Enter the userName: ");
+        let userAge = prompt("Enter the userAge: ");
+        document.write('Hello ' + userName + ' Your age is: ' + userAge + '<br>');
+        document.write("Hello " + userName + " Your age is: " + userAge + '<br>');
+        document.write(`Hello ${userName} Your age is: ${userAge}` +  userAge >= 18 ? "Adult" : "Minor" + '<br>'); //Expression Binding using template syntax
+    }
+
+    function doOneMoreTask(user){
+        return `Hello ${user}` + '<br>';
+    }
+
+    function printByHighlighting(strings, value){
+        console.log("call is made...");
+        return `${strings[0]} <b>${value}</b> ${strings[1]} '<br>'`;
+    }
+
+    doTask();
+    document.write(`Greeting MSG: ${doOneMoreTask('Dhoni')}`);
+    let name = 'Javascript';
+    document.write(printByHighlighting `Learn ${name} from PWIOI`)` + '<br>';
+</script>
+<body>
+    
+</body>
+</html>
