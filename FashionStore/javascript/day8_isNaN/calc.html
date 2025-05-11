@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    
+    </head>
+    <body class="container-fluid bg-secondary">
+        <div class="bg-white w-100 p-4 mt-5">
+            <div class="h3">PERSONAL EMI CALCULATOR</div>
+
+            <div class="row">
+                <div class="col d-flex align-items-center">
+                    <label for="txtAmount" class="form-label"
+                        >Amount you Need</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control ms-1 w-50"
+                        name="txtAmount"
+                        value="₹5,00,000"
+                        id="txtAmount"
+                    />
+                </div>
+
+                <div class="col d-flex align-items-center">
+                    <label for="txtYear" class="form-label">for</label>
+                    <input
+                        type="text"
+                        name="txtYear"
+                        class="form-control w-25 ms-1"
+                        value="5"
+                        id="txtYear"
+                    />
+                    <label class="form-label ms-1">Years</label>
+                </div>
+
+                <div class="col d-flex align-items-center">
+                    <label for="txtRate" class="form-label"
+                        >Interest Rate
+                    </label>
+                    <input
+                        type="text"
+                        class="ms-1 form-control w-25"
+                        value="10.5%"
+                        id="txtRate"
+                        name="txtRate"
+                    />
+                    <span class="form-label ms-1">%</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input
+                        type="range"
+                        class="form-range w-100"
+                        min="50000"
+                        max="500000"
+                        id="slider-amount"
+                    />
+                </div>
+                <div class="col">
+                    <input
+                        type="range"
+                        class="form-range w-100"
+                        min="1"
+                        max="5"
+                        id="slider-year"
+                    />
+                </div>
+                <div class="col">
+                    <input
+                        type="range"
+                        class="form-range w-100"
+                        min="10.5"
+                        max="21"
+                        step="0.1"
+                        id="slider-rate"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col d-flex justify-content-between">
+                    <span>₹50,000</span>
+                    <span>₹5,00,000</span>
+                </div>
+                <div class="col d-flex justify-content-between">
+                    <span>1 Year</span>
+                    <span>5 Year</span>
+                </div>
+                <div class="col d-flex justify-content-between">
+                    <span>10.5%</span>
+                    <span>21%</span>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <button class="btn btn-primary float-end" id="calc-button">
+                        Calculate
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                EMI amount is <span id="emi-amount"> 0 </span> for
+                <span id="months"> 0 </span> months
+            </div>
+        </div>
+
+        <script>
+            const calculateButton = document.querySelector("#calc-button");
+
+            const sliderAmount = document.querySelector("#slider-amount");
+            const sliderYear = document.querySelector("#slider-year");
+            const sliderRate = document.querySelector("#slider-rate");
+
+            const inputAmount = document.querySelector("#txtAmount");
+            const inputYear = document.querySelector("#txtYear");
+            const inputRate = document.querySelector("#txtRate");
+
+            console.log(sliderRate);
+            sliderRate.addEventListener("change", (e) => {
+            inputRate.setAttribute("value", e.target.value);
+            });
+
+            sliderAmount.addEventListener("change", (e) => {
+            let amount = Number(e.target.value);
+            let amountInRuppes = amount.toLocaleString("en-IN", {
+                style: "currency",
+                currency: "INR",
+            });
+            inputAmount.setAttribute("value", amountInRuppes);
+            });
+
+            sliderYear.addEventListener("change", (e) => {
+            inputYear.setAttribute("value", e.target.value);
+            });
+
+            function calculateEMI(amount, year, rate) {
+            let monthlyRate = rate / 12;
+            let months = year * 12;
+
+            let x = Math.pow(1 + monthlyRate, months);
+            return amount * monthlyRate * (x / (x - 1));
+            }
+
+            calculateButton.addEventListener("click", (e) => {
+            let amount = Number(sliderAmount.value);
+            let rate = Number(sliderRate.value);
+            let year = Number(sliderYear.value);
+            let emiAmount = calculateEMI(amount, year, rate);
+
+            document.querySelector("#emi-amount").innerHTML = emiAmount.toLocaleString(
+                "en-IN",
+                {
+                style: "currency",
+                currency: "INR",
+                },
+            );
+            document.querySelector("#months").innerHTML = year * 12;
+            });
+        </script>
+    </body>
+</html>
