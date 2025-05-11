@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        let age = prompt("Enter the age: ");
+        if(age == null){
+            console.log("No age entered, esc or cancel pressed");
+        }
+        else if(age == ''){
+            console.log("Plz enter correct data to process");
+        }
+        else if(isNaN(age)){
+            console.log("Enter correct age");
+        }
+        else{
+            console.log("Age is: ", age);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
