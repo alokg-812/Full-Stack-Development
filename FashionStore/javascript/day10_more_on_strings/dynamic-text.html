@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Text Styler</title>
+   <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+<script>
+    function setFontSize() {
+      const size = document.getElementById("fontSizeRange").value;
+      document.getElementById("fontSizeLabel").innerText = size;
+      document.getElementById("sampleText").style.fontSize = `${size * 6}px`;
+    }
+
+    function changeColor() {
+      const color = document.getElementById("colorPicker").value;
+      document.getElementById("sampleText").style.color = color;
+    }
+
+    function changeStyle() {
+      const style = document.getElementById("fontStyle").value;
+      const text = document.getElementById("sampleText");
+
+      if (style === "bold") {
+        text.style.fontWeight = "bold";
+        text.style.fontStyle = "normal";
+      } else if (style === "italic") {
+        text.style.fontWeight = "normal";
+        text.style.fontStyle = "italic";
+      } else {
+        text.style.fontWeight = "normal";
+        text.style.fontStyle = "normal";
+      }
+    }
+
+    function changeAlignment(align) {
+      const container = document.getElementById("textContainer");
+      container.style.textAlign = align;
+      document.getElementById("sampleText").style.textAlign = align;
+    }
+  </script>
+</head>
+
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+  <div class="text-center border p-4 rounded shadow" style="width: 100%; max-width: 700px;">
+    <h4 class="mb-4">Task</h4>
+
+    <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 mb-3">
+      
+      <!-- Font Size -->
+      <div>
+        <label for="fontSizeRange" class="form-label">Font Size</label><br>
+        <span>1</span>
+        <input type="range" class="form-range" id="fontSizeRange" min="1" max="7" value="3" oninput="setFontSize()" style="width: 100px;">
+        <span>7</span>
+        <div><span id="fontSizeLabel"></span></div>
+      </div>
+
+      <!-- Color -->
+      <div>
+        <label for="colorPicker" class="form-label">Color</label><br>
+        <input type="color" id="colorPicker" class="form-control form-control-color" onclick="changeColor()" onchange="changeColor()">
+      </div>
+
+      <!--Style -->
+      <div>
+        <label for="fontStyle" class="form-label">Style</label>
+        <select id="fontStyle" class="form-select" style="width: 100px;" onclick="changeStyle()">
+          <option value="normal">Normal</option>
+          <option value="bold">Bold</option>
+          <option value="italic">Italic</option>
+        </select>
+      </div>
+
+      <!-- Alignment -->
+      <div>
+        <label class="form-label">Align</label><br>
+        <div class="btn-group" role="group">
+          <button class="btn btn-outline-primary" onclick="changeAlignment('left')">L</button>
+          <button class="btn btn-outline-primary" onclick="changeAlignment('center')">C</button>
+          <button class="btn btn-outline-primary" onclick="changeAlignment('right')">R</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Text Container -->
+    <div class="border rounded p-3 mt-4" id="textContainer" style="text-align: center; color: red; font-weight: bold; font-size: 20px;">
+      <p id="sampleText" class="m-0">Hello World!</p>
+    </div>
+  </div>
+</body>
+</html>
