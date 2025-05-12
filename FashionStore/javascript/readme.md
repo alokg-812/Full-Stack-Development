@@ -684,12 +684,12 @@ document.write(`Hello ${userName} Your age is: ${userAge}` + '<br>\n'); //Expres
 ```
 
 
-## Day 10:
+## Day 10: More on Binding & strings
 
 ### Binding:
 Process of attaching a variable with its value at runtime is referred as Binding.
 
-1. DataBinding : Binded the varibale with the value.
+1. `DataBinding` : Binded the varibale with the value.
    **Syntax:** `${variableName}`
    ex:
    ``var userName = 'Sachin'
@@ -697,22 +697,22 @@ Process of attaching a variable with its value at runtime is referred as Binding
    document.write(`${username}`);
    ``
 
-2. StyleBinding: Process of attaching the style related details in `Inline` manner to an element is referred to as style binding.
+2. `StyleBinding`: Process of attaching the style related details in `Inline` manner to an element is referred to as style binding.
    **Syntax:**
    `document.getElementById('').style.cssAttribute='cssValue`
    `document.getElementById('').style.cssText='cssKey: cssValue`
 
-3. ClassBinding: Process of attaching the class assocuated with style to an elment is referred as class binding.
+3. `ClassBinding`: Process of attaching the class assocuated with style to an elment is referred as class binding.
    **Syntax:**
    `document.getElementById('').classNmae = 'userDefined | Library class'`
 
-Ques: What is an Event?
+Ques: What is an Event? <br>
 Ans: Anything which happens on a webpage is event.
 
  	onclick  => When any element is clicked by the user[button]
-  	onchange =>
+  	onchange => When the value of an ekement is changed by the user.
    	onblur   => When the element looses focus.
-    	onload   => 
+    	onload   => When the page is loaded by the browser.
 
 
 ### String Formating Methods:
@@ -735,12 +735,13 @@ document.write(str3);
 document.write(str.toUpperCase().bold().fontcolor('red')); //method chaining
 ``
 
-|Reference Error|Syntax Error|TypeError|
-|---------------|------------|---------|
-|not defined|variable is already declared | assignment to a constanat variable | 
-|defined| let/const | const |
-|cannot access before initialization| - |
-|(let | const) : Temporal Dead Zone | - |
+## Common JavaScript Errors
+
+| Reference Error                          | Syntax Error                    | TypeError                                  |
+|------------------------------------------|----------------------------------|--------------------------------------------|
+| Variable is not defined                  | Variable is already declared     | Assignment to a constant variable          |
+| Cannot access before initialization      | Invalid use of `let`/`const`     |                                            |
+| Temporal Dead Zone (`let` / `const`)     |                                  |                                            |
 
 
 ### Methods on String Object:
