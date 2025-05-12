@@ -684,6 +684,71 @@ document.write(`Hello ${userName} Your age is: ${userAge}` + '<br>\n'); //Expres
 ```
 
 
+## Day 10:
+
+### Binding:
+Process of attaching a variable with its value at runtime is referred as Binding.
+
+1. DataBinding : Binded the varibale with the value.
+   **Syntax:** `${variableName}`
+   ex:
+   ``var userName = 'Sachin'
+   document.write(`${userName}`);
+   document.write(`${username}`);
+   ``
+
+2. StyleBinding: Process of attaching the style related details in `Inline` manner to an element is referred to as style binding.
+   **Syntax:**
+   `document.getElementById('').style.cssAttribute='cssValue`
+   `document.getElementById('').style.cssText='cssKey: cssValue`
+
+3. ClassBinding: Process of attaching the class assocuated with style to an elment is referred as class binding.
+   **Syntax:**
+   `document.getElementById('').classNmae = 'userDefined | Library class'`
+
+Ques: What is an Event?
+Ans: Anything which happens on a webpage is event.
+
+ 	onclick  => When any element is clicked by the user[button]
+  	onchange =>
+   	onblur   => When the element looses focus.
+    	onload   => 
+
+
+### String Formating Methods:
+1. bold() :string
+2. italics() :string
+3. fontsize(number) : string
+4. fontcolor(string) : string
+5. toUpperCase() : string
+
+eg#1: 
+```javascript
+let str = 'sachin';
+let str1 = str.toUpperCase();
+let str2 =  str1.bold();
+let str3 = str2.fontcolor('red');
+document.write(str3);
+```
+**OR**
+``
+document.write(str.toUpperCase().bold().fontcolor('red')); //method chaining
+``
+
+|Reference Error|Syntax Error|TypeError|
+|---------------|------------|---------|
+|not defined|variable is already declared | assignment to a constanat variable | 
+|defined| let/const | const |
+|cannot access before initialization| - |
+|(let | const) : Temporal Dead Zone | - |
 
 
 
+
+
+
+
+
+
+
+   
