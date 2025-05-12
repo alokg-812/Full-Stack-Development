@@ -743,6 +743,26 @@ document.write(str.toUpperCase().bold().fontcolor('red')); //method chaining
 |(let | const) : Temporal Dead Zone | - |
 
 
+### Methods on String Object:
+
+1. `length`: It counts the number of characters present in the given string
+   `length: number`
+
+```javascript
+let srt = 'sachin';
+console.log(str.length); //6
+console.log(str.length()); //typeError
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
