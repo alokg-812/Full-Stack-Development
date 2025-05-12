@@ -7,7 +7,7 @@
 ## [Day 7: Variables & Datatypes](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 9: String in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
-
+## [Day 10: More on Strings](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-10-more-on-binding--strings)
 
 ## Java story:
 
