@@ -771,6 +771,46 @@ Two more methods on string:
 `charCodeAt(Number)`: if number is of null| indefined | NaN, it would adjust to `0th index` data.
 
 
+> ![Important] 
+> `Slice(starting, ending)`: It is used to extract the characters between specified index.
+ **Syntax:**
+
+
+`slide(start, end): string` => it returns characaters between starting to ending(ending exclusive). <br>
+Rule: 
+* forward direction extraction.
+* end index must be greater than starting index.
+
+**Parameters:**
+* startIndex(required):
+  * the postition where extraction begins(inclusive)
+  * if negative, it is trates as array.length + endIndex
+* endIndex(optional):
+  * the postion where extraction ends(exclusive)
+  * if negative, it is trates as array.length + endIndex
+
+Note: slice(start, end):
+
+ 	a. NaN -> 0
+  	b. null -> 0
+   	c. undefined -> no parameter
+    	d. true -> 1
+     	e. false -> 0
+
+**Ex:**
+```javascript
+let str = 'sachinrameshtendulkar'
+console.log(str.slice(6, -5));                  //rameshtend
+console.log(str.slice(6, 16));                  //rameshtend
+console.log(str.slice(NaN, NaN));               //
+console.log(str.slice(null, null)); 		//
+console.log(str.slice(undefined, undefined));   //sachinrameshtendulkar
+console.log(str.slice(true, true));		//
+console.log(str.slice(false, true));		//s
+console.log(str.slice(0, true));		//s
+console.log(str.slice(false, null));		//
+console.log(str.slice(false, undefined));	//sachinrameshtendulkar
+```
 
 
 
@@ -781,6 +821,3 @@ Two more methods on string:
 
 
 
-
-
-   
