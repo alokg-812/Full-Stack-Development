@@ -813,10 +813,14 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 ```
 
 
+`Substring(start, end)`
+**Syntax:**
+substring(startIndex, endIndex) : string ==> endIndex can be -ve | +ve
+substring(startIndex)
 
-
-
-
+|Feature | slice() | substring() |
+|Supports negative indices?| Yes | No(negative treated as 0)
+|Swaps 
 
 
 
