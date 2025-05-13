@@ -755,9 +755,20 @@ console.log(str.length); //6
 console.log(str.length()); //typeError
 ```
 
+## Day 11:
 
+Two more methods on string:
+1. `startsWith()`
+2. `endsWith()`
+   Ex:
+   ```javascript
+   let str = 'sachin@gmail.com';
+   console.log(str.endsWith('@gmail.com')); //true
+   console.log(str.startsWith('sachin'));   //false
+   console.log(str.startsWith('SACHIN'));   //false
+   ```
 
-
+`charCodeAt(Number)`: if number is of null| indefined | NaN, it would adjust to `0th index` data.
 
 
 
