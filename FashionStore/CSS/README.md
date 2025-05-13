@@ -757,13 +757,13 @@ Syntax:
 
 
 ### FAQs:
-Q: What is the difference between ``display: none`` vs ``visibility: hidden``
+> Q: What is the difference between ``display: none`` vs ``visibility: hidden``
 > Ans: `visibility: hidden` will not remove the memory reserved for that element on the page whereas `display: none` will remove the memory for the element from the page as a result of which it disturbs the page layout.
 
-Q: 
 
-5 concepts to be asked:
+> Q: 5 concepts to be asked:
 - Selectors
 - Inheritance
 - Box Model
-- 
+- Positioning & Layout
+- Specificity hierarchy
