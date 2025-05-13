@@ -8,7 +8,16 @@
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 9: String in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
 ## [Day 10: More on Strings](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-10-more-on-binding--strings)
-## [Day 11: String methods]()
+* [Binding](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#binding)
+* [String formatting methods](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#string-formating-methods)
+* [Common Javascript Errors](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#common-javascript-errors)
+* [Length Method](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#methods-on-string-object)
+
+## [Day 11: String methods](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-11-string-methods-1)
+* [Starts with endswith](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#startswith--endswith)
+* [CharCodeAt](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#charcodeat)
+* [Slicing](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#syntax)
+* [Substring](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#substringstart-end)
 ## Java story:
 
 ![javaStory](https://github.com/user-attachments/assets/3e514e27-e1e9-49c4-8e39-3a770564a21e)
