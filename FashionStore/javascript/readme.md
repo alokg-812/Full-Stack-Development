@@ -8,7 +8,7 @@
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
 ## [Day 9: String in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
 ## [Day 10: More on Strings](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-10-more-on-binding--strings)
-
+## [Day 11: String methods]()
 ## Java story:
 
 ![javaStory](https://github.com/user-attachments/assets/3e514e27-e1e9-49c4-8e39-3a770564a21e)
@@ -755,8 +755,9 @@ console.log(str.length); //6
 console.log(str.length()); //typeError
 ```
 
-## Day 11:
+## Day 11: String Methods
 
+##### startsWith & endsWith
 Two more methods on string:
 1. `startsWith()`
 2. `endsWith()`
@@ -768,14 +769,13 @@ Two more methods on string:
    console.log(str.startsWith('SACHIN'));   //false
    ```
 
+##### charCodeAt
 `charCodeAt(Number)`: if number is of null| indefined | NaN, it would adjust to `0th index` data.
 
 
-> ![Important] 
+> 🌟 **Important**
 > `Slice(starting, ending)`: It is used to extract the characters between specified index.
- **Syntax:**
-
-
+##### **Syntax:**
 `slide(start, end): string` => it returns characaters between starting to ending(ending exclusive). <br>
 Rule: 
 * forward direction extraction.
@@ -789,7 +789,14 @@ Rule:
   * the postion where extraction ends(exclusive)
   * if negative, it is trates as array.length + endIndex
 
-Note: slice(start, end):
+**Key Points:**
+- If startIndex is greater than endIndex, they are swapped.
+- If startIndex or endIndex is negative or NaN, they are treated as 0.
+- If endIndex is omitted, it extracts up to the end of the string.
+
+
+> 💡 **Note**  
+> - `slice(start, end)`:
 
  	a. NaN -> 0
   	b. null -> 0
@@ -813,14 +820,18 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 ```
 
 
-`Substring(start, end)`
+##### `Substring(start, end)`
 **Syntax:**
-substring(startIndex, endIndex) : string ==> endIndex can be -ve | +ve
-substring(startIndex)
+- substring(startIndex, endIndex) : string ==> endIndex can be -ve | +ve
+- substring(startIndex) ==> It return from startindex to endindex-1
 
-|Feature | slice() | substring() |
-|Supports negative indices?| Yes | No(negative treated as 0)
-|Swaps 
+| Feature                                | `slice()`        | `substring()`                   |
+|----------------------------------------|------------------|---------------------------------|
+| Supports negative indices?             | ✅ Yes           | ❌ No (negative treated as `0`) |
+| Swaps indices if `start > end`?        | ❌ No            | ✅ Yes                          |
+| Takes `length` instead of `endIndex`?  | ❌ No            | ❌ No                           |
+| Recommended for use?                   | ✅ Yes           | ✅ Yes                          |
+
 
 
 
