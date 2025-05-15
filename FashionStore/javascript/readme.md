@@ -855,7 +855,7 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 
 
 
-#### split() : 
+### Split Method : 
 - It is used to split the given string based on the delimitor.
 
 **Syntax:**
@@ -874,6 +874,23 @@ let names = "Sachin, Saurav, Dhoni, Yuvraj, Sehwag";
 let output = names.split(',', 3)
 console.log(typeof output, output);        // object (3) ['Sachin', ' Saurav', ' Dhoni']
 ```
+
+eg#3:
+```js
+let str1 = 'hello user';                   
+console.log(str1.split());                  //['hello user']
+console.log(str1.split(''));                //['h, 'e', 'l', 'l', 'o', ' ', 'u', 's', 'e', 'r']
+console.log(str1.split(undefined));	    //['hello user']
+console.log(str1.split(null));		    //['hello user']
+console.log(str1.split('', 0));             //[]
+console.log('P,W,,'.split(','));            //['P', 'W', '', '']
+console.log('P,W,'.split(','));             //[['P', 'W', '']]
+```
+
+
+
+
+
 
 
 
