@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        function verifyCase(){
+            const username = document.getElementById("txtUsername");
+            const msg = document.getElementById("error-msg");
+
+            let flag = username.value.charCodeAt(0) >=65 && username.value.charCodeAt(0) <=90;
+            if(flag){
+                msg.innerHTML = "";
+            }
+            else{
+                msg.innerHTML = "Username should start with Upper Case".fontcolor('RED');
+            }
+        }
+
+    </script>
+</head>
+<body class="m-5">
+    <dl>
+        <dt>Username</dt>
+        <dd>
+            <input type="text" name="" id="txtUsername" onblur="verifyCase()">
+        </dd>
+        <dd id="error-msg"></dd>
+    </dl>
+</body>
+</html>
