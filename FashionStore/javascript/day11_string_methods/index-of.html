@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        function verifyEmail(){
+            const email = document.getElementById("txtEmail");
+            const msg = document.getElementById("error-msg");
+            let flag = email.value.indexOf('@');
+            if(flag == -1){
+                msg.innerHTML = "Invalid Email".fontcolor('red').bold();
+            }
+            else{
+                if(email.value.endsWith("@gmail.com")){
+                    msg.innerHTML = "Email is valid".fontcolor('green').bold();
+                }
+                else{
+                    msg.innerHTML = "Email is not valid".fontcolor('red').bold();
+                }
+            }
+        }
+
+    </script>
+</head>
+<body class="m-5">
+    <dl>
+        <dt>Usermail</dt>
+        <dd>
+            <input type="email" name="" id="txtEmail" onblur="verifyEmail()">
+        </dd>
+        <dd id="error-msg"></dd>
+    </dl>
+</body>
+</html>
