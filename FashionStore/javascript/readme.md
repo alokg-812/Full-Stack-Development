@@ -846,14 +846,15 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 
 ##### Methods of string object:
 1. `toUpperCase()`       : string
-2. `startesWith(string)` : boolean
-3. `endsWith(string)`    : boolean
-4. `charAt(number)`      : string
-5. `charCodeAt(number)`  : number
-6. `indexOf(string)`     : number(-1 if not found)
-7. `slice([number],[number])` : string
-8. `substring([number],[number])` : string
-
+2. `toLowerCase()`       : string
+3. `startesWith(string)` : boolean
+4. `endsWith(string)`    : boolean
+5. `charAt(number)`      : string
+6. `charCodeAt(number)`  : number
+7. `indexOf(string)`     : number(-1 if not found)
+8. `slice([number],[number])` : string
+9. `substring([number],[number])` : string
+10. `string.trim()` : string
 
 ### Split Method : 
 - It is used to split the given string based on the delimitor.
