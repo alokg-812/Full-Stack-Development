@@ -18,6 +18,17 @@
 * [CharCodeAt](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#charcodeat)
 * [Slicing](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#syntax)
 * [Substring](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#substringstart-end)
+
+
+## [Day 12: ]()
+* [Methods of string object](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#methods-of-string-object)
+* [Split Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#split-method-)
+* [Trim Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#trim-method)
+
+
+
+
+
 ## Java story:
 
 ![javaStory](https://github.com/user-attachments/assets/3e514e27-e1e9-49c4-8e39-3a770564a21e)
@@ -842,7 +853,7 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 | Recommended for use?                   | ✅ Yes           | ✅ Yes                          |
 
 
-## Day 12[]
+## Day 12[Spliting & Trimming Method]
 
 ##### Methods of string object:
 1. `toUpperCase()`       : string
@@ -891,14 +902,15 @@ console.log('P,W,'.split(','));             //[['P', 'W', '']]
 ```
 
 ### Trim Method:
-- It is used to remove the leading and trailing spaces of the data.
-  eg#1:
-	```js
-	let str='   sachin ramesh tendulkar  ';
-	console.log(str.length);    	 //28
- 	console.log(str.trim());    	 //'sachin ramesh tendulkar'
- 	console.log(str.trim().length);  //23
-	```
+- It is used to remove the leading and trailing spaces of the data. <br>
+
+eg#1:
+```js
+let str='   sachin ramesh tendulkar  ';
+console.log(str.length);    	 //28
+console.log(str.trim());    	 //'sachin ramesh tendulkar'
+console.log(str.trim().length);  //23
+```
 
 
 > ▶️ **Note:**
