@@ -19,8 +19,7 @@
 * [Slicing](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#syntax)
 * [Substring](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#substringstart-end)
 
-
-## [Day 12: Splitting & Trimming](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-12spliting--trimming-method)
+## [Day 12: Splitting & Triming](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-12-spliting--trimming-method)
 * [Methods of string object](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#methods-of-string-object)
 * [Split Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#split-method-)
 * [Trim Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#trim-method)
