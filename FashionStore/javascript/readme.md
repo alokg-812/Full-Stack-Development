@@ -887,6 +887,8 @@ console.log('P,W,,'.split(','));            //['P', 'W', '', '']
 console.log('P,W,'.split(','));             //[['P', 'W', '']]
 ```
 
+### Trim Method:
+
 
 
 
