@@ -891,9 +891,25 @@ console.log('P,W,'.split(','));             //[['P', 'W', '']]
 
 
 
-
-
-
+> ▶️ **Note:**
+> In ajvascript, we can use conditio statements on methods| properties while returns `object|null`
+> This is possible because by default jacascript uses the following condtion to process the instrction.
+```js
+if(someOutput != null){
+	//truthy case
+} else{
+	//falsey case
+}
+```
+**eg#1:**
+```js
+let str = ''.someMethod(input); //Object|null
+if(str){ 						if(str != null){
+	//process for true case
+} else{					➡️➡️➡️➡️	}else{
+	//process for false case
+}							}
+```
 
 
 
