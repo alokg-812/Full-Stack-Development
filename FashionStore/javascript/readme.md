@@ -851,15 +851,17 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 4. `charAt(number)`      : string
 5. `charCodeAt(number)`  : number
 6. `indexOf(string)`     : number(-1 if not found)
-7. 
-
+7. `slice([number],[number])` : string
+8. `substring([number],[number])` : string
 
 
 ### Split Method : 
 - It is used to split the given string based on the delimitor.
+- It accepts two arguments:
+   - `string   : delimitor`
+   - `number   : limit`
 
-**Syntax:**
-`split(string | regEx, number) : string[]`
+**Syntax:** `split(string | regEx, number) : string[]`
 
 eg#1:
 ```js
@@ -888,12 +890,19 @@ console.log('P,W,'.split(','));             //[['P', 'W', '']]
 ```
 
 ### Trim Method:
-
+- It is used to remove the leading and trailing spaces of the data.
+  eg#1:
+	```js
+	let str='   sachin ramesh tendulkar  ';
+	console.log(str.length);    	 //28
+ 	console.log(str.trim());    	 //'sachin ramesh tendulkar'
+ 	console.log(str.trim().length);  //23
+	```
 
 
 > ▶️ **Note:**
-> * In ajvascript, we can use conditio statements on methods| properties while returns `object|null`.
-> * This is possible because by default jacascript uses the following condtion to process the instrction.
+> * In javascript, we can use conditional statements on methods| properties which returns `object|null`.
+> * This is possible because by default jacascript uses the following condition to process the instructions.
 ```js
 if(someOutput != null){
 	//truthy case
