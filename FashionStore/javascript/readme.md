@@ -842,6 +842,41 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 | Recommended for use?                   | ✅ Yes           | ✅ Yes                          |
 
 
+## Day 12[]
+
+##### Methods of string object:
+1. `toUpperCase()`       : string
+2. `startesWith(string)` : boolean
+3. `endsWith(string)`    : boolean
+4. `charAt(number)`      : string
+5. `charCodeAt(number)`  : number
+6. `indexOf(string)`     : number(-1 if not found)
+7. 
+
+
+
+#### split() : 
+- It is used to split the given string based on the delimitor.
+
+**Syntax:**
+`split(string | regEx, number) : string[]`
+
+eg#1:
+```js
+let names = "Sachin, Saurav, Dhoni, Yuvraj, Sehwag";
+let output = names.split(',')
+console.log(typeof output, output);        //object (5) ['Sachin', ' Saurav', ' Dhoni', ' Yuvraj', ' Sehwag']
+```
+
+eg#2:
+```js
+let names = "Sachin, Saurav, Dhoni, Yuvraj, Sehwag";
+let output = names.split(',', 3)
+console.log(typeof output, output);        // object (3) ['Sachin', ' Saurav', ' Dhoni']
+```
+
+
+
 
 
 
