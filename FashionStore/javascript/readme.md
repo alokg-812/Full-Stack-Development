@@ -24,9 +24,8 @@
 * [Split Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#split-method-)
 * [Trim Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#trim-method)
 
-
-
-
+## [Day 13: Boolean]()
+* [Boolean](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#boolean-type)
 
 ## Java story:
 
@@ -934,7 +933,7 @@ if(str){ 						if(str != null){
 }							}
 ```
 
-
+## Day 13: Boolean & Ternary
 
 ### Boolean type
 The permitted values are:
@@ -942,7 +941,7 @@ The permitted values are:
 2. `>0` or `<0` : `true` :: `1`
 3. `0` : `false` :: `0`
 
-> Ques: How boolean works with `+` as operators? <br>
+> FAQ: How boolean works with `+` as operators? <br>
 > Ans:
 > * if one operand is string type then perform `concatenation`. : `string`
 > * if both operands are number tpe then it performs `addition`. : `number`
@@ -969,10 +968,20 @@ console.log(NaN + null);         // NaN         (null => 0; NaN + 0 = NaN)
 ```
 
 
+### Ternary Operator:
 
+**Syntax:**
+`condition` ? `if true` : `if false`
 
+> FAQ: How to convert string 'true' to boolean true?
+> Ans: 
+```js
+let boolType = 'true' === 'true' ? true : false;
+console.log(boolType, typeof(boolType)); //true 'boolean'
+```
+![image](https://github.com/user-attachments/assets/8e450d1b-377f-40e1-91e2-19ba412f76b6)
 
-
+> FAQ: What is the difference between `==` and `===`?
 
 
 
