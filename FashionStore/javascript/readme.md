@@ -864,7 +864,9 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 7. `indexOf(string)`     : number(-1 if not found)
 8. `slice([number],[number])` : string
 9. `substring([number],[number])` : string
-10. `string.trim()` : string
+10. `trim()` : string
+11. `split()` : string[] | null
+
 
 ### Split Method : 
 - It is used to split the given string based on the delimitor.
@@ -934,5 +936,9 @@ if(str){ 						if(str != null){
 
 
 
-
+### Boolean type
+The permitted values are:
+1. `true` | `fasle`
+2. `>0` : `true` :: `1`
+3. `<=0` : `false` :: `0`
 
