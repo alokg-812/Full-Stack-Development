@@ -939,6 +939,43 @@ if(str){ 						if(str != null){
 ### Boolean type
 The permitted values are:
 1. `true` | `fasle`
-2. `>0` : `true` :: `1`
-3. `<=0` : `false` :: `0`
+2. `>0` or `<0` : `true` :: `1`
+3. `0` : `false` :: `0`
+
+> Ques: How boolean works with `+` as operators? <br>
+> Ans:
+> * if one operand is string type then perform `concatenation`. : `string`
+> * if both operands are number tpe then it performs `addition`. : `number`
+> * if onr operand is number and other operand is of other type like `boolean|null|undefined|`, it will convert to number type and then perform `Addition` : `number`
+
+**eg#:**
+```js
+console.log(10+5);               // 15          (Number + Number)
+console.log(3.5+2.5);            // 6           (Floating point addition)
+console.log(-1+4);               // 3           (Negative + Positive)
+console.log(2+"3");              // "23"        (Number + String => String concatenation)
+console.log("2" + 3);            // "23"        (String + Number => String concatenation)
+console.log("5" + true);         // "5true"     (String + Boolean => String concatenation)
+console.log("5" + 10);           // "510"       (String + Number => String concatenation)
+console.log(5 + "10");           // "510"       (Number + String => String concatenation)
+console.log("Result: " + 5 + 10);// "Result: 510" (Left to right: "Result: " + 5 => "Result: 5", then + 10 => "Result: 510")
+console.log(5+10 + " is the result"); // "15 is the result" (First 5+10 = 15, then + string => string concatenation)
+console.log(true + null);        // 1           (true => 1, null => 0; 1+0 = 1)
+console.log(undefined + null);   // NaN         (undefined => NaN, null => 0; NaN + 0 = NaN)
+console.log(undefined + false);  // NaN         (undefined => NaN, false => 0; NaN + 0 = NaN)
+console.log(undefined + NaN);    // NaN         (NaN + NaN = NaN)
+console.log(NaN + NaN);          // NaN         (NaN + NaN = NaN)
+console.log(NaN + null);         // NaN         (null => 0; NaN + 0 = NaN)
+```
+
+
+
+
+
+
+
+
+
+
+
 
