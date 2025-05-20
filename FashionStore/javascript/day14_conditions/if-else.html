@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Details</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <style>
+    fieldset {
+      width: 300px;
+      padding: 20px;
+      margin: 20px;
+    }
+    dd {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <fieldset>
+      <legend>Payment Details</legend>
+      <dl>
+        <dt><label for="cardNumber">Card Number</label></dt>
+        <dd><input type="text" id="cardNumber" name="cardNumber" maxlength="16" placeholder="Enter card number" required></dd>
+
+        <dt><label for="cvv">CVV</label></dt>
+        <dd><input type="text" id="cvv" name="cvv" maxlength="4" placeholder="Enter CVV" required></dd>
+
+        <dt><label for="expiry">Expiry</label></dt>
+        <dd>
+          <select id="expiry" name="expiry" class="form-select" required>
+            <option value="">Choose Expiry</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </dd>
+      </dl>
+      <button type="submit">Pay</button>
+    </fieldset>
+  </div>
+
+</body>
+</html>
