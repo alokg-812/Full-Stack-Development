@@ -935,6 +935,9 @@ if(str){ 						if(str != null){
 
 ## Day 13: Boolean & Ternary
 
+##### Match method():
+
+
 ### Boolean type
 The permitted values are:
 1. `true` | `fasle`
@@ -983,8 +986,20 @@ console.log(boolType, typeof(boolType)); //true 'boolean'
 
 > FAQ: What is the difference between `==` and `===`?
 
+#### Operators:
+1. Arithmetic Operator : 
+2. Comparision Operator
+3. Ternary Operator
 
+#### Conditional Statements:
+1. if
+2. if-else
+3. nested if-else
+4. switch | case | default | break
 
-
+##### 1. if:
+```js
+if(condition)
+```
 
 
