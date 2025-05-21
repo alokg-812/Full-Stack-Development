@@ -1021,9 +1021,12 @@ console.log(boolType, typeof(boolType)); //true 'boolean'
 > FAQ: What is the difference between `==` and `===`?
 
 #### Operators:
-1. Arithmetic Operator : 
-2. Comparision Operator
-3. Ternary Operator
+1. Arithmetic Operator : `+`
+2. Comparision Operator : `==` | `===`
+3. Ternary Operator : `condition ? true : false`
+
+##### statements
+- Executable code which would decide the control flow of the program.
 
 #### Conditional Statements:
 1. if
@@ -1031,9 +1034,61 @@ console.log(boolType, typeof(boolType)); //true 'boolean'
 3. nested if-else
 4. switch | case | default | break
 
-##### 1. if:
+#### 1.Syntax of if
 ```js
 if(condition)
+{
+	//statement of true part
+}
 ```
+**condition :** `true` | `false`
+**eg#:**
+[if-code.html](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript/day14_conditions)
+![image](https://github.com/user-attachments/assets/f9306ea4-2d5b-4654-a7f9-4fce1f2b9650)
+
+#### 2. Syntax of if-else
+* It is a conditional statement where if block will be executed when condition matches for true otherwise else block will be executed.
+* Else block is written without any condition, so by default if case fails then control would move to else block.
+```js
+  if(condition){
+	//true
+  }else{
+	//false
+  }
+```
+**eg#:**
+[if-else.html](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day14_conditions/if-else-payment-card.html)
+![image](https://github.com/user-attachments/assets/664a2ee5-22d0-4f83-89c1-c9e6726d522b)
+
+
+![image](https://github.com/user-attachments/assets/ffd80483-6be1-4343-bb7f-78ac52f0cebd)
+
+
+#### 3. Syntax of nested-if-else:
+```js
+if(condition1)
+{
+	if(condition2){
+		if(condition3){
+			//logic
+		}else{
+			//false logic of condition3
+		}	
+	}else{
+		//false logic of condition2
+	}
+}else{
+	//false logic of condition1
+}
+```
+
+**eg#:**
+[nested-if-else.html](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day14_conditions/nested-if-else-payment-card.html)
+![image](https://github.com/user-attachments/assets/063c27b0-8891-4ae7-aae7-26b3dbd281d6)
+
+
+
+
+
 
 
