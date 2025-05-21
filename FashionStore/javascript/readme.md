@@ -47,19 +47,33 @@
 * [Common Javascript Errors](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#common-javascript-errors)
 * [Length Method](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#methods-on-string-object)
 
+
 ## [Day 11: String methods](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-11-string-methods-1)
 * [Starts with endswith](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#startswith--endswith)
 * [CharCodeAt](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#charcodeat)
 * [Slicing](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#syntax)
 * [Substring](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#substringstart-end)
 
+
 ## [Day 12: Splitting & Triming](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-12-spliting--trimming-method)
 * [Methods of string object](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#methods-of-string-object)
 * [Split Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#split-method-)
 * [Trim Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#trim-method)
 
-## [Day 13: Boolean]()
+
+## [Day 13: Boolean](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-13-boolean--ternary)
+* [Match Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#match-method)
 * [Boolean](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#boolean-type)
+* [Ternary Operator](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#ternary-operator)
+
+
+## [Day 14: Conditionals](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-14-conditional-statements)
+* [Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#operators)
+* [Statments](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#statements)
+* [Conditional Statments](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#conditional-statements)
+     * [if](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#1syntax-of-if)
+     * [else-if](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#2-syntax-of-if-else)
+     * [nested-else-if](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#3-syntax-of-nested-if-else) 
 
 ## Java story:
 
@@ -978,7 +992,7 @@ The permitted values are:
 2. `>0` or `<0` : `true` :: `1`
 3. `0` : `false` :: `0`
 
-> FAQ: How boolean works with `+` as operators? <br>
+##### > FAQ: How boolean works with `+` as operators? <br>
 > Ans:
 > * if one operand is string type then perform `concatenation`. : `string`
 > * if both operands are number tpe then it performs `addition`. : `number`
@@ -1020,12 +1034,16 @@ console.log(boolType, typeof(boolType)); //true 'boolean'
 
 > FAQ: What is the difference between `==` and `===`?
 
+
+## Day 14: Conditional Statements
+
+
 #### Operators:
 1. Arithmetic Operator : `+`
 2. Comparision Operator : `==` | `===`
 3. Ternary Operator : `condition ? true : false`
 
-##### statements
+##### Statements-
 - Executable code which would decide the control flow of the program.
 
 #### Conditional Statements:
@@ -1041,10 +1059,12 @@ if(condition)
 	//statement of true part
 }
 ```
-**condition :** `true` | `false`
+**condition :** `true` | `false` <br>
 **eg#:**
-[if-code.html](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript/day14_conditions)
+[if-code.html](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript/day14_conditions) <br>
 ![image](https://github.com/user-attachments/assets/f9306ea4-2d5b-4654-a7f9-4fce1f2b9650)
+
+---
 
 #### 2. Syntax of if-else
 * It is a conditional statement where if block will be executed when condition matches for true otherwise else block will be executed.
@@ -1063,6 +1083,7 @@ if(condition)
 
 ![image](https://github.com/user-attachments/assets/ffd80483-6be1-4343-bb7f-78ac52f0cebd)
 
+---
 
 #### 3. Syntax of nested-if-else:
 ```js
