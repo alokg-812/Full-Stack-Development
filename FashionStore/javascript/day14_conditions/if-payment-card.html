@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Details</title>
+    <style>
+        fieldset {
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        }
+        dd {
+        margin-bottom: 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        function validateCard(){
+            const cardNum = document.getElementById("cardNumber");
+            const cvv = document.getElementById("cvv");
+            const cvvContainer = document.getElementById("cvvContainer");
+            if(cardNum.value === '444777666'){
+                cvv.disabled = false;
+            }
+        }
+
+        function validateCvv(){
+            const cvv = document.getElementById("cvv");
+            const expiry = document.getElementById("expiry");
+            const expiryContainer = document.getElementById("expiryContainer");
+            if(cvv.value === '333'){
+                expiry.disabled = false;
+            }
+        }
+
+        function validateYear(){
+            const expiry = document.getElementById("expiry");
+            const btn = document.getElementById("btnPay");
+            const btnContainer = document.getElementById("btnContainer");
+            if(expiry.value === '2024'){
+                btn.disabled = false;
+            }
+        }
+    </script>
+    </head>
+    <body>
+
+    <div>
+        <fieldset>
+        <legend>Payment Details</legend>
+        <dl>
+            <dt>Card Number</dt>
+            <dd><input type="text" id="cardNumber" maxlength="9" onblur="validateCard()"></dd>
+            <dt>CVV</dt>
+            <dd><input type="text" id="cvv" size="4" disabled onblur="validateCvv()"></dd>       
+            <dt><label for="expiry">Expiry</label></dt>
+            <dd>
+            <select id="expiry" name="expiry" onchange="validateYear()" disabled>
+                <option value="">Choose Expiry</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+            </dd>
+        </dl>
+        <button id="btnPay" disabled type="submit">Pay</button>
+        </fieldset>
+    </div>
+
+</body>
+</html>
