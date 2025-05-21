@@ -1,12 +1,46 @@
 ## [Day 1: Javascript PL vs SL](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript)
+* [Javascript introduction](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#javascript)
+* [Javscript as scripting Language](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#--javascript-as-scripting-language)
+* [Javascript as programming Language](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#--javascript-as-programming-language)
+
+
 ## [Day 2: Javascript Client-side](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-2)
+* [Client side of javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-client-side-)
+* [FAQs](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#faqs)
+
+
 ## [Day 3: ](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-3)
+
+
+
 ## [Day 4: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-4)
 ## [Day 5: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-5)
 ## [Day 6: Var, Let & Const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6--var-let--const)
+* [var](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#var)
+* [let](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#let)
+* [const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#const)
+* [differnce & common table](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#difference--common-table)
+
+
 ## [Day 7: Variables & Datatypes](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
+* [variables](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#variables)
+* [variable naming rules](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#variable-naming-rules)
+
+
 ## [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
+* [Javscript vs JSON](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-vs-json)
+* [Number](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#number)
+* [BigInteger](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#biginteger)
+* [isNaN vs Number.isNaN](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#isnan-vs-numberisnan)
+* [local-encode](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#local-encode--currency)
+
+
 ## [Day 9: String in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
+* [Strings in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
+* [Working with ``(backticks)](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#working-with-backticks)
+* 
+
+
 ## [Day 10: More on Strings](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-10-more-on-binding--strings)
 * [Binding](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#binding)
 * [String formatting methods](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#string-formating-methods)
