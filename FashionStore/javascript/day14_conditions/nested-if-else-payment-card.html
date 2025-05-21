@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function validateCard(){
+            const card = document.getElementById("card");
+            const msg = document.getElementById("msg");
+            if (card.value==='999888777') {  
+                const cvv = document.getElementById("cvv");
+
+                if(cvv.value === '333'){
+                    const expiry = document.getElementById("expiry");
+                    
+                    if (expiry.value === '2025') {
+                           msg.innerHTML = 'Valid Data';
+                           msg.style.color='green';
+                           msg.style.fontFamily ='Algerian';
+
+                    } else {
+                        msg.innerHTML = 'Invalid Expiry Date';
+                    }  
+
+                }else{
+                    msg.innerHTML = 'Invalid CVV Info';
+                }
+            } else {
+                msg.innerHTML = 'Invalid Card Details';
+            }
+        }
+    </script>
+</head>
+<body>
+    <fieldset style="width:150px">
+        <legend>Payment Details</legend>
+        <dl>
+            <dt>CardNumber</dt>
+            <dd>
+                <input type="text" name="" id="card"  maxlength="16">
+            </dd>
+
+            <div id="cvvContainer">
+                <dt>CVV</dt>
+                <dd>
+                    <input type="text" name="" id="cvv"  size="4">
+                </dd>
+            </div>
+
+            <div id="expiryContainer">
+                <dt>Expiry</dt>
+                <dd>
+                    <select name="" id="expiry">
+                        <option value="Choose Expiry">Choose Expiry</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </dd>
+            </div>
+        </dl>
+
+        <div id="payContainer">
+            <button id="btnPay" onclick="validateCard()">Pay</button>
+        </div>
+
+        <p id='msg' style="color: red; align-items: center;"></p>
+    </fieldset>
+</body>
+</html>
