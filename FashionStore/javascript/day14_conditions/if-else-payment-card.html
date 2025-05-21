@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        function  validateCard() {
+           const card = document.getElementById("card");
+           if (card.value==='444777666') {
+               const container = document.getElementById("cvvContainer")
+               const cvv = document.getElementById("cvv");
+                container.style.display = 'block';
+                cvv.disabled  = false;
+           }else{
+                alert("Invalid Card Number");
+           }
+        }
+
+        function validateCvv(){
+            const cvv = document.getElementById("cvv");
+            if (cvv.value==='333') {
+                const expiry = document.getElementById("expiry");
+                const expriyContainer = document.getElementById("expiryContainer");
+                expriyContainer.style.display = 'block';
+                expiry.disabled = false;
+            }else{
+                alert("Invalid Cvv");
+            }
+        }
+
+        function validateYear() {
+           const expiry =  document.getElementById("expiry");
+           if (expiry.value==='2025') {
+               const btn = document.getElementById("btnPay");
+               const payOption = document.getElementById("payContainer");
+                btn.disabled = false;
+                payOption.style.display ='block';
+           }else{
+                alert("Invalid Expiry Option");
+           }
+        }
+
+    </script>
+</head>
+<body>
+    <fieldset style="width:150px">
+        <legend>Payment Details</legend>
+        <dl>
+            <dt>CardNumber</dt>
+            <dd>
+                <input type="text" name="" id="card" onblur="validateCard()" maxlength="16">
+            </dd>
+
+            <div id="cvvContainer" style="display: none;">
+                <dt>CVV</dt>
+                <dd>
+                    <input type="text" name="" id="cvv" disabled size="4" onblur="validateCvv()">
+                </dd>
+            </div>
+
+            <div id="expiryContainer" style="display: none;">
+                <dt>Expiry</dt>
+                <dd>
+                    <select name="" id="expiry" disabled onchange="validateYear()">
+                        <option value="Choose Expiry">Choose Expiry</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </dd>
+            </div>
+        </dl>
+
+        <div id="payContainer" style="display: none;">
+            <button id="btnPay" disabled>Pay</button>
+        </div>
+    </fieldset>
+</body>
+</html>
