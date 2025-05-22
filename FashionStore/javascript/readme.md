@@ -1040,6 +1040,7 @@ console.log(boolType, typeof(boolType)); //true 'boolean'
 
 #### Operators:
 1. Arithmetic Operator : `+`
+    * all other arithmetic operators(`-`, `/`, `*`, `%`) are mainly meant to work with number type only.   
 2. Comparision Operator : `==` | `===`
 3. Ternary Operator : `condition ? true : false`
 
@@ -1106,6 +1107,168 @@ if(condition1)
 **eg#:**
 [nested-if-else.html](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day14_conditions/nested-if-else-payment-card.html)
 ![image](https://github.com/user-attachments/assets/063c27b0-8891-4ae7-aae7-26b3dbd281d6)
+
+
+## Day 15:
+
+#### Logical Operator
+1. `&&`
+2. `||`
+3. `|`
+
+![image](https://github.com/user-attachments/assets/72db5152-58c8-4d3b-a7c5-9ffc2ea0b815)
+
+
+### Conditions with falsy cases:
+1. 0
+2. ""
+3. null
+4. undefined
+5. NaN
+6. -0
+7. 0n
+
+### Condition with truthy cases:
+1. any positive| negative number
+2. " " | "sachin"
+3. [] | P{
+4. function(){}
+
+
+if(NaN) console.log("Hi")
+undefined
+if("23") console.log("Hi")
+VM557:1 Hi
+undefined
+if("") console.log("Hi")
+undefined
+if([]) console.log("Hi")
+VM579:1 Hi
+undefined
+if(function(){}) console.log("Hi")
+VM605:1 Hi
+undefined
+if(null) console.log("Hi")
+undefined
+if(undefined) console.log("Hi")
+undefined
+if(-8) console.log("Hi")
+VM774:1 Hi
+undefined
+
+
+if(NaN) console.log("Hi")
+undefined
+if("23") console.log("Hi")
+VM557:1 Hi
+undefined
+if("") console.log("Hi")
+undefined
+if([]) console.log("Hi")
+VM579:1 Hi
+undefined
+if(function(){}) console.log("Hi")
+VM605:1 Hi
+undefined
+if(null) console.log("Hi")
+undefined
+if(undefined) console.log("Hi")
+undefined
+if(-8) console.log("Hi")
+VM774:1 Hi
+undefined
+console.log(1+undefined-'sachin'+null)
+VM947:1 NaN
+undefined
+console.log(undefined-'sachin')
+VM965:1 NaN
+undefined
+console.log(1+'sachin'+null)
+VM976:1 1sachinnull
+undefined
+console.log(1+null)
+VM990:1 1
+undefined
+console.log(true/false)
+VM1089:1 Infinity
+undefined
+console.log(type of(true/false))
+VM1164:1 Uncaught SyntaxError: missing ) after argument listUnderstand this error
+console.log(typeof (true/false))
+VM1179:1 number
+undefined
+2if-else-amazon-login.html:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error
+console.log([] + [false])
+VM1223:1 false
+undefined
+console.log([true] + [false])
+VM1235:1 truefalse
+undefined
+console.log([] + [])
+VM1248:1 
+undefined
+console.log([2,3] + [4,5])
+VM1303:1 2,34,5
+undefined
+console.log([2,3] - [4,5])
+VM1314:1 NaN
+undefined
+console.log("3"*"5"-4+null)
+VM1381:1 11
+undefined
+if(NaN===NaN) console.log(true)
+else{
+    console.log(false)
+}
+VM1627:3 false
+undefined
+if(NaN==NaN) console.log(true)
+else{
+    console.log(false)
+}
+VM1634:3 false
+undefined
+if(NaN===NaN){
+    console.log(true);
+}
+else{
+    console.log(false)
+}
+VM1686:5 false
+undefined
+if(Infinity===Infinity){
+    console.log(true);
+}
+else{
+    console.log(false)
+}
+VM1708:2 true
+undefined
+if(NaN===undefined){
+    console.log(true);
+}
+else{
+    console.log(false)
+}
+VM1727:5 false
+undefined
+if(null == undefined){
+    console.log(true);
+}
+else{
+    console.log(false)
+}
+VM1752:2 true
+undefined
+if(null === undefined){
+    console.log(true);
+}
+else{
+    console.log(false)
+}
+VM1763:5 false
+undefined
+
 
 
 
