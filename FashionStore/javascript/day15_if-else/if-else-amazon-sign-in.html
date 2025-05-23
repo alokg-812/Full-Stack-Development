@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="userContainer" class="m-5 p-3 border border-2 w-25">
+        <p class="h2">Sign In</p>
+        <dl>
+            <dt>Enter Email | Phone No</dt>
+            <dd>
+                <input class="w-100 shadow p-1 mt-4 mb-3 bg-white rounded" type="text" name="" id="userId">
+            </dd>
+            <dd>
+                <div id="msg"></div>
+            </dd>
+        </dl>
+        <button type="submit" class="btn btn-warning w-100 " onclick="verifyData()">Continue</button>
+    </div>
+
+    
+    <div id="pwdContainer" style="display: none;" class="m-5 p-3 border border-2 w-25">
+        <p class="h2">Sign In</p>
+        <dl>
+            <dt>Password</dt>
+            <dd>
+                <input type="text" name="" id="emailPwd">
+            </dd>
+            <dd>
+                <div id="errorPwd"></div>
+            </dd>
+        </dl>
+        <button type="submit" class="btn btn-warning " onclick="verifyPwd()">Login</button>
+    </div>
+
+    <div id="otpContainer" style="display: none;" class="m-5 p-3 border border-2 w-25">
+        <p class="h2">Sign In</p>
+        <dl>
+            <dt>Otp sent!</dt>
+            <dd>
+                <input class="w-100 shadow p-1 mt-4 mb-3 bg-white rounded" type="text" name="" id="userOtp">
+            </dd>
+            <dd>
+                <div id="Otp-error"></div>
+            </dd>
+        </dl>
+        <button type="submit" class="btn btn-warning w-100 " onclick="verifyOtp()">Login</button>
+    </div>
+
+    <script type="text/javascript">
+        function verifyData(){
+            const data = document.getElementById("userId");
+            const userContainer = document.getElementById("userContainer");
+            const pwdContainer = document.getElementById("pwdContainer");
+            const otpContainer = document.getElementById("otpContainer");
+            const msg = document.getElementById("msg");
+            
+            if(data.value === 'sachin@gmail.com'){
+                // disable user id container
+                userContainer.style.display = 'none';
+                // enable Password container
+                pwdContainer.style.display = 'block';
+            }
+            else if(data.value === '9876543210'){
+                userContainer.style.display = 'none';
+                otpContainer.style.display = 'block';
+                
+            }
+            else if(data.value == '/^\d{10}$/'){
+                msg.textContent = `${data.value} is not a registered phone number`;
+            }else{
+                msg.textContent = `${data.value} is not a registered Email ID`;
+            }
+        }
+        function verifyPwd(){
+            const data = document.getElementById("userId");
+            const pwd = document.getElementById("emailPwd");
+            const errorPwd = document.getElementById("errorPwd");
+
+            if(pwd.value == 'sachinramesh'){
+                const msg = `Login Successful, Mail sent to the registered ${data.value}`;
+                document.write(`<h3>${msg}</h3>`);
+            }
+            else{
+                errorPwd.textContent = 'Invalid Password';    
+            }
+
+        }
+        function verifyOtp(){
+            const otp = document.getElementById("userOtp");
+            const errorOtp = document.getElementById("errorOtp");
+            const msg = document.getElementById("Otp-error");
+            if(otp.value == '1234'){
+                msg.textContent = `OTP verified, Login Successful`;
+            }
+            else{
+                msg.textContent = 'Invalid OTP';
+            }
+        }
+    </script>
+</body>
+</html>
