@@ -78,6 +78,7 @@
 ## [Day 15: Logical Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-15)
 * [Logical Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#logical-operator)
 * [Conditions with falsy cases](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#conditions-with-falsy-cases)
+* [Conditions with truthy cases](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#condition-with-truthy-cases)
 
 
 
