@@ -76,7 +76,7 @@
      * [nested-else-if](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#3-syntax-of-nested-if-else)
  
 ## [Day 15: Logical Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-15)
-
+* [Logical Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#logical-operator)
 
 
 
