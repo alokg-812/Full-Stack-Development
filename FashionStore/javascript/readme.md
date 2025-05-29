@@ -1143,6 +1143,11 @@ if(condition1)
 3. [] | P{
 4. function(){}
 
+### Difference between null and undefined?
+**Ans:** 
+`null`: runtime value. <br>
+`undefined`: compile time value(used by js engine)
+
 ```js
 if(NaN) console.log("Hi")
 undefined
@@ -1279,6 +1284,57 @@ VM1763:5 false
 undefined
 
 ```
+
+## Day 16
+
+### Javascript Input Techniques
+1. `prompt()`: string| null
+2. 
+
+### Javascript Output Techniques
+1. `alert(string)` : (ok)
+2. `confirm(string)` : (boolean)
+3. `document.write(string|markup`
+4. `innerHTML`
+5. `textContent`
+6. `outerText vs innerText`
+
+
+### Javascript targeting the elements
+1. usin
+
+
+
+### Switch in Javascript:
+- If we want certain set of statements to be executed, where the conidtion is already predefined then we need to go for `switch`.
+
+**Ex:**
+```js
+let input = prompt("ENter the number b/w 1 to 4", "[1,2,3,4]");
+switch (input){
+    case '1': console.log("PBKS");                
+	break;
+    case '2': console.log("RCB");
+	break;
+    case '3': console.log("GT");
+	break;
+    case '4': console.log("MI");
+	break;
+    default: console.log("Better luck next time");
+	break;
+}
+```
+#### Case Studies:
+> Note:
+> 1. type will be comapred in `strict manner` with respect to label. <br>
+>    `(type === label)` <br>
+>    Ex: [example1](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day16_switch/example1.html) <br>
+>    Ex: [example2](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day16_switch/example2.html)
+> 3. 
+
+
+
+
 
 
 
