@@ -1143,7 +1143,7 @@ if(condition1)
 3. [] | P{
 4. function(){}
 
-
+```js
 if(NaN) console.log("Hi")
 undefined
 if("23") console.log("Hi")
@@ -1278,7 +1278,7 @@ else{
 VM1763:5 false
 undefined
 
-
+```
 
 
 
