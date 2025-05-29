@@ -1330,7 +1330,10 @@ switch (input){
 >    `(type === label)` <br>
 >    Ex: [example1](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day16_switch/example1.html) <br>
 >    Ex: [example2](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day16_switch/example2.html)
-> 3. 
+> 2. `default` can be placed anywhere in the switch hierarchy.
+> 3. default gets executed when none of the labels are matching with the input type.
+> 4. while executing any label | default, if we don't attach break to that block, then `fall through` would happen.
+> 5. for one input, if we want multiple cases to execute then we use the mechanism of fall through.
 
 
 
