@@ -1334,6 +1334,9 @@ switch (input){
 > 3. default gets executed when none of the labels are matching with the input type.
 > 4. while executing any label | default, if we don't attach break to that block, then `fall through` would happen.
 > 5. for one input, if we want multiple cases to execute then we use the mechanism of fall through.
+> 6. duplicate labels are allowed, the input matches with the first label matched.
+> 7. default at max can only be one time in the switch statement.
+> 8. switch argument type can be of any type like `boolean| string| number| object| function, ...`
 
 
 
