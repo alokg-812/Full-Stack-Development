@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Mobile</title>
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div class="m-3 p-4 border border-2 border-black rounded-3 w-25">
+        <div class="h3">Verify Mobile</div>
+        <dl>
+            <dt>Select Your Country</dt>
+            <dd>
+                <img src="" alt="" height="60" width="60" id="flag" class="border rounded-circle">
+            </dd>
+            <dt>
+            </dt>
+            <dd>
+                <select name="" id="country-list" class="form-select w-100" onchange="countrySelect()">
+                    <option>Select Country</option>
+                    <option value="in">INDIA</option>
+                    <option value="usa">UNITED STATES OF AMERICA</option>
+                    <option value="uk">UNITED KINGDOM</option>
+                    <option value="sl">SWITZERLAND</option>
+                </select>
+            </dd>
+            <dt>Your Mobile</dt>
+            <dd><input type="text" name="" id="inputMobile" class="w-100"></dd>
+        </dl>
+        <button type="submit" class="btn btn-primary w-100" onclick="verifyMobile()">Verify</button>
+        <p class="text-center text-danger h2" id="error"></p>
+    </div>
+</body>
+<script type="text/javascript">
+    let regEx;
+    let data = '';
+    function countrySelect(){
+        //get the user choosen country detail
+        const selectedCountry = document.getElementById("country-list").value;
+        const selectedFlag =  document.getElementById("flag");
+        const mobile = document.getElementById("inputMobile");
+        switch(selectedCountry){
+            case "in":
+                selectedFlag.src = "../../images/indianFlag.png";
+                mobile.placeholder = "+91 and 10 digits";
+                regex = /^\+91\d{10}$/;
+                break;
+            case "uk":
+                selectedFlag.src = "../../images/ukFlag.png";
+                mobile.placeholder = "071|075|077|079 and 10 digits";
+                regex = /^(071|075|077|079)\d{10}$/;
+                break;
+            case "usa":
+                selectedFlag.src = "../../images/usaFlag.png";
+                mobile.placeholder = "+1 and 10 digits";
+                regex = /^\+1\d{10}$/;
+                break;
+            case "sl":
+                selectedFlag.src = "../../images/switzerlandFlag.png";
+                mobile.placeholder = "+41 and 10 digits";
+                regex = /^\+41\d{10}$/;
+                break;
+            default:
+                selectedFlag.src = "";
+                selectedFlag.alt = "N|A";
+                break;
+        }
+    }
+    function verifyMobile(){
+        const mobile = document.getElementById("inputMobile").value;
+        const msg = document.getElementById("error");
+        if(regex.test(mobile)){
+            msg.textContent = 'Mobile Numebr Verified Successfully';
+            msg.className='text-success h3 text-center'
+            msg.style.fontWeight = 'bold';
+        } else{
+            msg.textContent = `Invalid Mobile Number: ${data}`;
+        }
+        
+    }
+</script>
+</html>
