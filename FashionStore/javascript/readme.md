@@ -80,7 +80,12 @@
 * [Conditions with falsy cases](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#conditions-with-falsy-cases)
 * [Conditions with truthy cases](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#condition-with-truthy-cases)
 
-
+## [Day 16: Switch](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-16--switch)
+* [Javascript Input Technique](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-input-techniques)
+* [Javascript Output Technique](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-output-techniques)
+* [Javascript Targetting Elements](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-targeting-the-elements)
+* [Switch in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#switch-in-javascript)
+* [Case studies of switch](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#case-studies)
 
 
 
