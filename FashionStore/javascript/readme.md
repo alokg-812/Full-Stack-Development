@@ -1356,8 +1356,7 @@ switch (input){
 3. `Mutable`: changes made would be reflected in the same memory.
 **Ex:** Aray, Map, Object, function(){}
 
-
-
+---
 ### Array
 - It is used to store multiple value under single variable.
 - Memory allocation would be `continous` and data would be accessed via `index`.
@@ -1368,10 +1367,21 @@ switch (input){
 - -> ``let|var|const variable = new Array(size); //Dynamic array``
 - -> ``let arr = [value1, value2, value3, ...]; //Static array``
 
+**Ex:**
+```js
+let arr1 = [10, 'sachin', 53.4, true]; 
+```
+**Memory Allocation:** <br>
+![image](https://github.com/user-attachments/assets/c9f15d21-f449-4455-beca-71ce9024b795)
 
 
-
-
+#### IIFE Immediate Invoking Function Expression
+```js
+let arr = [10, 'sachin', 53.4, true, ['MI', 'IND'], function(){console.log("God of Cricket")}];
+// console.log(arr); //[Function (anonymous)]
+console.log(arr[5]); //God of Cricket
+arr[5](); //IIFE Immediate Invoking Function Expression
+```
 
 
 
