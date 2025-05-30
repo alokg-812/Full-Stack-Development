@@ -1349,7 +1349,7 @@ switch (input){
 
 ---
 
-## Day 17 Non Primitive Types
+# Day 17 Non Primitive Types
 
 1. Mmeory would be allocated in `heap`.
 2. Structure and range is `not defined`.
@@ -1375,7 +1375,7 @@ let arr1 = [10, 'sachin', 53.4, true];
 ![image](https://github.com/user-attachments/assets/c9f15d21-f449-4455-beca-71ce9024b795)
 
 
-#### IIFE Immediate Invoking Function Expression
+#### IIFE: Immediate Invoking Function Expression
 ```js
 let arr = [10, 'sachin', 53.4, true, ['MI', 'IND'], function(){console.log("God of Cricket")}];
 // console.log(arr); //[Function (anonymous)]
@@ -1383,8 +1383,14 @@ console.log(arr[5]); //God of Cricket
 arr[5](); //IIFE Immediate Invoking Function Expression
 ```
 
+1. `traditional for loop`
+[for-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-loop.html)
 
+2. `for...in loop`
+[for-in-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-in-loop.html)
 
+3. `for...of loop`
+[for-of-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-of-loop.html)
 
 
 
