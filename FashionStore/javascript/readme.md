@@ -1423,8 +1423,8 @@ for(const element of object){
 
 ---
 
-### Array Destructuring
-=> Array destructuring is a syntax that lets you unpack values form arrays into individual variables in a clean and readable way.
+### Destructuring
+=> `Destructuring` is a syntax that lets you unpack values form `arrays|objects` into individual variables in a clean and readable way.
 
 **eg#1: Without Destructuring technique**
 ```js
@@ -1437,7 +1437,7 @@ for(const element of object){
         console.log(userName, userAge, userAvg, isMarried);
 ```
 
-**eg#2: Using destructuring technique**
+**eg#2: Using array destructuring technique**
 ```js
 	let arr = ['sachin', 51, 53.4, true];
         let userName = arr[0];
@@ -1459,7 +1459,43 @@ for(const element of object){
         console.log(name, age, avg, married);
 ```
 
+**eg#4: With Object Destructuring**
+```js
+	let user={
+            userName:"sachin",
+            userAge:51,
+            userAvg:54.4,
+            userMail : 'sachin@ipl.com'
+        };
+        console.log("Using object destructuring");
+        const{userName, userAge} = user;
+        console.log(userName, userAge);
+```
 
+**eg#5: Using our own keys for Object Destructuring**
+```js
+	let user={
+            userName:"sachin",
+            userAge:51,
+            userAvg:54.4,
+            userMail : 'sachin@ipl.com'
+        };
 
+        console.log("Object destructuring using our own keys");
+        const {userAvg:avg, userMail:mail} = user;
+        console.log(avg, mail);
+```
 
+**eg#6: Object Destructuring but keu is not found while unpacking**
+```js
+	let user={
+            userName:"sachin",
+            userAge:51,
+            userAvg:54.4,
+            userMail : 'sachin@ipl.com'
+        };
+	console.log("Using object destructuring with unknown key");
+        const{userName, salary='Not Disclosed'} = user;
+        console.log(userName, salary);
+```
 
