@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+      let arr1 = [10, 'sachin', 53.4, true];       
+      //using for..in loop
+      console.log("Reading from for..in loop");
+      for (const key in arr1) {
+          console.log(`[${key}] ${typeof key} : ${arr1[key]} ${typeof arr1[key]}`);
+      }
+      /* Output:
+            Reading from for..in loop
+            [0] string : 10 number
+            [1] string : sachin string
+            [2] string : 53.4 number
+            [3] string : true boolean
+      */
+    </script>
+</body>
+</html>
