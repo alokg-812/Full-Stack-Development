@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let user={
+            userName:"sachin",
+            userAge:51,
+            userAvg:54.4,
+            userMail : 'sachin@ipl.com'
+        };
+        console.log("Using object destructuring");
+        const{userName, userAge} = user;
+        console.log(userName, userAge);
+
+        console.log("Object destructuring using our own keys");
+        const {userAvg:avg, userMail:mail} = user;
+        console.log(avg, mail);
+        
+        console.log("Using object destructuring with unknown key");
+        // const{userName, salary='Not Disclosed'} = user;
+        console.log(userName, salary);
+        
+
+        
+    </script>
+</body>
+</html>
