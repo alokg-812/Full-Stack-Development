@@ -1433,17 +1433,12 @@ for(const element of object){
         let userAge = arr[1];
         let userAvg = arr[2];
         let isMarried = arr[3];
-        console.log(arr);
         console.log(userName, userAge, userAvg, isMarried);
 ```
 
 **eg#2: Using array destructuring technique**
 ```js
 	let arr = ['sachin', 51, 53.4, true];
-        let userName = arr[0];
-        let userAge = arr[1];
-        let userAvg = arr[2];
-        let isMarried = arr[3];
         const[myName, myAge, myAvg, maritalStatus] = arr;
         console.log(myName, myAge, myAvg, maritalStatus);
 ```
@@ -1458,6 +1453,8 @@ for(const element of object){
         const[name, age, avg, married] = presentData();
         console.log(name, age, avg, married);
 ```
+![image](https://github.com/user-attachments/assets/f50b5044-ef8e-4e5a-93d3-e0def190685e)
+
 
 **eg#4: With Object Destructuring**
 ```js
@@ -1471,6 +1468,8 @@ for(const element of object){
         const{userName, userAge} = user;
         console.log(userName, userAge);
 ```
+![image](https://github.com/user-attachments/assets/2fd145ae-e35d-44c6-943d-4b962777852b)
+
 
 **eg#5: Using our own keys for Object Destructuring**
 ```js
@@ -1485,6 +1484,8 @@ for(const element of object){
         const {userAvg:avg, userMail:mail} = user;
         console.log(avg, mail);
 ```
+![image](https://github.com/user-attachments/assets/9297f67d-6af1-4e2e-97ec-4dc954732c1b)
+
 
 **eg#6: Object Destructuring but keu is not found while unpacking**
 ```js
@@ -1498,4 +1499,5 @@ for(const element of object){
         const{userName, salary='Not Disclosed'} = user;
         console.log(userName, salary);
 ```
+![image](https://github.com/user-attachments/assets/baef3be4-2376-4add-b486-0b1c433e1f1a)
 
