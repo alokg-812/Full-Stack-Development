@@ -1349,7 +1349,32 @@ switch (input){
 
 ---
 
-## Day 17
+## Day 17 Non Primitive Types
+
+1. Mmeory would be allocated in `heap`.
+2. Structure and range is `not defined`.
+3. `Mutable`: changes made would be reflected in the same memory.
+**Ex:** Aray, Map, Object, function(){}
+
+
+
+### Array
+- It is used to store multiple value under single variable.
+- Memory allocation would be `continous` and data would be accessed via `index`.
+
+**Creation Phase:**
+- Java creation -> ``datatype variable[] = new datatype[size];``
+- Javascript:
+- -> ``let|var|const variable = new Array(size); //Dynamic array``
+- -> ``let arr = [value1, value2, value3, ...]; //Static array``
+
+
+
+
+
+
+
+
 
 
 
