@@ -922,6 +922,7 @@ console.log(str.slice(false, undefined));	//sachinrameshtendulkar
 9. `substring([number],[number])` : string
 10. `trim()` : string
 11. `split()` : string[] | null
+12. `match()` : string
 
 
 ### Split Method : 
@@ -1285,11 +1286,11 @@ undefined
 
 ```
 
-## Day 16
+## Day 16 | Switch
 
 ### Javascript Input Techniques
 1. `prompt()`: string| null
-2. 
+2. `queryString() | form elements`: string
 
 ### Javascript Output Techniques
 1. `alert(string)` : (ok)
@@ -1301,7 +1302,10 @@ undefined
 
 
 ### Javascript targeting the elements
-1. usin
+1. `using id`: HTMLElements
+2. `using name, classname, tagname`: HtmlCollection
+3. `querySelector`: HtmlElement
+4. `querySelectorAll`: NodeList
 
 
 
@@ -1338,7 +1342,9 @@ switch (input){
 > 7. default at max can only be one time in the switch statement.
 > 8. switch argument type can be of any type like `boolean| string| number| object| function, ...`
 
+---
 
+## Day 17
 
 
 
