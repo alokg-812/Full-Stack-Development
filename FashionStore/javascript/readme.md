@@ -1383,14 +1383,48 @@ console.log(arr[5]); //God of Cricket
 arr[5](); //IIFE Immediate Invoking Function Expression
 ```
 
-1. `traditional for loop`
+#### Key points for arrays:
+1. Inside an array, we can keep any type of elements [primitive and non primitive]
+2. Indexing would happen internally in the form of `string` as the index would be `Key:value` pair data.
+3. Arrays can be created in 2 ways:
+	a. static <br>
+   	b. dynamic <br>
+4. Different ways of reading elements from an array:
+   * using for loop
+   * using property of the arra[key|index]
+   * directly reading the value[element] from an array
+
+i. `traditional for loop`
+**Syntax:**
+```js
+for(initialization : condition : increament/decreament){
+	arr[index];    //reading the elements using index	
+}
+```		
 [for-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-loop.html)
 
-2. `for...in loop`
+ii. `for...in loop`
+**Syntax:**
+```js
+for(const property in object){
+	arr[index];    //reading the elements using keys	
+}
+```
 [for-in-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-in-loop.html)
 
-3. `for...of loop`
+iii. `for...of loop`
+**Syntax:**
+```js
+for(const element of object){
+	console.log(element);    //reading the elements using index	
+}
+```
 [for-of-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-of-loop.html)
+
+---
+
+
+
 
 
 
