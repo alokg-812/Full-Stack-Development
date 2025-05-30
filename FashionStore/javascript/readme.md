@@ -1423,10 +1423,41 @@ for(const element of object){
 
 ---
 
+### Array Destructuring
+=> Array destructuring is a syntax that lets you unpack values form arrays into individual variables in a clean and readable way.
 
+**eg#1: Without Destructuring technique**
+```js
+	let arr = ['sachin', 51, 53.4, true];
+	let userName = arr[0];
+        let userAge = arr[1];
+        let userAvg = arr[2];
+        let isMarried = arr[3];
+        console.log(arr);
+        console.log(userName, userAge, userAvg, isMarried);
+```
 
+**eg#2: Using destructuring technique**
+```js
+	let arr = ['sachin', 51, 53.4, true];
+        let userName = arr[0];
+        let userAge = arr[1];
+        let userAvg = arr[2];
+        let isMarried = arr[3];
+        const[myName, myAge, myAvg, maritalStatus] = arr;
+        console.log(myName, myAge, myAvg, maritalStatus);
+```
 
+**eg#3: Function returning an Array**
+```js
+	function presentData(){
+            return ['kohli', 38, 47.4, true];
+        }
 
+	//destructuring the array to unpack the values
+        const[name, age, avg, married] = presentData();
+        console.log(name, age, avg, married);
+```
 
 
 
