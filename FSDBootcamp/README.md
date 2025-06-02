@@ -1,104 +1,60 @@
-# FSD bootcamp day1
+# ✅ **FSD Bootcamp – Day 1 Summary**
 
-## Learning Outcome
-* Understand the client and server program
-* Visualize the website data fetching
+## 🎯 **Learning Outcomes**
 
-
-### Accessing the files:
-* **File Explorer:** File explorer is a window/interface that communicates with the OS to serve us with the files available in the system.
-* **Terminal:** cd location -> open file
-* **Web Browsers:**
-    * Browser helps us access file, directly, connect remotly to some servers.
-    * Browser is a `parser | load` for HTML files.
+By the end of the session, you should be able to:
+* Understand how **client and server programs** interact.
+* Visualize how **websites fetch data** using network communication.
 
 
-### Transferring the files:
-* **Use external device:** Here, the operating system allows the permission
-* **For multiple devices:** There has to be some external device that helps other devices to connect with it through wires.
+## 📂 **Accessing Files on a System**
 
+### 1. **File Explorer**
 
-* `packets` are form of data that is been transferred.
-* L1 and l2 have some `protocols`(terms on which both systems agree to share some particular file)
-(`TCP | IP` are primary types of protocols)
+* A GUI tool in operating systems (e.g., Windows Explorer) used to **navigate and manage files**.
+* It **interacts with the OS kernel** to list, open, or move files on the system.
 
-🔁 Difference between 127.0.0.1 and localhost?
-They are almost the same:
-- 127.0.0.1 is the IP address
-- localhost is the hostname that maps to 127.0.0.1
+### 2. **Terminal**
 
-You can use either:
-- http://127.0.0.1:3000
-- http://localhost:3000
+* A command-line interface (CLI) used to navigate and access files.
+* Example:
 
+  ```bash
+  cd Desktop/myProject  
+  code index.html
+  ```
 
+### 3. **Web Browser**
 
-Default IP adress - Three systems, three IP address(10.0.0.1, 10.0.0.2, 10.0.0.3), i asked for a random IP which is not there, then there is a default IP address that lies in the same range of the device associated with it 
+* A tool that helps:
+  * **Access local HTML files**
+  * interpret different files and can open up for us
+  * **Connect to remote servers** over the internet
 
-The process:
-The diagram illustrates a network communication scenario involving a **Router**, a **Client**, a **Server**, and a **Program**. Here's a detailed explanation of each component and its role in the flow:
+* Web browsers work as **parsers and loaders**:
+  * They parse HTML, CSS, JS
+  * Load content (text, images, APIs) in a human-friendly way
 
----
+## 🔁 **Transferring Files Across Devices**
 
-### 🔵 **Router**
+### 1. **Using External Devices**
+* Files can be transferred via **pen drives, hard disks, etc.**
+* The OS handles **permissions** to read/write to these devices.
 
-* Acts as the central communication hub.
-* It **switches/forwards packets** to connected devices (Client, Server, and another device L3).
+### 2. **Using Networks (Multiple Devices)**
+* A **router or switch** is used to connect multiple systems.
+* Devices exchange files via **network protocols** like:
 
----
+  * **TCP/IP (Transmission Control Protocol / Internet Protocol)**
 
-### 💻 **Client (L1)**
+* **A better solution?:**
+  - Our computer has ethernet port, and we can connect devices togetehr using ethernet cable. Once we connect the devices we can transfer file from one machine to another. This transfer can take place using shared folder or SCP().
+- In place of connecting the devices directly one to one using ethernet cable, we can connect many such devices using a `router/wifi`. Now we can connect to any machine connected to the router.
+- This is called as the `LAN(Local Area Network)`.
+- Multiple LAN combination leads to the `WAN(Wide Area Network)`.
+- The largest existing WAN is `Internet`. 
 
-* Identified by **IP1 (Default IP)**.
-* Has a **Program bound to it** (likely a local service or listener running on L1).
-* Communicates with the router.
-* **Receives a program from the Server (L2)** via the router, which is displayed in the **Client's Chrome browser**.
-
----
-
-### 🖥️ **Server (L2)**
-
-* Also connected to the router.
-* Sends a **Program of IPxp** (another IP address or resource) to the client.
-* The implication is that the server is hosting or transmitting a program/resource which is accessed by the client through the network.
-
----
-
-### 🖥️ **Device L3**
-
-* Another device connected to the router, but not directly involved in the current interaction.
-* May be another client or resource in the network.
-
----
-
-### 🧩 **Program**
-
-* It is **bound** to the client (L1), meaning it's running or assigned to work with L1.
-* Possibly a server or application that L1 uses or interacts with.
-
----
-
-### 🔄 **Overall Flow**
-
-1. The **Router** connects all devices (L1, L2, L3).
-2. The **Client (L1)** runs or binds to a **Program**.
-3. **Server (L2)** sends a **program/resource of IPxp** to the **Client**, which is viewed in **Chrome**.
-4. L1 receives and possibly runs or displays this resource.
-5. L3 is present but unused in this specific transaction.
-
----
-
-### 📝 Key Points
-
-* **"IP1"** is the client’s default IP.
-* **"IPxp"** may refer to another IP (maybe the server’s or program source's IP).
-* The **Program from IPxp is loaded/displayed** in Client’s Chrome browser, possibly through a web service or HTTP request.
-
-Let me know if you'd like help drawing a packet flow or understanding how this would work technically (e.g., with ports, HTTP, etc.).
-
-
-
-
+[Detailed Explianation](https://github.com/alokg-812/Full-Stack-Development/blob/main/FSDBootcamp/Day1/client-server-network.md)
 
 
 
