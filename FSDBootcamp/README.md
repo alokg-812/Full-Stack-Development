@@ -57,7 +57,10 @@ By the end of the session, you should be able to:
 [Detailed Explianation](https://github.com/alokg-812/Full-Stack-Development/blob/main/FSDBootcamp/Day1/client-server-network.md)
 
 
-
-
+### Defer vs async
+**Defer:**
+- The script is downloaded and parsed in the background without blocking the browser's parsing of the rest of the page.
+- The script's execution is delayed until the page's parsing is finished.
+- Scripts with defer are executed in the order they appear in the HTML document. 
 
 
