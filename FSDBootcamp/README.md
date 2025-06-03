@@ -63,4 +63,24 @@ By the end of the session, you should be able to:
 - The script's execution is delayed until the page's parsing is finished.
 - Scripts with defer are executed in the order they appear in the HTML document. 
 
+---
+
+
+# Day 2:
+
+### Learning Outcomes:
+- Javascript
+
+### Javscript:
+-
+
+
+
+
+
+
+
+
+
+
 
