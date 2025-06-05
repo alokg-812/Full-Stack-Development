@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ol>
+
+    </ol>
+
+
+    <script type="text/javascript">
+       
+        let arr = [1,2,3,4];
+        
+        let newArray =arr.map(function(value){
+            //every element multiply by 2
+            return value * 2 ;
+        });
+        console.log(arr);
+        console.log(typeof arr);
+
+        console.log("*******************");
+        console.log(newArray);
+        console.log(typeof newArray);
+
+
+        let apiOutput = ['RCB','Punjab','MI','GT'];
+
+        let uiOutput = apiOutput.map(function(value,index){
+            return `${index+1}. ${value}`;
+        })
+        
+        console.log(apiOutput);
+        console.log(uiOutput);
+
+
+        let userApi = [
+            {
+                userName : 'sachin',
+                age  : 51,
+                gender: 'M'
+            },
+            {
+                userName : 'kohli',
+                age  : 38,
+                gender: 'M'
+            }
+        ];
+        console.log(userApi);
+
+        let userUiOutput = userApi.map(function(user){
+            return user.userName;
+        })
+        console.log(userUiOutput);
+
+
+        userUiOutput.map(function(userName){
+            let li= document.createElement("li");
+            li.textContent = userName;
+            document.querySelector("ol").appendChild(li);
+        });
+
+
+    </script>
+</body>
+</html>
