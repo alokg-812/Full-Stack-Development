@@ -1530,6 +1530,12 @@ for(const element of object){
 - `find()` : It returns the first occurance of the elements that matches condition
 - `filter()` : It returns the elements that match specified condition
 - `slice()` : It returns elements b/w specified index
+- `unshift()`: It inserts element at front end.
+- `shift()` : It deletes element at front end.
+- `push()` : It inserts element at the end.
+- `pop()` : It deletes element at the end.
+- `splice()` : It inserts/deletes element at an specified position.
+- `sort()` : 
 
 **eg#1.**
 ```js
@@ -1600,4 +1606,73 @@ array.forEach((element, index, array) => {  // arrow functions
 **eg#1:** <br>
 [javascript code](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/day18_more_on_arrays/forEach.js) <br>
 ![image](https://github.com/user-attachments/assets/2092cf91-0be0-44b5-bfe3-f995b9914fe1)
+
+# Day 19
+
+## Rest Operator in javascript
+
+**Ques** What is the Rest Operator (...)? <br>
+**Ans.** 
+- The rest operator is a syntax in JavaScript written as `three dots ...` used to collect multiple elements into a single array.
+- It’s like saying: “Gather all the remaining elements into this variable.”
+
+| Usage Context		| Example		      |	What It Does                        |
+| ======================| ============================|==================================== |
+| Function Parameters	| function fn(...args) {}     |	Collects all arguments into array   |
+| Array Destructuring	| [a, b, ...rest] = [1,2,3,4] |	Gathers remaining elements as array |
+| Object Destructuring	| {x, ...rest} = obj	      |	Gathers remaining props as object   |
+
+### Array methods for inserting the elements
+
+**Syntax:** 
+- `Array.push(...items)`   : number -> It would insert the element at the end of an array
+- `Array.unshif(...items)` : number -> It would insert the element at the begining an array
+- `Array.splice(start,deleteCount,...items)` : [deleted elements from an array]
+   - if deleteCount = 0 , then elements in the array won't be deleted rather elements will be appended to the array.
+   - deleteCount specifies the no of elements to be deleted while updating the elements in an Array
+
+> ▶️ Note:
+> `Array.concat(...items )` : [] [new array with modification]
+
+### Array methods for deletion
+
+- `Array.pop()` : string|undefined
+- `Array.shift()` : string |undefined
+- `Array.splice(start,deleteCount)` : [] : elements deleted will be returned in the form of an array
+  
+![image](https://github.com/user-attachments/assets/dbdfd183-8f6a-4d0b-8fb8-ff048e9c61a3)
+
+
+### Sorting the elements in an array
+- `Arrays.sort(compareFunction)` : []
+arrayName.sort([compareFunction])
+1. Default sorting : string sorting[map with unicode value and performing sorting]
+2. custom sorting  
+**Rule :**
+``
+If result of (a - b) < 0 then a comes before b  
+If result of (a - b) > 0 then b comes before a  
+If result of (a - b) === 0 then keep original order
+``
+
+
+
+
+
+# Day 20
+
+### filter()
+
+
+![image](https://github.com/user-attachments/assets/7288a6e0-3e56-4c52-b44e-a0203c3255bc)
+
+
+
+
+
+
+
+
+
+
 
