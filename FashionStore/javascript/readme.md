@@ -1535,7 +1535,9 @@ for(const element of object){
 - `push()` : It inserts element at the end.
 - `pop()` : It deletes element at the end.
 - `splice()` : It inserts/deletes element at an specified position.
-- `sort()` : 
+- `sort()` :
+- `filter()`:
+- `reduce()`: 
 
 **eg#1.**
 ```js
@@ -1696,6 +1698,25 @@ If result of (a - b) === 0 then keep original order
 - `initialValue`: optional value to start the accumulation.
 
 
+## Object
+> **Object** -> `Properties(data)` | `methods(logic)`
+> **JSON** -> `properties(data)`
+> **Syntax:**
+```js
+{
+	key : value
+}
+```
+* `key` should be of string type
+* `value` can be of any type(string | number | boolean | object)
+
+**eg#1:**<br>
+[code]() <br><br>
+![image](https://github.com/user-attachments/assets/39aecd00-faed-44a0-9af7-2c698f79c2ec)
+
+
+Hello
+<strong>Hello</strong>
 
 
 
