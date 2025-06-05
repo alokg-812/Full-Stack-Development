@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ol id="info">
+
+    </ol>
+
+    <select name="" id="">
+
+    </select>
+
+    <div>
+
+    </div>
+
+    <ol id="link">
+
+    </ol>
+
+    <script type="text/javascript">
+       
+       let items = ["All","Electornics","mobiles","kidsFashion"];
+
+       items.map(function(item){
+            let li = document.createElement("li");
+            li.textContent = item
+            document.querySelector("#info").appendChild(li);
+       })
+
+       items.map(function(item){
+            let option = document.createElement("option");
+            option.value=item.toUpperCase();
+            option.textContent = item;
+
+            document.querySelector("select").appendChild(option);
+       })
+
+       items.map(function(item){
+            let userInput = `<input type='checkbox' value='${item}' > <label> ${item.toUpperCase()} </label> <br>`;
+            document.querySelector("div").innerHTML += userInput;
+            document.querySelector("div").style.marginTop = '25px';
+       })
+
+       document.querySelector("#link").style.listStyle = 'none';
+       items.map(function(item){
+            let li = document.createElement("li");
+            let a = document.createElement("a");
+            a.href = item+".html";
+            a.textContent = item;
+        
+            li.appendChild(a);
+            document.querySelector("#link").appendChild(li);
+       })
+
+
+
+    </script>
+</body>
+</html>
