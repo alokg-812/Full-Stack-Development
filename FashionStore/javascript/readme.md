@@ -81,12 +81,14 @@
 * [Conditions with truthy cases](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#condition-with-truthy-cases)
 * [null vs undefined](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#difference-between-null-and-undefined)
 
+
 # [Day 16: Switch](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-16--switch)
 * [Javascript Input Technique](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-input-techniques)
 * [Javascript Output Technique](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-output-techniques)
 * [Javascript Targetting Elements](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-targeting-the-elements)
 * [Switch in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#switch-in-javascript)
 * [Case studies of switch](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#case-studies)
+
 
 # [Day17: arrays](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-17-non-primitive-types)
 * [Arrays Introduction](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#array)
@@ -95,10 +97,20 @@
 * [Destructuring](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#destructuring)
 
 
+# [Day18: array-methods]()
+*
+
+
+# [Day19: array-methods-2]()
+*
+
+
+# [Day20: array-methods-3 | Object]()
+*
 
 
 
-
+---
 
 ## Java story:
 
@@ -1715,9 +1727,28 @@ If result of (a - b) === 0 then keep original order
 ![image](https://github.com/user-attachments/assets/39aecd00-faed-44a0-9af7-2c698f79c2ec)
 
 
-Hello
-<strong>Hello</strong>
+## JSON
+> **JSON** -> `properties(data)`
+> **Syntax:**
+```js
+{
+	key : value
+}
+```
 
+* **Syntax to read JSON data:**
+    * `product.key | product['key']` ===> `.` is referred as member invoking operator.
 
-
+#### When to use `obj.key` operator and when to use `obj['key']`???
+ 1. using obj[key]
+- If the key is a vaeiable or a computed value.
+- If the key is a invalid as an identifier.
+  ``
+  const weirdObj = {'firstName': 'sachin', '123': 'number};
+  console.log(weirdObj['firstName'])
+  console.log(weirdObj['123'])
+  ``
+ 
+ 2. using obj.key
+- You know the key ahead of time and it is a valud operator
 
