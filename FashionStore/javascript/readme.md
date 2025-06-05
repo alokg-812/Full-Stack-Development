@@ -1662,14 +1662,38 @@ If result of (a - b) === 0 then keep original order
 # Day 20
 
 ### filter()
+- Returns a new array containing elements that passes through a test(i.e., return true) from a callback function.
+- **Syntax:** `arrayName.filter(callback(element, index, array))`
+  	- `callback:` function that tests each element.
+  	- `element:` current element being processed.
+  	- `index(optional):` index of the current element.
+  	- `array (optional):` the array filter was called on.
 
+#### Rules for writing arrow function:
+1. Don't user function keyword while writing the arrow function.
+2. If we have only one parameter then don't use () to specufy the parameter name.
+3. If we have only statement as the function body then don't use {} to define the body.
+4. If the function returns a value, then explicitly `return` keyword to tell return(only with one statement).
 
+**eg#1: basic example**<br>
+[code]() <br>
 ![image](https://github.com/user-attachments/assets/7288a6e0-3e56-4c52-b44e-a0203c3255bc)
 
+**eg#2: age example**<br>
+[code]() <br>
+![image](https://github.com/user-attachments/assets/c3dc9bcd-ed01-4061-ab1c-268d5180a52b)
+
+**eg#3: cart example**<br>
+[code]() <br>
+![image](https://github.com/user-attachments/assets/255ab315-810d-467b-b2bc-4eb73333bc93)
 
 
-
-
+### reduce method
+> Reduces the array to a single value by applying a function to each element and acculating the result.
+> **Syntax:** `array.reduce(callback(accumulator, currentValue, index, array), initialValue);`
+- `accumulator`: accumulated the result.
+- `currentValue`: current element being processed.
+- `initialValue`: optional value to start the accumulation.
 
 
 
