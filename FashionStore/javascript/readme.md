@@ -1435,7 +1435,8 @@ for(const element of object){
 ---
 
 ### Destructuring
-=> `Destructuring` is a syntax that lets you unpack values form `arrays|objects` into individual variables in a clean and readable way.
+=> `Destructuring` is a syntax that lets you unpack values form `arrays|objects` into individual variables in a clean and readable way. <br>
+=> Readablity and it simplifies the code
 
 **eg#1: Without Destructuring technique**
 ```js
@@ -1511,4 +1512,92 @@ for(const element of object){
         console.log(userName, salary);
 ```
 ![image](https://github.com/user-attachments/assets/baef3be4-2376-4add-b486-0b1c433e1f1a)
+
+# Day 18
+
+### Object Destructuring
+**-> syntax :**
+
+		const{key1,key2,key3,...} = obj;
+		const{key1:var1,key2:var2,..} = obj;
+		const{key1 = 'value',key2,key3} = obj;
+
+### Reading values from array | Reading array elements:
+- `toString()` : It returns array elements seperated with ","
+- `join()` : It returns array elements with custom delimitor
+- `map()` : It returns array elements using iterator **(Best approach used in realtime coding)**
+- `forEach()` : It returns array elements and their index references.
+- `find()` : It returns the first occurance of the elements that matches condition
+- `filter()` : It returns the elements that match specified condition
+- `slice()` : It returns elements b/w specified index
+
+**eg#1.**
+```js
+<script type="text/javascript">
+	let arr = [1,2,3];
+	arr["2"] = 100;    // Number("2") : 2 ---> arr[2] = 100;
+	console.log(arr);  // [1,2,100]
+	console.log(arr.length);//3
+	
+	arr["sachin"]  = 10; //Number("sachin") : NaN ----> sachin:10
+	console.log(arr);     // [1,2,100,sachin:10]
+	console.log(arr.length);//3
+</script>
+```
+
+**eg#2.**
+```js
+<script type="text/javascript">
+       let arr = [1,2,3];
+       for (const key in arr) {
+            delete arr[key]; // it just deletes the value with key, not the memory of element
+       }
+       console.log(arr);//[empty * 3]
+       console.log(arr.length); //3
+</script>
+```
+
+### Working with map
+In JavaScript, the `map()` is used on arrays to transform each element and `create a new array` based on the transformation.
+
+* What map() Does?
+  -  It does not change the original array.
+  -  It returns a new array with the same number of elements.
+  -  Each element is processed using a callback function you provide.
+
+**Syntax**
+```js
+let newArray = array.map(function(element, index, array) {
+  // return a new value for each element
+});
+
+array.map((element, index, array) => {       //arrow functions
+  // return new value
+});
+```
+
+eg#1: [map]()
+
+### Working with forEach()
+The `forEach()` in JavaScript is used to iterate over each element in an array and perform an operation, without returning a new array.
+```js
+Syntax: 
+ array.forEach(function(element, index, array) {
+  // do something with element
+});
+
+array.forEach((element, index, array) => {  // arrow functions
+  // do something
+});
+```
+
+### Features of forEach()
+1. Executes a callback function once for each element in the array.
+2. Does not return a value (i.e., it returns undefined).
+3. Does not modify the original array unless you change elements explicitly.
+4. Commonly used for side effects like logging, updating DOM, etc.
+
+**eg#1:** <br>
+[javascript code](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/day18_more_on_arrays/forEach.js) <br>
+![image](https://github.com/user-attachments/assets/2092cf91-0be0-44b5-bfe3-f995b9914fe1)
 
