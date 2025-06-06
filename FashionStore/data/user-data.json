@@ -1,0 +1,11 @@
+{
+    "userName" : "sachin",
+    "age" : 51,
+    "teams" : ["MI", "INDIA"],
+    "records" : {
+        "centuries" : 100,
+        "average" : 54.5,
+        "Brand" : "MRF"
+    },
+    "isCaptain" : true
+}
