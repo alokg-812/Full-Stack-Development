@@ -1,5 +1,5 @@
 // Javascript : Synchronous Single Thread Language
-const URL = "../../../../data/user-data.json";
+const URL = "../../data/user-data.json";
 fetch(URL)
     .then(function(response){
         console.log(response.json());
