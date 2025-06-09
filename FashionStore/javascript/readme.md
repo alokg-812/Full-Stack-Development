@@ -97,16 +97,23 @@
 * [Destructuring](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#destructuring)
 
 
-# [Day18: array-methods]()
-*
+# [Day18: array-methods](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-18)
+* [Object Destructuring](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#object-destructuring)
+* [Methods of array](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#reading-values-from-array--reading-array-elements)
+* [Working with array-map](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#working-with-map)
+* [For each loop](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#working-with-foreach)
+* [Features of forEach](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#features-of-foreach)
 
 
-# [Day19: array-methods-2]()
-*
+# [Day19: array-methods-2](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-19)
+* [Rest Operator](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#rest-operator-in-javascript)
+* [Array Insertion](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#array-methods-for-inserting-the-elements)
+* [Array-deletion](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#array-methods-for-deletion)
+* [Inbuilt Array Sort](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#sorting-the-elements-in-an-array)
+  
 
-
-# [Day20: array-methods-3 | Object]()
-*
+# [Day20: array-methods-3 | Object](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-20)
+* 
 
 
 
