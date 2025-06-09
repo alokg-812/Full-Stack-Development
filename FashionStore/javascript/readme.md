@@ -1641,11 +1641,13 @@ array.forEach((element, index, array) => {  // arrow functions
 - The rest operator is a syntax in JavaScript written as `three dots ...` used to collect multiple elements into a single array.
 - It’s like saying: “Gather all the remaining elements into this variable.”
 
+### Where to use rest operator???
 | Usage Context		| Example		      |	What It Does                        |
 | ======================| ============================|==================================== |
-| Function Parameters	| function fn(...args) {}     |	Collects all arguments into array   |
 | Array Destructuring	| [a, b, ...rest] = [1,2,3,4] |	Gathers remaining elements as array |
 | Object Destructuring	| {x, ...rest} = obj	      |	Gathers remaining props as object   |
+| Function Parameters	| function fn(...args) {}     |	Collects all arguments into array   |
+
 
 ### Array methods for inserting the elements
 
@@ -1762,9 +1764,61 @@ If result of (a - b) === 0 then keep original order
   ``
  
  2. using obj.key
-- You know the key ahead of time and it is a valud operator
+- You know the key ahead of time and it is a valid identifier.
 
-# Day 22
+# Day 21 Advanced Javascript
 
 ## Execution Flow of javascript code by the engine
 - Javascript is a `Single Threaded Synchronous` programming language.
+    - `Synchronous` : JS engine can't move to next line until it executes the current line code [`Blocking mode`]
+    - `Single Threaded` : Single line of execution [main thread].
+
+
+### Promise
+**Promise:** We asked for something, it can be
+
+
+# Day 22
+> ▶️ Note:
+> By default, All the web APIs or browser APIs javascript engine can use with the help of `Window Object`
+
+### Browser APIs:
+1. `setTimeout(callback, timer)`
+2. `fetch(URL)`
+   ```js
+   .then(function(success){
+
+     })
+   .catch(function(error){
+
+     })
+   ```
+   
+1. Promise: It is an async operation code which would run with the help of browser internal components.
+   * `Event Loop`: checks whether the callstack is empty or not, if empty load the callback function into callstack for execution
+   * `MicroTask Queue`: a priority queue where the data is associated with (.then() and .catch()) will be loaded.
+   * [Syntax code]()
+
+```js
+let promiseOutput = new Promise(function(resolve, reject){
+		// api code
+		if(condition){
+			resolve();
+		} else{
+			reject();
+		}
+});
+
+promiseOuput
+.then(function(){
+	//resolve output;
+})
+.catch(function(error){
+	//reject output;
+});
+```
+
+2. async/await:
+
+
+
