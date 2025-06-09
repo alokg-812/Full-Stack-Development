@@ -116,7 +116,11 @@
 * 
 
 
+# [Day21: ]()
 
+
+# [Day22: ]()
+* 
 ---
 
 ## Java story:
@@ -1735,11 +1739,12 @@ If result of (a - b) === 0 then keep original order
 
 
 ## JSON
+**Definition:** _If object contains only `has-part` then in javascript, we say such objects as `JSON`._
 > **JSON** -> `properties(data)`
 > **Syntax:**
 ```js
 {
-	key : value
+	"key" : value[number|bbolean|array|string|object|function] 
 }
 ```
 
@@ -1748,8 +1753,8 @@ If result of (a - b) === 0 then keep original order
 
 #### When to use `obj.key` operator and when to use `obj['key']`???
  1. using obj[key]
-- If the key is a vaeiable or a computed value.
-- If the key is a invalid as an identifier.
+- If the key is a variable or a computed value.
+- If the key is a not valid identifier _OR_ key is part of another variable.
   ``
   const weirdObj = {'firstName': 'sachin', '123': 'number};
   console.log(weirdObj['firstName'])
@@ -1759,3 +1764,7 @@ If result of (a - b) === 0 then keep original order
  2. using obj.key
 - You know the key ahead of time and it is a valud operator
 
+# Day 22
+
+## Execution Flow of javascript code by the engine
+- Javascript is a `Single Threaded Synchronous` programming language.
