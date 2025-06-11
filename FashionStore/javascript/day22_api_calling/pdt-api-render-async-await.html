@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Display</title>
+  <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body onload="loadData()" class="container mt-5">
+
+<script type="text/javascript">
+  async function loadData() {
+    try {
+      const URL = "/Fashion Store/data/products.json";
+      let response = await fetch(URL);
+      let product = await response.json();
+
+      let div = document.createElement("div");
+      div.innerHTML = `
+        <dl class="row p-3 border shadow rounded">
+          <dt class="col-2">
+            <img src="/Fashion Store/Java Script/images/iphone13pro.png" class="img-fluid">
+          </dt>
+          <dd class="col-6">
+            <h3>${product.Title}</h3>
+            <p>
+              <span class="bg-success text-white px-2">${product.Ratings.Rating}</span>
+              <span class="bi bi-star-fill text-success"></span>
+              <span class="text-secondary">${product.Ratings.Count} buyers</span>
+            </p>
+            <ul class="fw-light">
+              <li>${product.Features[0]}</li>
+              <li>${product.Features[1]}</li>
+              <li>${product.Features[2]}</li>
+              <li>${product.Features[3]}</li>
+              <li>${product.Features[4]}</li>
+            </ul>
+          </dd>
+          <dd class="col-4">
+            <p class="h4 text-primary">₹${product.Price}</p>
+          </dd>
+        </dl>
+      `;
+
+      document.body.appendChild(div);
+    } catch (error) {
+      console.log("Error loading data:", error);
+    }
+  }
+</script>
+
+</body>
+</html>
