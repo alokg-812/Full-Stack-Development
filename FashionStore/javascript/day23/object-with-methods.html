@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var product = {
+            'ProductName' : 'Samsung TV',
+            'Quantity' : 2,
+            'Price' : 35000.00,
+            'isAvailable' : true,
+            'Total' : function (){
+                return this.Quantity * this.Price;
+            },
+            'Print' :function(){
+                document.write(`
+                    Product Name is : ${this.ProductName} <br> 
+                    Product Quantity is : ${this.Quantity} <br> 
+                    Product Price is : ${this.Price.toLocaleString('en-IN', {style: 'currency', currency:'INR'})} <br> 
+                    Product Total is : ${this.Total().toLocaleString('en-IN', {style: 'currency', currency:'INR'})} <br> 
+                `)
+            }
+        }
+
+        product.Quantity = parseInt(prompt("Enter the Quantity: "));
+        product.Price = parseFloat(prompt("Enter the Cost: "));
+        product.Print();
+    </script>
+</body>
+</html>
