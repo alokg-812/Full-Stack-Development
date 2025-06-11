@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store Products</title>
+    <script>
+        async function loadData() {
+            try {
+                const URL = 'https://fakestoreapi.com/products';
+                let response = await fetch(URL);
+                let products = await response.json();
+
+                console.log(products);
+                products.forEach((product) => {
+                    let tr = document.createElement("tr");
+
+                    let tdID = document.createElement("td");
+                    let tdTitle = document.createElement("td");
+                    let tdPrice = document.createElement("td");
+                    let tdCategory = document.createElement("td");
+                    let tdImage = document.createElement("td");
+                    let tdRatings = document.createElement("td");
+
+
+                    tdID.textContent = product.id;
+                    tdTitle.textContent = product.title;
+                    tdPrice.textContent = `₹${product.price}`;
+                    tdCategory.textContent = product.category;
+
+                    const img = document.createElement("img");
+                    img.src = product.image;
+                    img.width = 50;
+                    img.height = 50;
+                    tdImage.appendChild(img);
+
+                    tdRatings.textContent = product.rating?.rate ?? "N/A";
+
+                    tr.appendChild(tdID);
+                    tr.appendChild(tdTitle);
+                    tr.appendChild(tdPrice);
+                    tr.appendChild(tdCategory);
+                    tr.appendChild(tdImage);
+                    tr.appendChild(tdRatings);
+
+                    document.querySelector("tbody").appendChild(tr);
+                });
+            } catch (error) {
+                console.error("API error", error);
+            }
+        }
+    </script>
+</head>
+<body onload="loadData()" class="container-fluid">
+    <h2>Product List</h2>
+    <table border="1" cellpadding="5" cellspacing="5">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Ratings</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>

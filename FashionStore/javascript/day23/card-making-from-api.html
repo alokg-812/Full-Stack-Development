@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loadData()" class="container-fluid">
+
+    <div id="card-box"></div>
+
+    
+    <script>
+        async function loadData(){
+            try {
+                const URL = 'https://fakestoreapi.com/products/category/jewelery';
+                const response = await fetch(URL);
+                const data = await response.json();
+
+                data.forEach((element)=>{})
+                let divId = document.createElement("div");
+                let divImage = document.createElement("div");
+                let divDescription = document.createElement("div");
+                let divPrice = document.createElement("div");
+                let divRating = document.createElement("div");
+                
+                divId.textContent = data.id;
+                divDescription.textContent = data.description;
+                divPrice = data.price;
+                divRating = data.rating.rate;
+                
+                const img = document.createElement("img");
+                img.src = product.image;
+                img.width = 50;
+                img.height = 50;
+                divImage.appendChild(img);
+
+                div.appendChild(divId);
+                div.appendChild(divImage);
+                div.appendChild(divDescription);
+                div.appendChild(divPrice);
+                div.appendChild(divRating);
+
+                document.querySelector("div").appendChild(div);
+            
+            
+            } catch (error) {
+                console.log("API ERROR");
+            }
+        }
+    </script>
+
+</body>
+</html>

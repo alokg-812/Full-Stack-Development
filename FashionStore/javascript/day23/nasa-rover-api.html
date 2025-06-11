@@ -1,0 +1,56 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            async function loadData(){
+                try {
+                    const URL = '';
+                    let response = await fetch(URL);
+                    let data = await response.json();
+                    data.photos.forEach((details) => {
+                        let tr = document.createElement("br");
+
+                        let tdID = document.createElement("td");
+                        let tdPreview = document.createElement("td");
+                        let tdCameraName = document.createElement("td");
+                        let tdRoverName = document.createElement("td");
+
+                        tdId.textContent = details.id;
+                        tdPreview.textContent = '<img src=`` width="50" height="50">'
+                        tdCameraName.textContent = details.camera.name;
+                        tdRoverName.textContent = details.rover.name;
+
+                        tr.appendChild(tdId);
+                        tr.appendChild(tdPreview);
+                        tr.appendChild(tdCameraName);
+                        tr.appendChild(tdRoverName);
+                    
+
+                        document.querySelector("tbody").appendChild(tr);
+
+
+                    })
+                } catch (error) {
+                    console.log("API error");                
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table border="1" cellpadding="4" cellspacing="5">
+            <thead>
+                <th>PhotoID</th>
+                <th>Preview</th>
+                <th>CameraName</th>
+                <th>RoverName</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        
+    </body>
+    </html>
