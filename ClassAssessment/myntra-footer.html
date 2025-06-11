@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Footer</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            text-align: left;
+            background-color: #d0bcbc;
+        }
+        .shop-name {
+            font-size: large;
+            font-weight: bold;
+            justify-content: left;
+            color: red;
+        }
+            
+        nav span{
+            margin-right: 15px;
+        }
+            
+
+        section{
+            height: 550px;
+        }
+        footer{
+            display: inline;    
+            /* display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            height: 400px; */
+            background-color: rgb(244, 249, 249);
+            color: gray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .brand-footer-title{
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+        div~span{
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        .search{
+            font-size: 18px;
+            background-color: #e1dbdb;
+            padding: 10px;
+            border-radius: 18px;
+            margin-right: 50px;
+        }
+
+        footer{
+            display: grid;
+            grid-template-columns: 2fr 2fr 4fr 4fr;
+            padding: 50px;
+        }
+        .online ,.foot1, .links, .touch{
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-family: 'Franklin Gothic Medium';
+            margin-top: 5px;
+            margin-bottom: 27px;
+        }
+        .foot1{
+            display: flex;
+
+        }
+        div~span{
+            display: block;
+            margin-bottom: 4.5px;
+        }
+        .dab1, .dab2{
+            display: inline;
+            background-color: black;
+            border-radius: 13px;
+            color: white;
+            padding: 18px;
+            width: 10px;
+            margin-right: 10px;
+        }
+        .dab2{
+            background-color: black;
+            color: white;
+            padding: 18px;
+            width: 10px;
+        }
+        .links{
+            padding-top: 20px;
+        }
+        aside~span{
+            margin: 10px;
+        }
+        .touch{
+            margin-top: 55px;
+        }
+        .large{
+            font-size: 18px;
+        }
+        .promises{
+            font-size: 18px;
+            padding-top: 19px;
+            font-weight: lighter;
+        }
+        .gap{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="shop-name">MYNTRA</div>
+        </div>
+
+        <div>
+            <nav>
+                <span>MEN</span>
+                <span>WOMEN</span>
+                <span>KIDS</span>
+                <span>HOME & LIVING</span>
+                <span>BEAUTY</span>
+                <span>STUDIO</span>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <span class="search">Search for products, brands and more</span>
+                <span >Profile</span>
+                <span >Wishlist</span>
+                <span >Bag</span> <span class="cart-name"> </span>
+            </nav>
+        </div>
+    </header>
+    <!---------------------------------------------- just for the gap----------------------------  -->
+    <section class="gap"></section>
+    <!---------------------------------------------- footer section------------------------------- -->
+
+    <footer>
+            <div>
+                <div class="online">ONLINE SHOPPING</div>
+                <span>Men</span>
+                <span>Women</span>
+                <span>Kids</span>
+                <span>Home & Living</span>
+                <span>Beauty</span>
+                <span>Gift Cards</span>
+                <span>Myntra Insider</span>
+                <div>
+                    <div class="links">USEFUL LINKS</div>
+                    <span>Blog</span>
+                    <span>Careers</span>
+                    <span>Site Map</span>
+                    <span>Corporate Information</span>
+                    <span>Whitehat</span>
+                    <span>Cleartrip</span>
+                </div>
+            </div>
+            <div>
+            <div class="online">CUSTOMER POLICIES</div>
+                <span>Contact US</span>
+                <span>FAQ</span>
+                <span>T&C</span>
+                <span>Terms Of Use</span>
+                <span>Track Orders</span>
+                <span>Shipping</span>
+                <span>Cancellation</span>
+                <span>Return</span>
+                <span>Privacy Policy</span>
+                <span>Grievance Officer</span>
+            </div>
+            <div>
+                <div class="foot1">EXPERIENCE MYNTRA APP ON MOBILE</div>
+                    <span class="dab1">
+                        <!-- <span class="small">Get in on</span> -->
+                        <span class="large">Google Play</span>
+                    </span>
+                    <span class="dab2">
+                        <!-- <span class="small">Download on the</span> -->
+                        <span class="large">App Store</span>
+                    </span>
+                    
+                <div class="touch">KEEP IN TOUCH</div>
+                    <aside>
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-twitter"></span>
+                        <span class="bi bi-youtube"></span>
+                        <span class="bi bi-instagram"></span>
+                    </aside>
+                </div>
+            </div>
+            <div class="promises">
+                    <span><b>100% ORIGINAL</b> guarantee for <br> all products at myntra.com</span>
+                   <br><br> <span><b>Return within 14days</b> of receiving <br>your order</span>
+            </div>     
+    </footer>
+</body>
+</html>
