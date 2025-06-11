@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid" onload="loadContent()">
+</body>
+<script>
+    function loadContent(){
+        const URL = "/Fashion Store/data/products.json";
+        fetch(URL)
+        .then(function(response){
+            return response.json();
+        }).then(function(product){
+            let div = document.createElement("div");
+            div.innerHTML = `
+                <dl class="row">
+                    <dt class="col-2">
+                        <img src="${product.Photo}">
+                    </dt>
+                    <dt class="col-6">
+                        <h3>${product.Title}</h3>
+                        <p>
+                            <span class=""></span>
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </dt>
+                    <dt class="col-4">
+                        <p></p>
+                    </dt>
+                </dl>
+            `;
+            document.body.appendChild("div");
+            }).catch(function(error){
+                console.log(error);
+        })
+    }
+</script>
+
+</html>
