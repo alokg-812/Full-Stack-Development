@@ -1,56 +1,59 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script>
-            async function loadData(){
-                try {
-                    const URL = '';
-                    let response = await fetch(URL);
-                    let data = await response.json();
-                    data.photos.forEach((details) => {
-                        let tr = document.createElement("br");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Mars Rover Photos</title>
+    <script>
+        async function loadData() {
+            try {
+                const URL = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY';
+                const response = await fetch(URL);
+                const data = await response.json();
 
-                        let tdID = document.createElement("td");
-                        let tdPreview = document.createElement("td");
-                        let tdCameraName = document.createElement("td");
-                        let tdRoverName = document.createElement("td");
+                data.photos.forEach((details) => {
+                    const tr = document.createElement("tr");
 
-                        tdId.textContent = details.id;
-                        tdPreview.textContent = '<img src=`` width="50" height="50">'
-                        tdCameraName.textContent = details.camera.name;
-                        tdRoverName.textContent = details.rover.name;
+                    const tdID = document.createElement("td");
+                    const tdPreview = document.createElement("td");
+                    const tdCameraName = document.createElement("td");
+                    const tdRoverName = document.createElement("td");
 
-                        tr.appendChild(tdId);
-                        tr.appendChild(tdPreview);
-                        tr.appendChild(tdCameraName);
-                        tr.appendChild(tdRoverName);
-                    
+                    tdID.textContent = details.id;
+                    const img = document.createElement("img");
+                    img.src = details.img_src;
+                    img.width = 100;
+                    img.height = 100;
+                    tdPreview.appendChild(img);
 
-                        document.querySelector("tbody").appendChild(tr);
+                    tdCameraName.textContent = details.camera.name;
+                    tdRoverName.textContent = details.rover.name;
+                    tr.appendChild(tdID);
+                    tr.appendChild(tdPreview);
+                    tr.appendChild(tdCameraName);
+                    tr.appendChild(tdRoverName);
 
-
-                    })
-                } catch (error) {
-                    console.log("API error");                
-                }
+                    document.querySelector("tbody").appendChild(tr);
+                });
+            } catch (error) {
+                console.log("API error", error);
             }
-        </script>
-    </head>
-    <body>
-        <table border="1" cellpadding="4" cellspacing="5">
-            <thead>
-                <th>PhotoID</th>
+        }
+    </script>
+</head>
+<body onload="loadData()">
+    <h2>NASA Mars Rover Photos</h2>
+    <table border="1" cellpadding="4" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Photo ID</th>
                 <th>Preview</th>
-                <th>CameraName</th>
-                <th>RoverName</th>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-        
-    </body>
-    </html>
+                <th>Camera Name</th>
+                <th>Rover Name</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

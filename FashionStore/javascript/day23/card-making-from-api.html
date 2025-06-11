@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jewelry Products</title>
+    <style>
+        .card {
+            border: 1px solid #000000;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            vertical-align: top;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            position: relative;
+            background-color: #fff;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            z-index: 2;
+        }
+
+        .card-description {
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: max-height 0.5s ease;
+        }
+
+        .card:hover .card-description {
+            max-height: 500px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        .card div {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body onload="loadData()" class="container-fluid">
 
+    <h2>Jewelry Products</h2>
     <div id="card-box"></div>
 
-    
     <script>
-        async function loadData(){
-            try {
-                const URL = 'https://fakestoreapi.com/products/category/jewelery';
-                const response = await fetch(URL);
-                const data = await response.json();
+        async function loadData() {
+        try {
+            const URL = 'https://fakestoreapi.com/products/category/jewelery';
+            const response = await fetch(URL);
+            const data = await response.json();
 
-                data.forEach((element)=>{})
-                let divId = document.createElement("div");
-                let divImage = document.createElement("div");
-                let divDescription = document.createElement("div");
-                let divPrice = document.createElement("div");
-                let divRating = document.createElement("div");
-                
-                divId.textContent = data.id;
-                divDescription.textContent = data.description;
-                divPrice = data.price;
-                divRating = data.rating.rate;
-                
-                const img = document.createElement("img");
-                img.src = product.image;
-                img.width = 50;
-                img.height = 50;
-                divImage.appendChild(img);
+            data.forEach((element) => {
+            const card = document.createElement("div");
+            card.className = "card";
 
-                div.appendChild(divId);
-                div.appendChild(divImage);
-                div.appendChild(divDescription);
-                div.appendChild(divPrice);
-                div.appendChild(divRating);
+            const divId = document.createElement("div");
+            const divDescription = document.createElement("div");
+            const divPrice = document.createElement("div");
+            const divRating = document.createElement("div");
+            const divImage = document.createElement("div");
 
-                document.querySelector("div").appendChild(div);
-            
-            
-            } catch (error) {
-                console.log("API ERROR");
-            }
+            divId.textContent = "ID: " + element.id;
+            divDescription.textContent = element.description;
+            divDescription.className = "card-description";
+            divPrice.textContent = "Price: ₹" + element.price;
+            divRating.textContent = "Rating: " + element.rating.rate;
+
+            const img = document.createElement("img");
+            img.src = element.image;
+            divImage.appendChild(img);
+
+            card.appendChild(divId);
+            card.appendChild(divImage);
+            card.appendChild(divDescription);
+            card.appendChild(divPrice);
+            card.appendChild(divRating);
+
+            document.getElementById("card-box").appendChild(card);
+            });
+        } catch (error) {
+            console.log("API ERROR", error);
+        }
         }
     </script>
 
