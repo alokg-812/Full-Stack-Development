@@ -1,0 +1,36 @@
+[
+    {
+        "Title" : "Apple iPhone 15 (Blue, 128GB)",
+        "Price": "57,999",
+        "Features": [
+            "128 GB RAM",
+            "15.49 cm (1.6 in) Super Letina XR Display",
+            "12 MP + 12 MP Front Camera",
+            "A15 Bionic Chip, 6 core processor",
+            "1 year warranty for phone and 6 months warranty for "
+        ],
+        "Ratings":{
+            "Rating": 4.6,
+            "Reviews": "8701 Ratings",
+            "Count": "28000"
+        },
+        "Photo": "/Fashion Store/Java Script/images/iphone15.png"
+    },
+    {
+        "Title" : "Apple iPhone 16 Pro 256GB Black Titanium",
+        "Price": "117,999",
+        "Features": [
+            "256 GB RAM",
+            "New 6‑core CPU with 2 performance and 4 efficiency cores",
+            "48 MP Rear Camera + 12 MP Front Camera",
+            "A18 Bionic Chip, hexa-core processor",
+            "1 year warranty for phone and 6 months warranty for "
+        ],
+        "Ratings":{
+            "Rating": 4.1,
+            "Reviews": "9931 Ratings",
+            "Count": "15870"
+        },
+        "Photo": "/Fashion Store/Java Script/images/iphone15.png"
+    }
+]
