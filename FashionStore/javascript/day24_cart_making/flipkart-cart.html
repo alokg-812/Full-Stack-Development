@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+    />
+</head>
+<body class="container-fluid" onload="loadData()">
+    <header
+    class="bg bg-dark text-white ps-2"
+    style="margin-left: 0px; margin-right: 0px"
+    >
+    <div class="row mt-4 mb-4 pt-2">
+        <div class="h3 col-2">FakeStore</div>
+        <div class="col-8 text-center align-middle p-2">
+        <ul>
+            <span class="me-3">HOME</span>
+            <span class="me-3">ELECTRONICS</span>
+            <span class="me-3">JEWELERY</span>
+            <span class="me-3">MENSCLOTHING</span>
+            <span class="me-3">WOMENSCLOTHING</span>
+        </ul>
+        </div>
+        <div class="col-2 pt-2">
+        <button type="button" class="btn btn-warning position-relative">
+            <span class="bi bi-cart-plus-fill"></span>
+            Your Cart
+            <span
+            class="position-absolute top-0 start-100 translate-middle border border-light rounded-circle bg-danger p-2"
+            ><span class="visually-hidden">0</span></span
+            >
+        </button>
+        </div>
+    </div>
+    </header>
+    <div
+    class="bg bg-dark text-white text-center pt-1 pb-2"
+    style="margin-top: 2px"
+    >
+    <span class="bi bi-lightning-fill text-warning"></span>
+    <span> HOLIDAY deals 50% off limited offer</span>
+    <span class="bi bi-lightning-fill text-warning"></span>
+    </div>
+    <section class="row mt-4">
+    <nav class="col-2">
+        <div>
+        <label for="" class="form-select fw-bold">Select Categories</label>
+        <select name="" id="listCategories"></select>
+        </div>
+    </nav>
+    <main class="col-8"></main>
+    </section>
+
+    <!-- <script type="text/javascript">
+        function loadData(){
+            loadCategories();
+            loadProducts();
+            addToCart();
+        }
+
+        async function loadProducts() {
+            const URL = "https://fakestoreapi.com/products";
+            const response = await fetch(URL);
+            const products = await response.json();
+            products.forEach(products => {
+                `
+                
+                `
+            });
+        }
+
+        async function addToCart() {
+            
+        }
+
+        async function loadCategories(){  
+            //1. calling api: https://fakestoreapi.com/products/categories
+            const URL = "https://fakestoreapi.com/products/categories";
+            console.log("api fetched");
+            
+            let response = await fetch(URL);
+            let categories = await response.json();
+
+            categories.unshift("ALL");
+            categories.forEach((category)=>{
+                //2. create an option element and keep the value and text as sent from the API
+                const option = document.createElement("option");
+                option.value = category;
+                option.textContent = category.toUpperCase();
+
+                //3. Target the selected element and append the data. 
+                document.getElementById("listCategories").appendChild(option)
+            })
+
+        }
+    </script> -->
+
+    <script type="text/javascript">
+    function loadData() {
+        // loadCategories();
+        loadProducts();
+    }
+
+    let cart = [];
+
+    async function loadProducts(category = "ALL") {
+        let URL =
+        category === "ALL"
+            ? "https://fakestoreapi.com/products"
+            : `https://fakestoreapi.com/products/category/${category}`;
+
+        const response = await fetch(URL);
+        const products = await response.json();
+
+        const mainSection = document.querySelector("main");
+        mainSection.innerHTML = "";
+
+        products.forEach((product) => {
+        const card = document.createElement("div");
+        card.className = "card mb-3";
+        card.innerHTML = `
+            <div class="border border-dark" style="width:300px">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="${
+                    product.image
+                    }" class="img-fluid rounded-start p-2" alt="${
+            product.title
+        }" style="max-height:100px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.title}</h5>
+                        <p class="card-text">Category: ${product.category}</p>
+                        <p class="card-text text-success fw-bold">₹${
+                        product.price
+                        }</p>
+                        <p class="card-text"><small class="text-muted">Rating: ${
+                        product.rating?.rate ?? "N/A"
+                        } ⭐</small></p>
+                        <button class="btn btn-sm btn-primary w-100"
+                            onclick='addToCart(${JSON.stringify(product)})'>
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+        mainSection.appendChild(card);
+        });
+    }
+
+    function addToCart(product) {
+        cart.push(product);
+        updateCartCount();
+        console.log("Cart Contents:", cart);
+    }
+
+    function updateCartCount() {
+        const cartCountSpan = document.querySelector(
+        ".btn .position-absolute span"
+        );
+        cartCountSpan.textContent = cart.length;
+        cartCountSpan.classList.remove("visually-hidden");
+    }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
