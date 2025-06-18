@@ -1768,6 +1768,39 @@ If result of (a - b) === 0 then keep original order
 
 # Day 21 Advanced Javascript
 
+## Quick visit of Non Primitive types
+1. Array	: 
+    ```
+    Heterogenous elements it can hold
+    static array : let arr = [];
+    dynamic array : let arr = new Array(size);
+      K,V
+      K : string , V : any type[number,string,boolean,function,array,object]
+      Iteration : forloop, for...in [key], for...of[value]
+      Property : length
+      Methods  : map(),reduce(),filter()
+          forEach() : logging, dom manipulation
+
+          Insertion: unshift() | push()| splice(start,deleteCount,...items)
+          Deletion : shift()   | pop() 
+          Sorting  : sort[compareFunction]
+          Reverse  : reverse()
+      ```
+Destructuring : Array, Object
+Rest Operator : Array, Object, Function parameter
+		```	    
+   b. Object
+	 has part  : property
+	 does part : methods
+	 JSON  : {
+			"K" : value[any type]
+		 }
+
+     Access part 
+          a. "." operator when identifier is valid and if the key is already known.
+	        b. ['key'] when the key is not a valid identifier and the key is part of another variable.
+    ```
+
 ## Execution Flow of javascript code by the engine
 - Javascript is a `Single Threaded Synchronous` programming language.
     - `Synchronous` : JS engine can't move to next line until it executes the current line code [`Blocking mode`]
