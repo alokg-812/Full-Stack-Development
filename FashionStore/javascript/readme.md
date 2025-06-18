@@ -1855,8 +1855,7 @@ promiseOuput
 
 # Day 24
 
-![alt text](/Full-Stack-Development/FashionStore/image.png)
-
+[!image](../public/images/flipkartImage.png)
 
 ## Asynchronous nature of Object:
 
