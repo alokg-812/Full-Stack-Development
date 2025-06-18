@@ -1905,13 +1905,16 @@ promiseOuput
 
 ## Working with Date type
 
-Javscript date object provides various date and time methods
-getHours() -> It returns hour number `0 to 23`
-getMinutes() -> It returns minutes number `0 to 59`
-getSeconds() -> It returns seconds number `0 to 59`
-getMiliSeconds() -> It returns milli seconds number `0 to 99`
-getDay() -> It returns weekday number `0=Sunday, 1=Monday, ...`
-getDate() -> It returns date number `1 to 29, 30, 31`
-getMonth() -> It returns month number `0 = January, 1 = February,...`
-getFullYear() -> It returns full years `4 chars`
-getYear()`obselete` -> It returns year number as per `Y2K`
+### JavaScript Date Object Methods
+
+| Method             | Description                                                                       |
+|--------------------|-----------------------------------------------------------------------------------|
+| `getHours()`       | Returns the hour number(0 to 23).                                                 |
+| `getMinutes()`     | Returns the minutes number(0 to 59).                                              |
+| `getSeconds()`     | Returns the seconds number(0 to 59).                                              |
+| `getMilliseconds()`| Returns the milliseconds number(0 to 999).                                        |
+| `getDay()`         | Returns the day number of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday).   |
+| `getDate()`        | Returns the date number of the month (1 to 28/29/30/31 depending on the month).   |
+| `getMonth()`       | Returns the month number(0 = January, 1 = February, ..., 11 = December).          |
+| `getFullYear()`    | Returns the 4-digit year.                                                         |
+| `getYear()`        | *Obsolete.* Returns the year minus 1900 (e.g., 123 for 2023).                     |
