@@ -1853,5 +1853,20 @@ promiseOuput
 
 2. async/await:
 
+# Day 24
+
+![alt text](/Full-Stack-Development/FashionStore/image.png)
 
 
+## Asynchronous nature of Object:
+
+# Day 25 Map, Date, & Functions
+
+### Limitations of Object:
+- Key must be of `string` type.
+- No standard API of its own to tell `length` of the object.
+  - (Alternate way: obj.keys() will return array of keys and then arr.length).
+- `Searching` and `deletion` on its own can't be done, it should be with the help of Operators.
+- Best suited only when the data is `structured`, otherwise it would fail.
+
+> 💡 `Map` comes up with the solution for the limitations of object.
