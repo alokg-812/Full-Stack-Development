@@ -1896,3 +1896,22 @@ promiseOuput
 > Configure a symbol: ``var ID = Symbol()``
 > Define key with Sumbol type in Object: `{[ID] : value}`
 > Access the key individually: `Object[ID]`
+
+### Key Points:
+1. We can create a `Symbol()` type with the same key.
+2. Even if we create a Symbol() typw with the same key, still `2 different objects` would be available in the memory.
+3. If we use `==` or `===` on Symbol() with same key, the result would be `false`.
+4. We can use `toString()` on Symbol() to convert into String type while rendering on UI.
+
+## Working with Date type
+
+Javscript date object provides various date and time methods
+getHours() -> It returns hour number `0 to 23`
+getMinutes() -> It returns minutes number `0 to 59`
+getSeconds() -> It returns seconds number `0 to 59`
+getMiliSeconds() -> It returns milli seconds number `0 to 99`
+getDay() -> It returns weekday number `0=Sunday, 1=Monday, ...`
+getDate() -> It returns date number `1 to 29, 30, 31`
+getMonth() -> It returns month number `0 = January, 1 = February,...`
+getFullYear() -> It returns full years `4 chars`
+getYear()`obselete` -> It returns year number as per `Y2K`
