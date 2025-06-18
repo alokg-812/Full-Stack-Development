@@ -1870,3 +1870,29 @@ promiseOuput
 - Best suited only when the data is `structured`, otherwise it would fail.
 
 > 💡 `Map` comes up with the solution for the limitations of object.
+> **Syntax:** `` var name = new Map();``
+> Methods of Map: Map provides following methods for manipulation.
+
+| Method      | Description                                             |
+|-------------|---------------------------------------------------------|
+| `set()`     | Assigns a new key with a value.                         |
+| `get()`     | Accesses a value using the reference of a key.          |
+| `keys()`    | Returns all the keys.                                   |
+| `values()`  | Returns all the values.                                 |
+| `entries()` | Returns all keys and their corresponding values.        |
+| `delete()`  | Removes a key and its corresponding value.              |
+| `has()`     | Checks if a key exists in the map.                      |
+| `clear()`   | Removes all keys and values from the map.               |
+| `size`      | Returns the total number of keys present.               |
+
+
+> ▶️ Note: we use `for...of` to iterate if we have data in Map type.
+
+# Symbol type in Javscript
+- It is a primitve datatype of Javascript,
+- It is used for unique identification of any elemnt in Object.
+- It configures hidden key, whixh is individually used but ignored over iterations.
+
+> Configure a symbol: ``var ID = Symbol()``
+> Define key with Sumbol type in Object: `{[ID] : value}`
+> Access the key individually: `Object[ID]`
