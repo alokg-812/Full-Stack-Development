@@ -1,0 +1,19 @@
+div{
+    border: 2px solid black;
+    width: 700px;
+    margin: 10px;
+    padding: 20px;
+}
+dl{
+    display:grid;
+    grid-template-columns: 4fr 8fr;
+    
+}
+dt{
+    font-weight: bold;
+    padding: 4px ;
+}
+img{
+    border-radius: 12px;
+    box-shadow: 5px 10px 10px black;
+}

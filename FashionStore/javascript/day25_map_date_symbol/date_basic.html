@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let now = new Date();
+        console.log(now);
+
+        let mfgDate = new Date("2025-06-01");
+        console.log(mfgDate);
+
+        let departTime = new Date("2025-06-19 19:30:45");
+        console.log(departTime);
+
+        console.log("Date is: ", now.getDate())
+        console.log("Month is: ", now.getMonth())
+        console.log("Year is: ", now.getFullYear())
+        
+        console.log("Hour is: ", now.getHours())
+        console.log("Minute is: ", now.getMinutes())
+        console.log("Second is: ", now.getSeconds())
+
+        console.log(`Today's date is: ${now.getDate()}/${now.getMonth()+1}/${now.getFullYear()}`);
+
+        console.log(`Today's time is: ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`);
+
+
+    </script>
+</body>
+</html>

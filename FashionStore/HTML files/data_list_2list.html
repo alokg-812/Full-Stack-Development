@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      dl {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+      }
+      dt {
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 255, 255);
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+      dd {
+        background-color: rgb(64, 64, 64);
+        color: rgb(0, 255, 255);
+        margin-bottom: 5px;
+        width: 420px;
+      }
+      fieldset {
+        width: 650px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px solid black;
+        background-image: url(/public/images/personal\ details.jpg);
+        background-size: cover;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+      }
+      legend {
+        text-align: center;
+        background-color: black;
+        color: wheat;
+        padding: 6px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px black;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <dl>
+        <dt>FirstName</dt>
+        <dd>Enter your first name here</dd>
+        <dt>LastName</dt>
+        <dd>Enter your last name here</dd>
+        <dt>Age</dt>
+        <dd>Enter your age here</dd>
+      </dl>
+    </fieldset>
+    <fieldset>
+      <legend>Other details</legend>
+      <dl>
+        <dt>City</dt>
+        <dd>Enter your city here</dd>
+        <dt>State</dt>
+        <dd>Enter your state here</dd>
+        <dt>PostalCode</dt>
+        <dd>Enter your Postal Code here</dd>
+      </dl>
+    </fieldset>
+  </body>
+</html>

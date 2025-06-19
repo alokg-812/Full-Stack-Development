@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DG Fashion point</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/Fashion Store/public/images/fashionstore.ico">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            font-family: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;          /*Space from all sides*/
+        }
+        .cart-item{
+            background-color: red;
+            color: white;
+            display: inline-block;       /*To make change in the width of span element*/
+            width: 15px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        nav span{
+            margin-right: 15px;
+        }
+        .brand-title{
+            font-weight: bold;
+        }
+        .bi-lightning-charge-fill{
+            color:GOLD;
+        }
+        article{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            padding-right: 120px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 300;
+            font-size: medium;
+               }
+
+        section{
+            height: 700px;
+        }
+        footer{
+            background-color: #080808;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .foot-heading{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .email,.button{
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .button{
+            background-color: #feda15;
+            margin-top: 25px;
+        }
+        .footer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer p{
+            color: grey;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .footer h3{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .footer-footer{
+            text-align: left;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 100px;
+            padding-top: 15px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="brand-title">Shopper</div>
+        </div>
+        <div>
+            <nav>
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+        </nav>
+        </div>
+        <div>
+            <nav>
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"><span class="cart-item">2</span></span>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-charge-fill"></span>
+        <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+        <span class="bi bi-lightning-charge-fill"></span>
+    </article>
+    <section>
+    </section>
+
+    <footer >
+        <span class="foot-heading">Want some style Ideas and Treats?</span>
+        <form>
+            <input vmodel="message" type="email" name="email" id="email" placeholder="*Enter-email" class="email">&nbsp;&nbsp;&nbsp;
+            <input type="button" name="button" id="button" value="Subscribe" class="button">
+        </form>
+        
+        <div class="footer">
+            <div class="shopper">
+                <h3>Shopper.</h3>
+                <!-- <span class="bi bi-linkedin"></span> -->
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+            </div>
+            <div class="support">
+                <h3>Support</h3>
+                <p>Contact US</p>
+                <p>FAQs</p>
+                <p>Size Guide</p>
+                <p>Shipping & Returns</p>
+            </div>
+            <div class="shop">
+                <h3>Shop</h3>
+                <p>Men's Shopping</p>
+                <p>Women's Shopping</p>
+                <p>Kids' Shopping</p>
+                <p>Discounts</p>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy & Cookie Policy</p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>1234567890</p>
+                <p>0987654321</p>
+                <p>help@stopper.com</p>
+            </div>
+        </div>
+        <hr color="grey">
+        <div class="footer-footer">
+            <p>&copy;2019 All rights reserved.Designed by DG.</p>
+        </div>
+    </footer>
+</body>
+</html>

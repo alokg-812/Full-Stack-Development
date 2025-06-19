@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 200px;
+        }
+        .course{
+            width: 100px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend class="course">Course Details</legend>
+            <select name="course" multiple size="10">
+                <option>Full Stack Courses</option>
+                <optgroup label="MEAN">
+                    <option value="MongoDB">MongoDB</option>
+                    <option value="Express">Express.js</option>
+                    <option value="Angular">Angular</option>
+                    <option value="Node">Node.js</option>
+                </optgroup>
+                <optgroup label="MERN">
+                    <option value="MongoDB">MongoDB</option>
+                    <option value="Express">Express.js</option>
+                    <option value="React">React.js</option>
+                    <option value="Node">Node.js</option>
+                </optgroup>
+                <optgroup label="JAVA">
+                    <option value="JSE">Core Java</option>
+                    <option value="JEE">Advanced Java</option>
+                    <option value="Angular">Hibernate</option>
+                    <option value="Spring">Spring Boot</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let map = new Map();
+        map.set("name", "Sachin");
+        map.set(10, "ID");
+        map.set(true, "isMarried");
+        console.log(map);
+        console.log(map.keys());
+        console.log(map.values());
+        console.log(map.entries());
+        console.log(map.size);
+
+        for (const key of map.keys()) {
+            console.log(key);
+        }
+
+        for (const value of map.values()) {
+            console.log(value);
+        }
+
+        console.log("******* Before Deletetion*********");
+        
+        for (const [key, value] of map.entries()) {
+            console.log(key, "=> ", value);
+        }
+
+        map.delete(true);
+        
+        console.log("******* After Deletetion*********");
+        
+        for (const [key, value] of map.entries()) {
+            console.log(key, "=> ", value);
+        }
+
+    </script>
+</body>
+</html>

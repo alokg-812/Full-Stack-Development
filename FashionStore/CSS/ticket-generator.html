@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/CSS/ticket-effects.css">
+<style type="text/CSS" media="print" >
+    /* div{
+        border: 2px solid black;
+        width: 700px;
+        margin: 10px;
+        padding: 20px;
+    } */
+    dl{
+        display:grid;
+        grid-template-columns: 4fr 8fr;
+        
+    }
+    dt{
+        font-weight: bold;
+        padding: 4px ;
+    }
+    img{
+        display: none;
+    }
+</style>
+
+
+</style>
+</head>
+<body>
+    <div>
+        <img src="/public/images/vandeBharat.png" width="600px">
+        <h1>Train Ticket</h1>
+        <dl>
+            <dt>DepartureDate</dt>
+            <dd>26-09-2024</dd>
+            <dt>DepartureTime</dt>
+            <dd>12:30</dd>
+        </dl>
+        <button type="button">PRINT Ticket</button>
+    </div>
+</body>
+</html>

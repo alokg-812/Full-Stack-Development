@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="text-white bg bg-dark row p-3 text-align-center">
+        <div class="col-4 fw-bold">Shopper.</div>
+        <div class="col-5">
+            <span class="ms-3">Home</span>
+            <span class="ms-3">About</span>
+            <span class="ms-3">Contact</span>
+        </div>
+        <div class="col-3">
+            <span class="bi bi-calendar ms-3 me-4" id="date"></span>
+            <span class="bi bi-clock me-3 ms-3" id="time"></span>
+        </div>
+    </header>
+    <section>
+        <div class="d-none" id="msgBox">
+            <p id="msg"></p>
+            <img src="" alt="Image box" height="100" width="150">
+        </div>
+    </section>
+    
+    <script>
+        let now = new Date();
+        let months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+        let weeks = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+        document.getElementById("date").innerHTML = " &nbsp;"+ now.toLocaleDateString();
+        document.getElementById("time").innerHTML = " &nbsp;"+ now.toLocaleTimeString();
+
+        let hours = now.getHours();
+        if(hours<12){
+            msg = 'GOOD MORNING';
+        }else if(hours<16){
+            msg = 'GOOD AFTERNOON';
+        }else if(hours20){
+            msg = 'GOOD EVENING';
+        }else{
+            msg = 'GOOD NIGHT';
+        }
+        document.getElementById("msg").innerHTML = msg;
+        document.querySelector("#msgBox").style.display = 'block';
+
+
+
+
+
+    </script>
+</body>
+</html>

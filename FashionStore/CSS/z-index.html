@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        
+        #men{
+            background-image: url(/public/images/mensfashion.webp);
+            background-size: cover;
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px red;
+            /* margin-left: 100px; */
+            position: absolute;
+            z-index: 3;
+
+        }
+        #women{
+            background-image: url(/public/images/womenfashion.jpeg);
+            background-size: cover;
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px green;
+            margin-left: 300px;
+            position: absolute;
+            z-index: 2;
+        }
+        #kids{
+            background-image: url(/public/images/kidsfashion.jpeg);
+            background-size: cover;
+            height: 500px;
+            width: 500px;
+            box-shadow: 5px 5px blue;
+            margin-left: 750px;
+            position: absolute;
+            z-index: 1;
+        }
+        .container{
+            position: absolute;
+            /* display: inline; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="men"></div>
+        <div id="women"></div>
+        <div id="kids"></div>
+    </div>
+</body>
+</html>

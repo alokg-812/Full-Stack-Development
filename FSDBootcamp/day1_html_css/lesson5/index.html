@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        div {
+            margin: 12px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 1 1 0%; 
+            color: white;
+            font-size: 30px;
+            background-color: #000a96;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* transition: background-color 0.5s; */
+        }
+
+        /* .card:hover {
+            transform: scale(0.80);
+            background-color: #4c58c2;
+            transition-timing-function: ease-in-out;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">Card 1</div>
+        <div class="card" id="card2">Card 2</div>
+        <div class="card" id="card3">Card 3</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# ignore logs 
+logs
+* .logs
+
+# ifnore 3rd party lib
+node_modules
+
+#environment variables
+*.env

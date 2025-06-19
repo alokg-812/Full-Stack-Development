@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .btn-group-vertical{
+            position: absolute;
+            top: 470px;
+            bottom: 0;
+            left: 1220px;
+        }
+    </style>
+</head>
+<body>
+    <p class="h3">Password</p>
+    <div class="btn btn-group w-25">
+        <span class="bi bi-key-fill"></span>
+        <input type="password" class="form-control">
+        <button class="btn btn-success">
+            <span class="bi bi-check-square"></span>
+        </button>
+    </div>
+    <p class="h3">Price</p>
+    <div class="btn btn-group w-25">
+        <span class="bi bi-currency-rupee bg-dark text-white"></span>
+        <input type="text" class="number">
+        <button class="bg-dark">
+            <span class="text-white">0.0</span>
+        </button>
+    </div>
+
+
+    <dl>
+        <dt>Tool Bar</dt>
+        <dd class="btn btn-toolbar btn-danger d-flex justify-content-between ">
+            <div class="btn btn-group">
+                <button class="btn btn-danger">Home</button>
+                <button class="btn btn-danger">Shop</button>
+                <button class="btn btn-danger">Contact</button>
+                <button class="btn btn-danger">Blog</button>
+            </div>
+            <div class="btn btn-group">
+                <button class="bi bi-search btn btn-danger"></button>
+                <button class="bi bi-heart btn btn-danger"></button>
+                <button class="bi bi-person btn btn-danger"></button>
+            </div>
+        </dd>
+
+
+
+        <!-- Types of button -->
+        <dt>Normal Button</dt>
+        <dd>
+            <button class="button">Click me!</button>
+        </dd>
+        <dt>Base Button</dt>
+        <dd>
+            <button class="btn">Click me!</button>
+        </dd>
+        <dt>Contextual button</dt>
+        <dd>
+            <span class="btn btn-primary">Insert</span>
+            <span class="btn btn-warning">Update</span>
+            <span class="btn btn-danger">Delete</span>
+        </dd>
+        <dt>Outline Contextual button</dt>
+        <dd>
+            <span class="btn btn-outline-primary">Insert</span>
+            <span class="btn btn-outline-warning">Update</span>
+            <span class="btn btn-outline-danger">Delete</span>
+        </dd>
+        <dt>Special Button</dt>
+        <dd>
+            <button class="btn btn-close"></button>
+            <button class="btn btn-link">Sign-out</button>
+        </dd>
+        <dt>Outline Contextual button</dt>
+        <dd class="btn-group">
+            <span class="btn btn-primary">Insert</span>
+            <span class="btn btn-warning">Update</span>
+            <span class="btn btn-danger">Delete</span>
+        </dd>
+
+        <dt>Logo Based button</dt>
+        <dd class="btn-group-vertical">
+            <span class="bi bi-instagram btn btn-primary"></span>
+            <span class="bi bi-facebook btn btn-warning"></span>
+            <span class="bi bi-youtube btn btn-danger"></span>
+        </dd>
+
+    </dl>
+</body>
+</html>

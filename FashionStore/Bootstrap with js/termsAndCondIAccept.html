@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        /* .terms{
+            cursor: not-allowed;
+        }
+        .terms+span{
+            color: red;
+        }
+        .terms-checked-span{
+            color: green;
+        }
+        .terms-checked-button{
+            display: block;
+        } */
+        input+div{
+            display: none;
+        }
+        input:focus+div{
+            display: block;
+            color: green;
+        }
+        input::placeholder{
+            color: rgb(48, 48, 224);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <dl class="m-3 p-3">
+        <dt>Terms and Services</dt>
+        <dd>
+            <textarea name="txtTerms" disabled>Terms and conditions</textarea>
+        </dd>
+        <dd>
+            <br>
+            <input type="checkbox"class="terms" ><span> I Accept</span>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </dd>
+
+    </dl> -->
+    <form>
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                <input type="text" name="txtUser" placeholder="Enter username">
+                <div>
+                    <span class="bi bi-icon-circle">Username in uppercase</span>
+                </div>
+            </dd>
+        </dl>
+    </form>
+    
+</body>
+</html>
