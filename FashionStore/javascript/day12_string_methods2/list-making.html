@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="m-3"> 
+    <input type="text" name="" id="txtName" placeholder="Enter your name">
+    <button class="m-2 p-1" id="addList" onclick="addNames();">Add to List</button>
+    <button id="removeNames" onclick="removeName()">Delete Last Item</button>
+    <button class="p-1" id="resentList" onclick="resetList();">Reset List</button>
+    <ul id="lstItems">
+
+    </ul>
+
+    <script>
+        function addNames(){
+            const userName = document.getElementById('txtName');
+            const item = userName.value.trim();
+            const lstItem = document.getElementById('lstItems');
+            let li = document.createElement('li');
+            li.textContent = item.toUpperCase();
+
+            lstItem.appendChild(li);
+            userName.value='';
+            userName.focus();
+
+            document.getElementById("addList").disabled=true;
+            document.getElementById("resetList").disabled=false;
+
+        }
+
+        function resetList(){
+            const userName = document.getElementById('txtName');;
+            const lstItem = document.getElementById('lstItems');
+            lstItem.innerHTML='';
+            userName.focus();
+
+            document.getElementById("resetList").disabled = true;
+        }
+
+        function disableButton(){
+            document.getElementById("addList").disabled=true;
+            document.getElementById("resetList").disabled=false;
+        }
+    </script>
+</body>
+</html>

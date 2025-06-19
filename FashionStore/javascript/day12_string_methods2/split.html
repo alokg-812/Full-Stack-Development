@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        let details = ('Home|About Me|Project|Skills|Contact Me')
+        
+        let items = details.split('|');
+
+        let ul = document.createElement("ul");
+
+        let output = items => {
+            let li = document.createElement("li");
+            li.textContent = item.toUpperCase();
+            ul.appendChild(li);
+        }
+        
+        items.forEach(output);
+        
+        document.body.appendChild(ul);
+    
+    </script>
+</body>
+</html>
