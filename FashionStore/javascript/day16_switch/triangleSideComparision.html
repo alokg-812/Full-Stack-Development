@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let side1 = prompt("Enter the side 1 of the triangle: ");
+    let side2 = prompt("Enter the side 2 of the triangle: ");
+    let side3 = prompt("Enter the side 3 of the triangle:")
+    if(side1 == side2 && side2 == side3){
+        alert("Triangle is equilateral");
+    } else if(side1 == side2 || side2 == side3 || side1 == side3){
+        alert("Triangle is isosceles");
+    } else{
+        alert("Triangle is scalene");
+    }
+</script>
+</html>
