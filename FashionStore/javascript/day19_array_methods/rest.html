@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function add(...x){
+            const[a,b,c,...otherData]=x;
+            console.log(a,b,c);
+            console.log('type of otherData',typeof otherData)
+            console.log(otherData);
+        }
+
+        function printDetails(person){
+                const{username,age,...otherData}=person;
+                console.log(username,age);
+                console.log(otherData);
+        }
+        
+        add(10,20,30,40,50,60);
+        let user = {
+            username :'sachin',
+            age : 51,
+            gender: 'M',
+            email : 'sachin@mi.com',
+            isMarried : true
+        }
+        printDetails(user)
+    </script>
+</body>
+</html>
