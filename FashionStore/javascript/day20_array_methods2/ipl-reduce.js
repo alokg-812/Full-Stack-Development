@@ -1,0 +1,1 @@
+let iplTeams = ['CSK', 'MI', 'CSK']
