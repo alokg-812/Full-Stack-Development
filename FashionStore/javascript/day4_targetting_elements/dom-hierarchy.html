@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body onload="loadData()" class="container-fluid">
+    <div>
+        <img id="imgLoad" height="100" width="100" border="1">
+    </div>
+    <div>
+        <form>
+        <h3>Register</h3>
+        User Name: 
+        <input type="text"> <button class="border rounded" id="registerBtn"></button>
+        </form>
+    </div>
+    <div>
+        <form>
+        <h3>Login</h3>
+        Email: 
+        <input type="email"> <button id="LoginBtn"></button>
+        </form></div>
+    
+    <script type="text/javascript">
+        function loadData(){
+            const imgSrc = document.getElementById("imgLoad");
+            imgSrc.src = '../public/images/pwioi_channel_banner.jpg'; 
+            const regBtn = document.getElementById("registerBtn");
+            regBtn.innerHTML = 'Register';
+            const loginBtn = document.getElementById("LoginBtn");
+            loginBtn.innerHTML = 'Login';
+        }
+    </script>
+</body>
+</html>
