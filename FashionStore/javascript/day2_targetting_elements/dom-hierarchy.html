@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body onload="loadData()" class="container-fluid">
-    <div>
-        <img id="imgLoad" height="100" width="100" border="1">
+<body onload="loadData()" class="container-fluid m-3 p-3">
+    <div class=>
+        <img id="imgLoad" height="300" width="250">
     </div>
     <div>
         <form>
         <h3>Register</h3>
         User Name: 
-        <input type="text"> <button class="border rounded" id="registerBtn"></button>
+        <input type="text"> <button id="registerBtn"></button>
         </form>
     </div>
     <div>
@@ -27,12 +27,12 @@
     
     <script type="text/javascript">
         function loadData(){
-            const imgSrc = document.getElementById("imgLoad");
-            imgSrc.src = '../public/images/pwioi_channel_banner.jpg'; 
-            const regBtn = document.getElementById("registerBtn");
-            regBtn.innerHTML = 'Register';
-            const loginBtn = document.getElementById("LoginBtn");
-            loginBtn.innerHTML = 'Login';
+            console.log("function wroking");
+            window.document.images[0].src = '../../public/images/iphone16.png'; 
+            window.document.forms[0].elements[0].value = 'Virat';
+            window.document.forms[0].elements[1].textContent = 'Register';
+            window.document.forms[1].elements[0].value = 'virat@india.com';
+            window.document.forms[1].elements[1].textContent = 'Login';
         }
     </script>
 </body>
