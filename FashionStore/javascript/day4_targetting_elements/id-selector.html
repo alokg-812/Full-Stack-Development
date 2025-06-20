@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        #heading{
+            font-size: 25px;
+            color: blueviolet;
+            background-color: yellowgreen;
+            font-family: 'Algerian';
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="heading">Hello User</p>
+    <p>Welcome User</p>
+    <script type="text/javascript">
+        const pElement = document.getElementById("heading");
+        pElement.textContent = 'Bye User';
+        // pElement.style.fontFamily = 'Brush Script MT';
+        // pElement.style.backgroundColor = 'yellow';
+        // pElement.style.color = 'Red';
+        // pElement.style.fontSize = '50px';
+        // pElement.style.border = '2px solid black';
+
+        pElement.style.cssText = "font-family: Brush Script MT; background-color: yellow; color: red; font-size: 50px; border: 2px solid black;";
+        console.log(pElement);
+    </script>
+</body>
+</html>
