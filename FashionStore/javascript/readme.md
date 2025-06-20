@@ -1,17 +1,25 @@
-# [Day 1: Javascript PL vs SL](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript)
-* [Javascript introduction](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#javascript)
-* [Javscript as scripting Language](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#--javascript-as-scripting-language)
-* [Javascript as programming Language](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#--javascript-as-programming-language)
+# [Intro lecture](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#java-story)
 
 
-# [Day 2 & 3: Javascript Client-side](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-2)
-* [Client side of javascript](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript-client-side-)
-* [FAQs](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#faqs)
+# [Day 1: Javascript PL vs SL](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#Day-1)
+* [Javascript introduction](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#javascript)
+* [Javscript as scripting Language](https://github.com/alokg-812/Full-Stack-Development/tree/main/FashionStore/javascript#--javascript-as-scripting-language)
+* [Javascript as programming Language](https://github.com/alokg-812/Full-Stack-Development/tree/main/FashionStore/javascript#--javascript-as-programming-language)
 
 
-# [Day 4: ](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-4)
+# [Day 2: JS Client-side & DOM Hierarchy](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-2)
+* [Client side of javascript](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#javascript-client-side-)
+* [FAQs](https://github.com/alokg-812/Full-Stack-Development/tree/main/FashionStore/javascript#faqs)
+* [Targetting HTML Elements](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#targetting-the-html-element-using-javascript)
+  * [DOM Hierarchy](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#dom-hierarchy)
+    * [Disadvantage of DOM Hierarchy](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#disadvantage)
+  * [Targetting Selectors](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#targetting-through-selectors)
 
-# [Day 5: ](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-5)
+# [Day 3: ](https://github.com/alokg-812/Full-Stack-Development/tree/main/FashionStore/javascript#day-3)
+
+# [Day 4: ](https://github.com/alokg-812/Full-Stack-Development/tree/main/FashionStore/javascript#day-4)
+
+# [Day 5: ](https://github.com/alokg-812/Full-Stack-Development/tree/main/FashionStore/javascript#day-5)
 # [Day 6: Var, Let & Const](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-6--var-let--const)
 * [var](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#var)
 * [let](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#let)
@@ -144,7 +152,8 @@ Ans - `3 compile time error`
 Scene - 10 HLL code -> 100 MLL code, 13th line error, 25th line error of MLL <br>
 Ans - at 13th line, the `execution error` will be generated and no further execution will be done (Interpretation)
 
-# JavaScript:
+# Day 1
+## JavaScript:
 
 It was initially a scripting lang and not prog lang. <br>
 Ques. What is difference between Programming Language & Scripting Language?
