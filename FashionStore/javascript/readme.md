@@ -1,100 +1,97 @@
-# [Day 1: Javascript PL vs SL](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript)
-* [Javascript introduction](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#javascript)
-* [Javscript as scripting Language](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#--javascript-as-scripting-language)
-* [Javascript as programming Language](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#--javascript-as-programming-language)
+# [Day 1: Javascript PL vs SL](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript)
+* [Javascript introduction](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#javascript)
+* [Javscript as scripting Language](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#--javascript-as-scripting-language)
+* [Javascript as programming Language](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#--javascript-as-programming-language)
 
 
-# [Day 2: Javascript Client-side](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-2)
-* [Client side of javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-client-side-)
-* [FAQs](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#faqs)
+# [Day 2 & 3: Javascript Client-side](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-2)
+* [Client side of javascript](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript-client-side-)
+* [FAQs](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#faqs)
 
 
-# [Day 3: ](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-3)
+# [Day 4: ](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-4)
+
+# [Day 5: ](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-5)
+# [Day 6: Var, Let & Const](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-6--var-let--const)
+* [var](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#var)
+* [let](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#let)
+* [const](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#const)
+* [differnce & common table](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#difference--common-table)
 
 
-
-# [Day 4: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-4)
-# [Day 5: ](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-5)
-# [Day 6: Var, Let & Const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-6--var-let--const)
-* [var](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#var)
-* [let](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#let)
-* [const](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#const)
-* [differnce & common table](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#difference--common-table)
+# [Day 7: Variables & Datatypes](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-7)
+* [variables](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#variables)
+* [variable naming rules](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#variable-naming-rules)
 
 
-# [Day 7: Variables & Datatypes](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
-* [variables](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#variables)
-* [variable naming rules](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#variable-naming-rules)
+# [Day 8: Number, Conversion & Project](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-7)
+* [Javscript vs JSON](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript-vs-json)
+* [Number](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#number)
+* [BigInteger](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#biginteger)
+* [isNaN vs Number.isNaN](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#isnan-vs-numberisnan)
+* [local-encode](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#local-encode--currency)
 
 
-# [Day 8: Number, Conversion & Project](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-7)
-* [Javscript vs JSON](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-vs-json)
-* [Number](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#number)
-* [BigInteger](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#biginteger)
-* [isNaN vs Number.isNaN](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#isnan-vs-numberisnan)
-* [local-encode](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#local-encode--currency)
-
-
-# [Day 9: String in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
-* [Strings in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
-* [Working with ``(backticks)](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#working-with-backticks)
+# [Day 9: String in Javascript](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
+* [Strings in Javascript](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-9-string-in-javascript-1)
+* [Working with ``(backticks)](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#working-with-backticks)
 * 
 
 
-# [Day 10: More on Strings](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-10-more-on-binding--strings)
-* [Binding](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#binding)
-* [String formatting methods](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#string-formating-methods)
-* [Common Javascript Errors](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#common-javascript-errors)
-* [Length Method](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#methods-on-string-object)
+# [Day 10: More on Strings](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-10-more-on-binding--strings)
+* [Binding](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#binding)
+* [String formatting methods](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#string-formating-methods)
+* [Common Javascript Errors](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#common-javascript-errors)
+* [Length Method](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#methods-on-string-object)
 
 
-# [Day 11: String methods](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-11-string-methods-1)
-* [Starts with endswith](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#startswith--endswith)
-* [CharCodeAt](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#charcodeat)
-* [Slicing](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#syntax)
-* [Substring](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#substringstart-end)
+# [Day 11: String methods](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-11-string-methods-1)
+* [Starts with endswith](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#startswith--endswith)
+* [CharCodeAt](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#charcodeat)
+* [Slicing](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#syntax)
+* [Substring](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#substringstart-end)
 
 
-# [Day 12: Splitting & Triming](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-12-spliting--trimming-method)
-* [Methods of string object](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#methods-of-string-object)
-* [Split Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#split-method-)
-* [Trim Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#trim-method)
+# [Day 12: Splitting & Triming](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-12-spliting--trimming-method)
+* [Methods of string object](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#methods-of-string-object)
+* [Split Method](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#split-method-)
+* [Trim Method](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#trim-method)
 
 
-# [Day 13: Boolean](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-13-boolean--ternary)
-* [Match Method](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#match-method)
-* [Boolean](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#boolean-type)
-* [Ternary Operator](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#ternary-operator)
+# [Day 13: Boolean](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-13-boolean--ternary)
+* [Match Method](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#match-method)
+* [Boolean](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#boolean-type)
+* [Ternary Operator](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#ternary-operator)
 
 
-# [Day 14: Conditionals](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-14-conditional-statements)
-* [Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#operators)
-* [Statments](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#statements)
-* [Conditional Statments](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#conditional-statements)
-     * [if](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#1syntax-of-if)
-     * [else-if](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#2-syntax-of-if-else)
-     * [nested-else-if](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#3-syntax-of-nested-if-else)
+# [Day 14: Conditionals](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-14-conditional-statements)
+* [Operators](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#operators)
+* [Statments](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#statements)
+* [Conditional Statments](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#conditional-statements)
+     * [if](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#1syntax-of-if)
+     * [else-if](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#2-syntax-of-if-else)
+     * [nested-else-if](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#3-syntax-of-nested-if-else)
  
-# [Day 15: Logical Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-15)
-* [Logical Operators](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#logical-operator)
-* [Conditions with falsy cases](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#conditions-with-falsy-cases)
-* [Conditions with truthy cases](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#condition-with-truthy-cases)
-* [null vs undefined](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#difference-between-null-and-undefined)
+# [Day 15: Logical Operators](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-15)
+* [Logical Operators](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#logical-operator)
+* [Conditions with falsy cases](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#conditions-with-falsy-cases)
+* [Conditions with truthy cases](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#condition-with-truthy-cases)
+* [null vs undefined](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#difference-between-null-and-undefined)
 
 
-# [Day 16: Switch](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#day-16--switch)
-* [Javascript Input Technique](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-input-techniques)
-* [Javascript Output Technique](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-output-techniques)
-* [Javascript Targetting Elements](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#javascript-targeting-the-elements)
-* [Switch in Javascript](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#switch-in-javascript)
-* [Case studies of switch](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript#case-studies)
+# [Day 16: Switch](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#day-16--switch)
+* [Javascript Input Technique](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript-input-techniques)
+* [Javascript Output Technique](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript-output-techniques)
+* [Javascript Targetting Elements](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#javascript-targeting-the-elements)
+* [Switch in Javascript](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#switch-in-javascript)
+* [Case studies of switch](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript#case-studies)
 
 
-# [Day17: arrays](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#day-17-non-primitive-types)
-* [Arrays Introduction](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#array)
-* [IIFE - Immediate Invoking Function Expression](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#iife-immediate-invoking-function-expression)
-* [Key points for arrays](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#key-points-for-arrays)
-* [Destructuring](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/readme.md#destructuring)
+# [Day17: arrays](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-17-non-primitive-types)
+* [Arrays Introduction](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#array)
+* [IIFE - Immediate Invoking Function Expression](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#iife-immediate-invoking-function-expression)
+* [Key points for arrays](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#key-points-for-arrays)
+* [Destructuring](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#destructuring)
 
 
 # [Day18: array-methods](https://github.com/alokg-812/Full-Stack-Development/blob/main/FashionStore/javascript/readme.md#day-18)
@@ -188,7 +185,7 @@ The current time is:  9:19:21.76
 - `Just Ahead of Time Compilation`, third party compiler is used to convert the code before the request shooting, here, we will use `Babel` for compilation.
 - When request is shooted, only interpretation is done.
 
-![image](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/public/images/javascript_as_pl.png)
+![image](https://github.com/Full-Stack-Development/blob/main/FashionStore/public/images/javascript_as_pl.png)
 
 > JavaScript is `light weight interpreted` and `Just-in-Time Compiled` programming language.
 > * Light weight refers to memory occupied and how heavy the application is.
@@ -206,7 +203,7 @@ We can use various engines and compilers:
 3. Node
 4. V8
 
-![image](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/public/images/jsDevelopment.png)
+![image](https://github.com/Full-Stack-Development/blob/main/FashionStore/public/images/jsDevelopment.png)
 
 JavaScript supports various programming techniques and approaches
 * Structural Programming
@@ -229,7 +226,7 @@ Databse => `MongoDB`[.js] <br>
 ⁛ `MERN` = MongoDB + Express + React + Node.
 
 FAQ1. What are the issues of Javascript? <br>
-[Ans](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript/FAQs#faq1-what-are-the-issues-of-javascript) 
+[Ans](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript/FAQs#faq1-what-are-the-issues-of-javascript) 
 1. JavaScript is not `strongly typed`
 (No data types enforced on a variable)
 
@@ -272,7 +269,7 @@ JavaScript Client Side-
 
 
 ### How javasccript will take the control over html elements OR in how many ways we can write a javascript code in html page:
-![image](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/public/images/embedingogJavascripttoHTML.png)
+![image](https://github.com/Full-Stack-Development/blob/main/FashionStore/public/images/embedingogJavascripttoHTML.png)
 
 
 FAQ: 
@@ -345,10 +342,7 @@ Ans.
 ```
 
 
-
-# Day 3:
-
-Targetting the HTML element using javascript:
+### Targetting the HTML element using javascript:
 * `DOM hierarchy`
 * `Using ID`(limitation : multiple ids if used while targeting, we can access the first element)
 
@@ -359,6 +353,20 @@ arrayElements.forEach(
 	}
 )
 ```
+
+## DOM Hierarchy
+
+- With the HTML DOM, JavaScript can `access and change` all the elements of an HTML document.
+- When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+
+### Disadvantage:
+1. If we target the element using DOM hierarchy, it might result in code break when DOM structure is `altered`.
+> Solution: Use `ID` and target the element.
+
+![Alt text](../public/images/windowElements.png)
+
 ![image](https://github.com/user-attachments/assets/47706815-b88a-42d6-be27-7c3be5f505a1)
 
 _____________________
@@ -1119,7 +1127,7 @@ if(condition)
 ```
 **condition :** `true` | `false` <br>
 **eg#:**
-[if-code.html](https://github.com/alokg-812/Web-Dev/tree/main/FashionStore/javascript/day14_conditions) <br>
+[if-code.html](https://github.com/Full-Stack-Development/tree/main/FashionStore/javascript/day14_conditions) <br>
 ![image](https://github.com/user-attachments/assets/f9306ea4-2d5b-4654-a7f9-4fce1f2b9650)
 
 ---
@@ -1135,7 +1143,7 @@ if(condition)
   }
 ```
 **eg#:**
-[if-else.html](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day14_conditions/if-else-payment-card.html)
+[if-else.html](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/day14_conditions/if-else-payment-card.html)
 ![image](https://github.com/user-attachments/assets/664a2ee5-22d0-4f83-89c1-c9e6726d522b)
 
 
@@ -1162,7 +1170,7 @@ if(condition1)
 ```
 
 **eg#:**
-[nested-if-else.html](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day14_conditions/nested-if-else-payment-card.html)
+[nested-if-else.html](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/day14_conditions/nested-if-else-payment-card.html)
 ![image](https://github.com/user-attachments/assets/063c27b0-8891-4ae7-aae7-26b3dbd281d6)
 
 
@@ -1379,8 +1387,8 @@ switch (input){
 > Note:
 > 1. type will be comapred in `strict manner` with respect to label. <br>
 >    `(type === label)` <br>
->    Ex: [example1](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day16_switch/example1.html) <br>
->    Ex: [example2](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day16_switch/example2.html)
+>    Ex: [example1](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/day16_switch/example1.html) <br>
+>    Ex: [example2](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/day16_switch/example2.html)
 > 2. `default` can be placed anywhere in the switch hierarchy.
 > 3. default gets executed when none of the labels are matching with the input type.
 > 4. while executing any label | default, if we don't attach break to that block, then `fall through` would happen.
@@ -1443,7 +1451,7 @@ for(initialization : condition : increament/decreament){
 	arr[index];    //reading the elements using index	
 }
 ```		
-[for-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-loop.html)
+[for-loop-code](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/day17_arrays/for-loop.html)
 
 ii. `for...in loop`
 **Syntax:**
@@ -1452,7 +1460,7 @@ for(const property in object){
 	arr[index];    //reading the elements using keys	
 }
 ```
-[for-in-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-in-loop.html)
+[for-in-loop-code](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/day17_arrays/for-in-loop.html)
 
 iii. `for...of loop`
 **Syntax:**
@@ -1461,7 +1469,7 @@ for(const element of object){
 	console.log(element);    //reading the elements using index	
 }
 ```
-[for-of-loop-code](https://github.com/alokg-812/Web-Dev/blob/main/FashionStore/javascript/day17_arrays/for-of-loop.html)
+[for-of-loop-code](https://github.com/Full-Stack-Development/blob/main/FashionStore/javascript/day17_arrays/for-of-loop.html)
 
 ---
 
