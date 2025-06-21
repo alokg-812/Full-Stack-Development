@@ -369,24 +369,46 @@ arrayElements.forEach(
 - When a web page is loaded, the browser creates a Document Object Model of the page.
 
 The HTML DOM model is constructed as a tree of Objects:
+![Alt text](../public/images/windowElements.png)
 
 ### Disadvantage:
 1. If we target the element using DOM hierarchy, it might result in code break when DOM structure is `altered`.
 > Solution: Use `ID` and target the element.
 
-![Alt text](../public/images/windowElements.png)
+## Targetting Through Selectors
 
+### Disadvantage:
+1. if multiple `ids` are used, the first element with that ID would only be accessed.
+   **eg#:**
+   ```js
+    <p id="heading">Hello User</p>
+    <p>Welcome User</p>
+    <script type="text/javascript">
+        const pElement = document.getElementById("heading");
+        pElement.style.cssText = "font-family: Brush Script MT; background-color: yellow; color: red;";
+        console.log(pElement);
+   ```
+   _Output:_
+![image](https://github.com/user-attachments/assets/d6acd0c7-117d-4dd0-a2c4-f69e75628849)
+
+#### Style Binding to HTML elements:
+``element.style.properties = ""``
+<br>OR<br>
+``element.style.cssText = "cssKey: cssValue; cssKey: cssValue; cssKey: cssValue; ..."``
+
+# Day 3
+	
 ![image](https://github.com/user-attachments/assets/47706815-b88a-42d6-be27-7c3be5f505a1)
 
-_____________________
+## Targetting Elements
 
-1. document.getElementsByClassName()  : HTMLCollection[]
+### 1. `document.getElementsByClassName()  : HTMLCollection[]`
 
 Ques. How to convert HTMLCollection to Array? <br>
-Ans. 
+Ans. `arrayElements = Array.from(HtmlCollection)`
 
-`arrayElements = Array.from(HtmlCollection)`
-Working with iterator called `forEach` 
+
+### Working with iterator called `forEach` 
 * It can be used only on Array object.
 
 ```javascript
@@ -398,8 +420,7 @@ callbackfunction = (value,index,arr) => {
 forEach( callbackfunction)
 ```
 
-2.
-`document.getElementByTagName() : HTML Collection[]`
+### 2.  `document.getElementByTagName() : HTML Collection[]`
 ```
 	Another approach to convert HTMLCollection to Array
 		[...HTMLCollection]
