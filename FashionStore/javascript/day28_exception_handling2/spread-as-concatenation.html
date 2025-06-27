@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let userData = [10, 'js', 99.9, false];
+        let newData = [...userData, 'Hi'];
+        console.log(newData);
+        
+        function printData(...userDetails){
+            const{name, ...otherData} = userDetails;
+            console.log(otherData);
+        }
+
+        let obj = {'name':'kohli', 'age':37, 'gender':'male'};
+        printData(obj);
+        
+        // let obj = {'name':'kohli', 'age':37, 'gender':'male'};
+        // let updateData = {...obj, 'name':'virat kohli', 'isMarried':true};
+        // console.log(updateData);
+        
+
+    </script>
+</body>
+</html>
