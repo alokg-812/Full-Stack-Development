@@ -2002,3 +2002,40 @@ promiseOuput
 
 - All exceptions in javascript are `unchecked exceptions`
 - _These exceptions are not checked by compiler during memory allocation phase._
+
+
+### Rest Operator
+This operator is used to bind multiple values under single variable. <br>
+**syntax:**
+```js
+function collectData(...variable){
+
+}
+collectData(10, 'js', 53.5, true);
+
+```
+
+### Spread Operator
+This operator is used to spread multiple values. <br>
+**syntax:**
+```js
+function collectData(...data){
+
+}
+collectData(...sendData)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
