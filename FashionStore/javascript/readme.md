@@ -1963,3 +1963,42 @@ promiseOuput
 | `getMonth()`       | Returns the month number(0 = January, 1 = February, ..., 11 = December).          |
 | `getFullYear()`    | Returns the 4-digit year.                                                         |
 | `getYear()`        | *Obsolete.* Returns the year minus 1900 (e.g., 123 for 2023).                     |
+
+
+# Day 26 Functions
+
+
+# Day 27 Exception Hadling
+## Exception
+- **Exceptions** are runtime mistakes which happens due to faulty inputs given by the user to the application. Because of faulty input, the application would result in `Abnormal termination`.
+- To resolve the problem of Abnormal terminatione, we use `Exception handling Mechanism`
+- Exceptoin handling will promote `Graceful terminatoin of a program`
+- [It would not affect OS | hardware device of the user.]
+- Syntax:
+  ```
+  try{
+	//risky code
+  }
+  error(catch(error)){
+	//handling code
+  }
+  finally{
+	//resource releasing code 
+  }
+  ```
+
+# Day 28 EH2
+
+### Details in error Object
+
+
+| **Property** | **Description**                   |
+| ------------ | --------------------------------- |
+| `name`       | Type of error (e.g., `TypeError`) |
+| `message`    | Description of the error          |
+| `stack`      | Stack trace (few info)            |
+
+### Checked vs Unchecked Exceptions
+
+- All exceptions in javascript are `unchecked exceptions`
+- _These exceptions are not checked by compiler during memory allocation phase._
