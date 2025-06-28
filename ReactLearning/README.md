@@ -39,7 +39,12 @@ _Ans:_
 * Query shorts
 
 
-
+## Why Vite for Project Setup?
+- Vite is a fast development server and build tool.
+- Efficient production build.
+- Simple Configuration.
+- Typescript Support.
+- Vite supports features like CSS pre-processors, CSS modules.
 
 
 
