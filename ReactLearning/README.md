@@ -47,6 +47,85 @@ _Ans:_
 - Vite supports features like CSS pre-processors, CSS modules.
 
 
+* Whenever vite is created, the first page that is rendered is `index.html`.
+![image](https://github.com/user-attachments/assets/d1102f7c-1ef2-472e-941c-c4c192e14cab)
+<br>
+
+* index.html's body file further contains two major parts, a `div` with `id="root"` and a script tag with source of `src="/src/main.jsx"`.
+* The `main.jsx`file sets up the starting point of the React app that:
+  - Loads styles and main component.
+  - Finds the root HTML element (<div id="root">).
+  - Renders the app inside that element using React.
+
+### main.jsx code:
+```jsx
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+```
+
+Explaining each line of code in detail:
+
+#### 1. import { StrictMode } from 'react'
+
+* ✅ **What it does:**  
+This line imports a special helper called **`StrictMode`** from the React library.
+
+* 🧠 **Why it's used:**  
+`StrictMode` is like a safety net. It **checks your code for potential problems** (like deprecated features or side effects). It doesn’t show anything on the screen—it’s just for development and helps you write better React code.
+
+#### 2. import { createRoot } from 'react-dom/client'
+
+* ✅ **What it does:**
+This line imports the `createRoot` function from React's DOM client.
+
+* 🧠 **Why it's used:**
+React needs to connect to the actual web page (the HTML file). `createRoot` helps React take control of a specific part of the page and **start showing your app there**.
+
+* Fun fact: This is part of the **React 18+ update**, replacing the older `ReactDOM.render()` method.
+
+#### 3. import './index.css'
+* ✅ **What it does:**  
+This line brings in a CSS file named `index.css`.
+
+* 🧠 **Why it's used:**  
+CSS styles define how things look. This file likely contains **global styles** (colors, fonts, layout rules) that apply to the whole app.
+
+#### 🔴 4. import App from './App.jsx'
+* ✅ **What it does:**
+This imports the main component of your app called `App` from a file named `App.jsx`.
+
+* 🧠 **Why it's used:**
+The `App` component is where your **entire app’s content** (like buttons, pages, lists, etc.) starts. This is the **root component** of your app.
+
+#### 5. createRoot(document.getElementById('root')).render(
+* ✅ **What it does:** This tells React:  
+“🎯 *Find the HTML element with the ID 'root'*, and I’m going to put my app inside it.”
+
+🧠 **Why it's used:**  
+The `index.html` file has a line like:
+```html
+<div id="root"></div>
+````
+
+React grabs that empty `<div>` and fills it with your app's content using the `render()` function.
+#### 7-10 ``<StrictMode><App /></StrictMode>``
+* ✅ **What it does:**  
+This is the **actual app being shown**.
+
+  * `<StrictMode>` wraps the `<App />` component.
+  * `<App />` is a React component (we usually write many of these).
+
+* 🧠 **Why it's used:**
+React uses this to **start rendering your UI**. The `<App />` component contains your UI structure (header, pages, buttons, etc.).
+StrictMode helps catch bugs while doing this.
 
 
 
