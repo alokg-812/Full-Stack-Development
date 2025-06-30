@@ -2046,7 +2046,19 @@ collectData(...sendData)
 2. 
 
 
+### Syntax:
+```js
+function* generatorFunction(){
+	yield value1;
+	yield value2;
+	...
+}
+```
+function* - declares a generator.
+yield - pauses the functions and returns a value.
+.next() - resumes the function and gives the next value.
 
+## Higher Order Functions
 
 
 
