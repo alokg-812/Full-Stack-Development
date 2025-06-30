@@ -1966,7 +1966,11 @@ promiseOuput
 
 
 # Day 26 Functions
-
+1. Function Declaration | Function Statement
+2. Function Expression
+3. Arrow Function
+4. Anonumous Function
+5. CallBack Function [Synch | Asynch[Promise, Asynch, Await]]
 
 # Day 27 Exception Hadling
 ## Exception
@@ -2027,10 +2031,19 @@ collectData(...sendData)
 
 
 
+# Day 29
 
 
+### Shallow Copy:
+> Shallow copy copies the top-level properties of an object only. If the obkect has nested objects or arrays, the references to those nested structures are copied.
 
+### Deep Copy:
+> A deep copy creates a completely independent clone of the object, including all nested objects and arrays. No shared references. <br>
+> It is done using `structuredClone(object)`.<br>
 
+### Rest Operator
+1. Every function must have only one rest paramete,
+2. 
 
 
 
