@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Program started");
+        
+        try {
+            // let json = '{"name": "sachin", "age":51}';
+            let json = {"name": "sachin", "age":51};
+            let user = JSON.parse(json);
+            console.log(user.name);
+        } catch (err) {
+            console.log("Parsing error", err.message);
+        }
+        finally{
+            console.log("Execution Completed");
+        }
+    </script>
+
+    <script>
+        // try {
+            // let a = 10;
+            // let undeclared = 20;
+            // let b = a + undeclared;
+            // console.log(a+b);
+        // } catch (error) {
+            // console.log("Error COcured");
+        // }
+
+        // console.log("Graceful Termination");
+        
+    </script>
+</body>
+</html>
