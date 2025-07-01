@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printData(...data) {
+            console.log(data);
+        }
+
+        let userData = [10, 'js', 53.5, true];
+        printData(userData); //rest operator
+        printData(...userData); //spread operator
+    </script>
+</body>
+</html>
