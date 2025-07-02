@@ -1970,7 +1970,8 @@ promiseOuput
 2. Function Expression
 3. Arrow Function
 4. Anonumous Function
-5. CallBack Function [Synch | Asynch[Promise, Asynch, Await]]
+5. CallBack Function [Synch | Asynch : Promise, Asynch, Await]
+6. Higher Order Function
 
 # Day 27 Exception Hadling
 ## Exception
@@ -2060,7 +2061,15 @@ yield - pauses the functions and returns a value.
 
 ## Higher Order Functions
 
+# Day 30 Operators in Javascript
+1. Unary Operator: Single Operand [++, --, !=]
+2. Binary Operator: Two Operands [+, -, *, /, ==, ]
+3. Ternary Operator
+
+![image](https://github.com/user-attachments/assets/904996c1-9caf-4c81-943b-9d8cc9504445)
 
 
+![image](https://github.com/user-attachments/assets/111de5c9-a1a8-4730-a0b8-7b8019bc29bb)
 
 
+![image](https://github.com/user-attachments/assets/4843b73e-89ac-4f90-8eb1-274037d66b6b)
