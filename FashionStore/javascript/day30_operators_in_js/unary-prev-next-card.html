@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Viewer</title>
+        <link
+        rel="stylesheet"
+        href="/node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+        <link
+        rel="stylesheet"
+        href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+        />
+    </head>
+    <body class="container-fluid d-flex justify-content-center align-items-center" onload="loadBody()" style="height: 100vh">
+        <div class="w-50 m-2 p-2 border rounded shadow">
+            <!-- Title -->
+            <div class="text-center border-bottom p-2">
+                <h4 id="lblTitle" class="mb-0"></h4>
+            </div>
+
+            <div class="text-end bg-danger w-25 justify-content-end d-flex flex-row-reverse">
+                <p id="lblPrice" class="fw-bold fs-5 text-dark"></p>
+            </div>
+            <!-- Product Image -->
+            <div class="text-center p-3">
+                <img id="lblImage" src=""
+                alt="Product Image"
+                class="img-fluid"
+                style="max-height: 300px"
+                />
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="text-center p-2">
+                <span class="me-2">Previous</span>
+                <span id="btnPrevious" class="bi bi-caret-left-fill bg-primary text-light p-2 rounded" style="cursor: pointer"></span>
+                <span id="btnNext" class="bi bi-caret-right-fill bg-primary text-light p-2 rounded ms-3" style="cursor: pointer"></span>
+                <span class="ms-2">Next</span>
+            </div>
+        </div>
+
+        <script>
+        let productId = 1;
+
+        function loadBody() {
+            callApi(productId);
+
+            document.getElementById("btnPrevious").addEventListener("click", function () {
+                if (productId > 1) productId--;
+                callApi(productId);
+            });
+
+            document.getElementById("btnNext").addEventListener("click", function () {
+                if (productId < 20) productId++; // Limit as per API
+                callApi(productId);
+            });
+        }
+
+        async function callApi(productId) {
+            const URL = `https://fakestoreapi.com/products/${productId}`;
+
+            try {
+            const response = await fetch(URL);
+            const product = await response.json();
+
+            document.getElementById("lblTitle").textContent = product.title;
+            document.getElementById("lblPrice").innerHTML = `<span class="bi bi-currency-dollar"></span> ${product.price}`;
+            document.getElementById("lblImage").src = product.image;
+            document.getElementById("btnPrevious").disabled = (productId == 1);
+            document.getElementById("btnNext").disabled = (productId == 20);
+            } 
+            
+            catch (error) {
+            console.error("Error fetching product:", error);
+            document.getElementById("lblTitle").textContent =
+                "Product not found.";
+            document.getElementById("lblPrice").textContent = "";
+            document.getElementById("lblImage").src = "";
+
+            }
+        }
+        </script>
+  </body>
+</html>
