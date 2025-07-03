@@ -66,5 +66,59 @@ const heading = React.createElement(
 )));
 ```
 
+![image](https://github.com/user-attachments/assets/bd279c77-9de8-44ab-92f4-7620f1fac1ae)
+```
+        const heading = React.createElement(
+            "div", 
+                {id: 'parent'}, React.createElement(
+                    "div",
+                    {id:'child'}, 
+                    [
+                        React.createElement(
+                            "h1",
+                            {id:"heading1"}, "Hello world from React"
+                    ),
+                        React.createElement(
+                            "h2",
+                            {id:"heading2"}, "Learning React in easy way"
+                        )
+                    ]
+                )
+        );
+```
+
+![image](https://github.com/user-attachments/assets/5f0bcb1c-99a5-41f6-827c-981cba2fb8ba)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
