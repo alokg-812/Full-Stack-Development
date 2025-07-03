@@ -18,3 +18,53 @@ Ans:
 What is CORS?
 * It is a mechanism where two applications are running in two different server where scritps would share the data between them.
 *  
+
+# Day 3
+
+Creating an Element
+
+Signature:
+```
+const element = React.createElement(
+      type,        // HTML tag name or React component
+      props,       // Object with props/ attributes or null
+      ...children  // Child elements or text
+)
+```
+
+### Accessing the DOM
+Signature:
+```
+      const container = document.getElementById("idName");
+      const root = ReactDOM.createRoot(container);
+```
+
+### Usage of {} in React.createElement
+* It is used to give the attributes to the elements we create dynamically.
+
+```
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script>
+        const heading = React.createElement("h1", {}, "Hello React World");
+        const root = ReactDOM.createRoot(document.getElementById("root2"));
+        root.render(heading);
+    </script>
+```
+
+![image](https://github.com/user-attachments/assets/21b812fc-847d-49ba-a013-5c447864943b)
+```
+const heading = React.createElement(
+  "div", 
+  {id: 'parent'},
+  React.createElement(
+      "div",
+      {id:'child'},
+      React.createElement(
+          "h1",
+          {id:"heading"}, "Hello world from React"
+)));
+```
+
+
+
