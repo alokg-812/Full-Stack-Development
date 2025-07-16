@@ -2073,3 +2073,22 @@ yield - pauses the functions and returns a value.
 
 
 ![image](https://github.com/user-attachments/assets/4843b73e-89ac-4f90-8eb1-274037d66b6b)
+
+
+
+# Day 36 OOPS 3 
+
+Advantages of Has-a 
+
+### Inheritance:
+1. Configuring the relationship b/w classes to access members of one class in another class.
+2. Mechanism is termed as `IS-A` relationship.
+3. Newly created class extends existing class.
+4. Existing class(super|parent), Newly created class(sub|child).
+5. To access the members of parent classs in child class we use `super` keyword.
+6. Instance of parent class is not needed to access the members of parents class.
+
+
+
+
+
