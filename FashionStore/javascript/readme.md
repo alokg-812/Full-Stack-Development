@@ -2089,6 +2089,11 @@ Advantages of Has-a
 6. Instance of parent class is not needed to access the members of parents class.
 
 
-
-
+### Style binding in Javascript
+```
+	element.style.property = value;
+	element.style.cssText = 'cssAttr:cssVal; cssAttr:cssVal; ...';
+	element.className = 'userdefineclass | predefinedclass';
+```
+``<div id='root' class='box red' style=''></div>``
 
