@@ -2097,3 +2097,4 @@ Advantages of Has-a
 ```
 ``<div id='root' class='box red' style=''></div>``
 
+> [Note:] In all the above class, stylebinding will override the online-css so to avoid override, use `classList` 
