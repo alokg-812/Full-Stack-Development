@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function* generateValues(params) {
+            yield 'kapil';
+            yield 'jumbo';
+            yield 'ashwin';
+            yield 'bhajji'
+        }
+
+        let gen = generateValues();
+        console.log(gen);
+
+        let res = gen.next();
+        while(!res.done){
+            console.log(res);
+            res = gen.next;
+        }
+    </script>
+    
+</body>
+</html>
