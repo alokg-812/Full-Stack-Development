@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .timer {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-weight: bold;
+        color: red;
+        font-size: 1.2rem;
+        }
+        #quiz-box {
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: relative;
+        background-color: #f8f9fa;
+        }
+        .hidden {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="quiz-box" class="shadow">
+        <div class="timer" id="timer">15</div>
+        <form id="quiz-form">
+        <h4 id="question-text">Loading question...</h4>
+        <div id="options-container" class="my-3"></div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+
+    <div id="result" class="text-center mt-5 fs-4 hidden"></div>
+</div>
+
+<script>
+    let questions = [];
+    let currentIndex = 0;
+    let score = 0;
+    let timer;
+    let timeLeft = 12;
+
+    const timerEl = document.getElementById('timer');
+    const questionText = document.getElementById('question-text');
+    const optionsContainer = document.getElementById('options-container');
+    const quizForm = document.getElementById('quiz-form');
+    const resultEl = document.getElementById('result');
+    const quizBox = document.getElementById('quiz-box');
+
+    async function loadQuestions() {
+        const response = await fetch('questions.json');
+        questions = await response.json();
+        showQuestion();
+        startTimer();
+    }
+
+    function startTimer() {
+        timeLeft = 12;
+        timerEl.textContent = timeLeft;
+
+        timer = setInterval(() => {
+            timeLeft--;
+            timerEl.textContent = timeLeft;
+            if (timeLeft === 0) {
+                clearInterval(timer);
+                handleAnswer(null);
+            }
+        }, 1000);
+    }
+
+    function showQuestion() {
+        const q = questions[currentIndex];
+        questionText.textContent = q.question;
+        optionsContainer.innerHTML = '';
+
+        q.options.forEach((opt, i) => {
+        const optionHTML = `
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="option" value="${opt}" id="opt${i}">
+            <label class="form-check-label" for="opt${i}">
+                ${opt}
+            </label>
+            </div>
+        `;
+        optionsContainer.innerHTML += optionHTML;
+        });
+    }
+
+    function handleAnswer(selectedOption) {
+        const correct = questions[currentIndex].answer;
+        if (selectedOption === correct) {
+        score++;
+        }
+
+        currentIndex++;
+
+        if (currentIndex < questions.length) {
+            showQuestion();
+            clearInterval(timer);
+            startTimer();
+        } else {
+            showResult();
+        }
+    }
+
+    function showResult() {
+        clearInterval(timer);
+        quizBox.classList.add('hidden');
+        resultEl.classList.remove('hidden');
+        resultEl.innerHTML = `
+        <div class="alert alert-success">
+            🎉 Hurry! You answered <strong>${score}</strong> out of <strong>${questions.length}</strong> correctly.
+        </div>
+        `;
+    }
+
+    quizForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent page reload
+        const selected = quizForm.querySelector('input[name="option"]:checked');
+        const selectedValue = null;
+        if(selected){
+            selectedValue = selected.value;
+        }
+        else selectedValue = null;
+        clearInterval(timer);
+        handleAnswer(selectedValue);
+    });
+
+    loadQuestions();
+</script>
+</body>
+</html>
