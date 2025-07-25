@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Database</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <fieldset class="border border-3 m-3 p-3 pb-4 w-50">
+        <legend class="h3">Connect with database</legend>
+        
+        <dl>Select Database</dl>
+        <dt>
+        <select id="db-select" class="form-select">
+            <option>Select Database</option>
+            <option value="SQL">SQL</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Mongo DB">Mongo DB</option>
+        </select>
+        </dt>
+
+        <br>
+        <dl>Select Action</dl>
+        <div>
+        <button class="btn btn-success action-btn">Insert</button>
+        <button class="btn btn-primary action-btn">Update</button>
+        <button class="btn btn-danger action-btn">Delete</button>
+        </div>
+    </fieldset>
+
+    <p id="output" style="color: red; font-weight: bold;"></p>
+
+    <script>
+        class Database {
+        constructor(dbName, action) {
+            this.dbName = dbName;
+            this.action = action;
+        }
+
+        displayMessage() {
+            return `Mongo DB selected - Performing ${this.action} operation`;
+        }
+        }
+
+        const dbSelect = document.getElementById("db-select");
+        const buttons = document.querySelectorAll(".action-btn");
+        const output = document.getElementById("output");
+
+        buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const selectedDB = dbSelect.value;
+            const action = button.textContent;
+
+            if (selectedDB === "Mongo DB") {
+            const dbOperation = new Database(selectedDB, action);
+            output.textContent = dbOperation.displayMessage();
+            } else {
+            output.textContent = ""; // clear message if not Mongo DB
+            }
+        });
+        });
+    </script>
+</body>
+</html>
