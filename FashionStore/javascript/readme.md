@@ -2106,6 +2106,12 @@ Advantages of Has-a
 5. replace
 
 
+# Day 39
 
+### Form Events
+1. `onsubmit`
+2. `onreset`
 
+   - These are tje ebents configure for <form> elemets.
+   - They define actions to perform when user submits or resets the form.
 
