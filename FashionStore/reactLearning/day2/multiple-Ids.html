@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root0{
+            color:red;
+        }
+        #root1{
+            color:black;
+        }
+        #root2{
+            color:blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <script>
+        const heading = React.createElement(
+            "div", 
+                {id: 'parent'}, 
+                [
+                    React.createElement(
+                        "div",
+                        {id:'child1'}, 
+                        [
+                            React.createElement(
+                                "h1",
+                                {id:"heading1"}, "Hello world from React"
+                        ),
+                            React.createElement(
+                                "h2",
+                                {id:"heading2"}, "Learning React in easy way"
+                            )
+                        ]
+                    ),
+                    React.createElement(
+                        "div",
+                        {id:'child2'}, 
+                        [
+                            React.createElement(
+                                "h1",
+                                {id:"heading3"}, "Attend all sessions of React"
+                        ),
+                            React.createElement(
+                                "h2",
+                                {id:"heading4"}, "Maintain Proper Notes"
+                            )
+                        ]
+                    )
+                
+                ]
+        );
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+    </script>
+    
+    
+</html>
