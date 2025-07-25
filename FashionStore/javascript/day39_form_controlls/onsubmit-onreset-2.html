@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <form action="" onreset="alert('form values cleared!')">
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                <input type="text" name="userName" id="txtName">
+            </dd>
+            <dt>Password</dt>
+            <dd>
+                <input type="text" name="userPwd" id="txtPwd">
+            </dd>
+            <dt></dt>
+            <dd>
+                <button type="submit" style="margin: 10px;" id="btnSubmit">Submit</button>
+                <button type="reset" style="margin: 10px;">Reset</button>
+            </dd>
+        </dl>
+    </form>
+    <p id="msg" class="fontFamily:Algeria"></p>
+
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", function(e){
+            e.preventDefault();
+            const msg = document.getElementById("msg");
+            const userName = document.getElementById("txtName");
+            const userPwd = document.getElementById("txtPwd");
+            console.log("Data not sent to bacakend");
+            msg.innerHTML = `<span style='font-size:45px;'> Username if ${userName.value} <br> Password is ${userPwd.value}.</span>`
+            
+        })
+
+    </script>
+</body>
+</html>
