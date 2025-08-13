@@ -56,10 +56,21 @@ _Ans:_
 * Hence the order of loading is something like 
   1. _index.html_
   2. _main.jsx_
+* <img width="667" height="336" alt="image" src="https://github.com/user-attachments/assets/1e7377ac-8228-4dcc-aa50-2fa9eab86546" />
+
 * The `main.jsx`file sets up the starting point of the React app that:
   - Loads styles and main component.
   - Finds the root HTML element (<div id="root">).
   - Renders the app inside that element using React.
+* We preferably use Capital letters to give the components name because for the browser, if the component name starts with a small letter, it is just an _HTML Tag_.
+  - Components -> Capital letter
+  - Tags -> small letter
+
+### App.jsx
+
+<img width="1341" height="848" alt="image" src="https://github.com/user-attachments/assets/d2d9c379-ccfd-451a-9d9b-6d7010f2820f" />
+
+
 
 ### main.jsx code:
 ```jsx
