@@ -70,6 +70,55 @@ _Ans:_
 
 <img width="1341" height="848" alt="image" src="https://github.com/user-attachments/assets/d2d9c379-ccfd-451a-9d9b-6d7010f2820f" />
 
+## File and Folder Structure of React App
+- Folder Structure
+  - Most Important Files
+    - `package.json` : The most important file
+    - `package-lock.json` 
+  - Config Files
+
+
+### 1. `package.json`
+- 📦 `package.json` is the heart of any Node.js/ React/ Vue/ project.
+- It keeps track of:
+
+| Section                         | Meaning                                                 |
+| ------------------------------- | ------------------------------------------------------- |
+| `name`                          | Name of your project                                    |
+| `version`                       | Version of your app (like `1.0.0`)                      |
+| `scripts`                       | Shortcuts to run commands like `start`, `build`, `test` |
+| `dependencies`                  | Packages your app **needs to run**                      |
+| `devDependencies`               | Packages your app **needs only during development**     |
+| `main`                          | Entry point of your project (usually `index.js`)        |
+| `keywords`, `author`, `license` | Meta info (optional)                                    |
+
+#### dependencies vs devDependencies
+* `dependencies`: Core plugins your app uses (needed even after deployment)
+* `devDependencies`: Tools for developers (needed only during coding/testing/building)
+* Example:
+  * `react` and `react-dom` go into dependencies → We need them to run the app.
+  * `eslint`, `prettier`, `vite`, or `webpack` goes into devDependencies → Only needed while writing the code or building the app.
+
+
+### 2. package-lock.json
+As we have project details in our package.json file, the package-lock.json contains the nested details of our project.
+- **eg#01:**
+<img width="1197" height="1238" alt="image" src="https://github.com/user-attachments/assets/6ca16df7-f69f-4035-b5c2-dbcb5a8e6619" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### main.jsx code:
@@ -145,29 +194,6 @@ StrictMode helps catch bugs while doing this.
 ****
 * In main.jsx, all the tags like {function App(){}}, the names are written starting with `Capital Letters`, because react understands that whatever starts with the small letter it is an html tag.
 
-## File and Folder Structure of React App
-
-### 1. `package.json`
-- 📦 `package.json` is the heart of any Node.js/ React/ Vue/ project.
-- It keeps track of:
-
-| Section                         | Meaning                                                 |
-| ------------------------------- | ------------------------------------------------------- |
-| `name`                          | Name of your project                                    |
-| `version`                       | Version of your app (like `1.0.0`)                      |
-| `scripts`                       | Shortcuts to run commands like `start`, `build`, `test` |
-| `dependencies`                  | Packages your app **needs to run**                      |
-| `devDependencies`               | Packages your app **needs only during development**     |
-| `main`                          | Entry point of your project (usually `index.js`)        |
-| `keywords`, `author`, `license` | Meta info (optional)                                    |
-
-
-### dependencies vs devDependencies
-* `dependencies`: Core plugins your app uses (needed even after deployment)
-* `devDependencies`: Tools for developers (needed only during coding/testing/building)
-* Example:
-  * `react` and `react-dom` go into dependencies → We need them to run the app.
-  * `eslint`, `prettier`, `vite`, or `webpack` goes into devDependencies → Only needed while writing the code or building the app.
 
 
 
