@@ -52,6 +52,10 @@ _Ans:_
 <br>
 
 * index.html's body file further contains two major parts, a `div` with `id="root"` and a script tag with source of `src="/src/main.jsx"`.
+* The `src="/src/main.jsx"` calls up the `main.jsx` file.
+* Hence the order of loading is something like 
+  1. _index.html_
+  2. _main.jsx_
 * The `main.jsx`file sets up the starting point of the React app that:
   - Loads styles and main component.
   - Finds the root HTML element (<div id="root">).
