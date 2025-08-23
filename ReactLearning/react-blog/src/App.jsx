@@ -1,10 +1,13 @@
-import Header from "./Header";
+import Header from "./Header"
 function Apple(){
-  return <div>
-  <Header />
-      <h1>Hello India</h1>
+  return(
+    <div>
+      < Header/ >
       <h1>Hello React</h1>
-  </div>
+      <h2>Hello World</h2>
+    </div>
+  )
 }
+
 
 export default Apple
