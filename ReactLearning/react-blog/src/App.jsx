@@ -1,10 +1,11 @@
-import Header from "./Header"
+import Header from "./Components/Header"
 function Apple(){
+  const userName='Alok gupta';
   return(
     <div>
-      < Header/ >
+      {/* < Header/ > */}
       <h1>Hello React</h1>
-      <h2>Hello World</h2>
+      <h2>Hello World {userName} </h2>
     </div>
   )
 }
