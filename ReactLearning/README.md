@@ -1,4 +1,4 @@
-<img width="1089" height="438" alt="image" src="https://github.com/user-attachments/assets/a57a9ed0-e0ff-4b96-91f8-e180f58c43bb" /># React Learning
+# React Learning
 
 ## What is React?
 _Ans:_
