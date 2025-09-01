@@ -1,7 +1,6 @@
 # React Learning
 
 ## What is React?
-
 _Ans:_
 - React is Javascript library
 - React is used to make web front-end application
@@ -106,11 +105,30 @@ As we have project details in our package.json file, the package-lock.json conta
 <img width="1197" height="1238" alt="image" src="https://github.com/user-attachments/assets/6ca16df7-f69f-4035-b5c2-dbcb5a8e6619" />
 
 
+## React Components
+* What is component?
+* How to use component?
+* Role of component in a React application
+* Writing first react component
+* Difference between component and function
 
-
-
-
-
+**Components are smaller UI parts of any react app** <br>
+<img width="1089" height="438" alt="image" src="https://github.com/user-attachments/assets/e7c24b3f-4ecd-49d9-bc5f-ea6f84375afd" />
+* Multiple components can exist in a single component.
+* Even `App.jsx` is a component which is considered as the root component.
+* Components name should and must start with a capital letter like `Header` and not header.
+* **eg#:**
+  * ```jsx
+    function Fruit(){
+      return(
+        <div>
+          <h1>First React Component making</h1>
+        </div>
+      )
+    }
+    export default Fruit
+    ```
+* 
 
 
 
