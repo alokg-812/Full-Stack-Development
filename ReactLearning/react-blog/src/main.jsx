@@ -7,14 +7,16 @@ import JSX from './Components/JavascriptHTML.jsx';
 import Exercise from './Components/JSXExercise.jsx';
 import JSXWithCurlyBraces from './Components/JSXWithCurlyBraces.jsx';
 import ClickEvent from './Components/ClickEvent.jsx';
+import ReactState from './Components/ReactState.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {/* <App /> */}
     {/* <BasicLoginComponent /> */}
     {/* <JSX/> */}
     {/* <Exercise/> */}
-    <JSXWithCurlyBraces/>
-    <ClickEvent />
+    {/* <JSXWithCurlyBraces/> */}
+    {/* <ClickEvent /> */}
+    <ReactState/>
   </StrictMode>,
 )
