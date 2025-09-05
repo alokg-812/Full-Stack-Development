@@ -8,6 +8,7 @@ import Exercise from './Components/JSXExercise.jsx';
 import JSXWithCurlyBraces from './Components/JSXWithCurlyBraces.jsx';
 import ClickEvent from './Components/ClickEvent.jsx';
 import ReactState from './Components/ReactState.jsx';
+import Toggle from './Components/Toggle.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Exercise/> */}
     {/* <JSXWithCurlyBraces/> */}
     {/* <ClickEvent /> */}
-    <ReactState/>
+    {/* <ReactState/> */}
+    <Toggle/>
   </StrictMode>,
 )
