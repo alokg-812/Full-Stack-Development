@@ -9,6 +9,8 @@ import JSXWithCurlyBraces from './Components/JSXWithCurlyBraces.jsx';
 import ClickEvent from './Components/ClickEvent.jsx';
 import ReactState from './Components/ReactState.jsx';
 import Toggle from './Components/Toggle.jsx';
+import MultipleCondition from './Components/MultipleCondition.jsx';
+import Props2 from './Components/Props2.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +21,8 @@ createRoot(document.getElementById('root')).render(
     {/* <JSXWithCurlyBraces/> */}
     {/* <ClickEvent /> */}
     {/* <ReactState/> */}
-    <Toggle/>
+    {/* <Toggle/> */}
+    {/* <MultipleCondition/> */}
+    <Props2/>
   </StrictMode>,
 )
