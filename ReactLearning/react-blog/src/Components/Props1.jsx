@@ -9,6 +9,8 @@ function Props1({objt}){
             {/* <h4>Email: {email}</h4> */}
             <h4>Name: {objt.name}</h4>
             <h4>Age: {objt.age}</h4>
+            <h4>Email: {objt.email}</h4>
+            <h4>Salary: {objt.salary}</h4>
         </div>
     )
 }
