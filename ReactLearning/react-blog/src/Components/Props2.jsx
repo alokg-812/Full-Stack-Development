@@ -1,4 +1,5 @@
 import Props1 from './Props1';
+import PropsArray from './PropsArray';
 
 function Props2(){
     let obj1={
@@ -13,8 +14,12 @@ function Props2(){
         "email":"akanksha@gmail.com",
         "salary":50000
     }
+
+    let arr=[1, 'hello', null, true]
+
     return(
         <div>
+            <PropsArray array={arr}/>
             <Props1 objt={obj1}/>
             <Props1 objt={obj2}/>
         </div>
