@@ -3,6 +3,7 @@ import Props2 from "./Props2"
 function Props1({objt}){
     return(
         <div>
+            <hr/>
             <h1>Using Props of JSX</h1>
             {/* <h4>Name: {name}</h4> */}
             {/* <h4>Age: {age}</h4> */}
