@@ -259,10 +259,6 @@ The official React documentation recommends using a package manager like **npm**
       * For major version updates (e.g., from v17 to v18), refer to the official **React blog** for a detailed migration guide.
 
 
-I can help complete your React notes with detailed explanations and examples from the official documentation. Your current notes are a good starting point, and I'll add the missing information to create a comprehensive guide.
-
------
-
 ## State in React JS 🧠
 
 #### Why State is Required
