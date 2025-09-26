@@ -20,7 +20,6 @@ _Ans:_
 - Current version: `19.1.0`(in march 2025).
 - React helps in learning `react native`, helpful for mobile development.
 
-
 ## What we will learn in React JS Course
 * Setup
 * Basics
@@ -34,7 +33,6 @@ _Ans:_
 * Mini Project
 * Tailwind with React
 * Main Project
-* Interview Question
 * Query shorts
 
 
