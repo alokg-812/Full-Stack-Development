@@ -1,8 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")    # This means we are saying hey flask, please turn the following function into a route that can be served up be the server of the browser.
+@app.route("/")
 def index():
-    # return "Hello World!"
-    return '<!DOCTYPE html><html lang="en"><head><title>Flask</title></head><body>Hello Body</body></html>'
+    if "name" in request.args:
+        name = request.args["name"]
+    else:
+        name = "alok"
+    return render_template("index.html", name=name) # this will only work when the user sends some data through the /?name="xyz"
