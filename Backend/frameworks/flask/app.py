@@ -12,4 +12,4 @@ def index():
 @app.route("/greet")
 def greet():
     name = request.args.get("name", "advik")
-    return render_template("form.html", name=name)
+    return render_template("greet.html", name=name)
