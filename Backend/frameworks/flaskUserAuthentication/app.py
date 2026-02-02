@@ -26,7 +26,7 @@ with app.app_context():
 
 @app.route('/')
 def index():
-  return 'Hi'
+  return render_template('index.html')
 
 @app.route('/register', methods=['GET','POST'])
 def register():
@@ -59,6 +59,11 @@ def login():
       return render_template('login.html', error='Invalid User')
 
   return render_template('login.html')
+
+@app.route('/logout')
+def logout():
+  session.pop('email',None)
+  return redirect('/login')
 
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
