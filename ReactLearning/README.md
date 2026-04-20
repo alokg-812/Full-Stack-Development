@@ -3,6 +3,17 @@
 ## What is React?
 _Ans:_
 - React is Javascript library
+
+## Real DOM vs Virtual DOM
+
+
+
+
+
+
+## What is React?
+_Ans:_
+- React is Javascript library
 - React is used to make web front-end application
 - With the use of React, we make `SPA(Single Page Application)`.
 - Ex:
