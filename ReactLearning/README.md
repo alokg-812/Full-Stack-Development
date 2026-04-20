@@ -1,13 +1,35 @@
 # React Learning
 
+1. [What is React]()
+2. [Real DOM vs Virtual DOM]()
+3. [JSX]()
+4.
+
+
 ## What is React?
 _Ans:_
 - React is Javascript library
 
 ## Real DOM vs Virtual DOM
+Initially, website had to change something tiny in their website, like clicking a button, the website rerender complete site again, this was very hectic work, hence React introduced the concept of `virtual dom` that just updates the part of the website that has to be changed and not whole website.
 
+<img width="1318" height="529" alt="image" src="https://github.com/user-attachments/assets/9a57a8e8-3864-46b6-b3aa-749ecdda5668" />
 
+## JSX 
+- `Javascript XML`
+- `HTML` + `Javascript`
 
+### JS vs JSX
+- in JS:
+```js
+var h1 = document.createElement("h1");
+h1.setAttribute("Hello");
+```
+
+- in JSX
+```jsx
+var h1 = <H1>Hello</H1>
+```
 
 
 
