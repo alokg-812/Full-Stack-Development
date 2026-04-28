@@ -3,7 +3,20 @@
 1. [What is React]()
 2. [Real DOM vs Virtual DOM]()
 3. [JSX]()
-4.
+4. [Setting up React Project]()
+5. [Components]()
+6. [Props]()
+7. [Working with Functions]()
+8. [Hooks]()
+9. [State Management]()
+10. [Form handling]()
+11. [Two way data binding]()
+12. [Using Local Storage]()
+13. [API calling in React]()
+14. [useEffect Hook]()
+15. [React Router DOM]()
+16. [Advanced Routing]()
+17. [Context API]()
 
 
 ## What is React?
@@ -30,6 +43,48 @@ h1.setAttribute("Hello");
 ```jsx
 var h1 = <H1>Hello</H1>
 ```
+
+- below both methods are allowed while calling a function in jsx writing
+```jsx
+function Hello(){
+  console.log("Hello");
+  
+}
+
+// both ways are allowed to call a function in JSX language
+Hello(); 
+<Hello/>
+```
+
+## Setting Up React Project
+
+We set up our project with a package **bundler** that we use to create tasks of our React project, such as compiling code, managing dependencies, and serving our application for local viewing.
+- Steps to create React project:
+  1. ``` npm create vite```(**preferable**) or ```npm create vite@latest```
+  2. enter project name after this
+  3. cd to the project name
+  4. ```npm install```
+  5. ```npm run dev```
+  6. the app would automatically render on the `http://localhost:5173/`
+
+### Code Flow in React
+<img width="1301" height="557" alt="image" src="https://github.com/user-attachments/assets/f1b4e8be-6051-445b-9e4a-c62bf24edef2" />
+
+<br>
+
+1. `index.html` -> renders the page where only one div is created with id of _**#root**_
+2. `main.jsx` -> The content from the multiple files is taken and a new child is created in the _**#root**_
+3. `App.jsx` -> The content written for a particular page and is exported to main file.
+
+* Hierarchy order:
+  * index.html(superior(dadaji)) -> main.jsx(arranger(papaji)) -> App.jsx(beta)
+    
+
+
+
+
+
+
 
 
 
