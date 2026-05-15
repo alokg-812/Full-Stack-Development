@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Flex</title>
+  <style>
+    html, body{
+      height: 100%;
+      width: 100%;
+    }
+    body{
+      background-color: #111;
+    }
+    #parent{
+      height: 100%;
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .child{
+      height: 300px;
+      width: 200px;
+      background-color: red;
+      border: 2px solid white;
+      background-size: cover;
+      background-position: center;
+    }
+    #child1{
+      background-image: url(https://images.unsplash.com/photo-1778402620479-64bb441d5826?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+    #child2{
+      background-image: url(https://plus.unsplash.com/premium_photo-1698183570303-2d3de1450b47?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+    #child3{
+      background-image: url(https://plus.unsplash.com/premium_photo-1698183570742-02b8b5fd31a5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div id="child1" class="child"></div>
+    <div id="child2" class="child"></div>
+    <div id="child3" class="child"></div>
+  </div>
+</body>
+</html>
