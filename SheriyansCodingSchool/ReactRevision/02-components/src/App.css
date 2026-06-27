@@ -1,0 +1,10 @@
+*{
+  background-color: grey;
+  color: aqua;
+}
+
+.card{
+  background-color: crimson;
+  padding: 10px;
+  margin: 10px;
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: grey;
+  color: aqua;
+}
+
+.card {
+  background-color: pink;
+  color: blue;
+  border: 10px solid white;
+  padding: 10px;
+  margin: 10px;
+}
